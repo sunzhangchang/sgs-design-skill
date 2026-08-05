@@ -9,17 +9,20 @@ Sources used for this reference:
 - https://www.bilibili.com/opus/745737843276513317
 - https://www.bilibili.com/opus/693405298689310759
 - https://www.bilibili.com/opus/674737966604615718
+- https://www.bilibili.com/opus/657130146618146848
 
 ## Contents
 
 - `Design Origin`: choose the design发端 before drafting.
 - `Anchors`: translate character facts, temperament, and failure modes into rules.
 - `Simplicity`: keep the resource axis, memory, and trigger burden low.
+- `Tabletop Feasibility`: keep designs executable in face-to-face play unless the brief says otherwise.
 - `Linkage Patterns`: build produce/consume, hub/spoke, relay, open-node, or conflict links.
 - `Clan And Family Design` and `太原王氏: 中流`: choose family language by individual orientation.
 - `Locked Skills`: use locked labels for true compulsory structure and choose the lock type.
 - `Support With Solo Play`: keep assist designs playable in duel.
 - `Balancing Valves`: tune power through costs, targets, card classes, and source zones before hard limits.
+- `Role Shape And Breakpoints`: give each general a specialty, weakness, and interactive opening.
 - `Play Experience`: check what the player actually does.
 - `Wording Checks`: verify "并/然后", source ownership, and virtual-card flow.
 
@@ -61,6 +64,18 @@ Text efficiency matters. Strong designs often become shorter over iteration. Aft
 Avoid dynamic text mutation, many ending states, or self-rewriting structures unless the user explicitly wants a high-complexity design. They create reread cost and memory burden.
 
 If using an unusual concept, make the rest of the skill plain. A new mechanic plus a long branching text usually overdraws the player's attention budget.
+
+## Tabletop Feasibility
+
+Default to face-to-face tabletop feasibility unless the user explicitly asks for an online-only, app-only, boss, or mode design.
+
+Avoid effects that require repeatedly searching random qualifying cards from the deck, revealing through half the deck, opaque system-only checks, side mini-games, or heavy skill-text rewriting. If a physical token, public card, current-turn history, judgment, or small visible pile cannot represent the memory, the design probably needs simplification.
+
+Cross-turn memory should be visible and low-volume. Prefer "本回合/本阶段", cards on the general card, current chained/flipped/equipment state, or a small public history over remembering which hidden condition happened several turns ago.
+
+Be conservative with delayed-trick and equipment conversion. Delayed tricks share one judgment area and have ordering concerns; equipment can be moved, replaced, or exchanged by other skills. If the goal is only "borrow the feel" of an equipment or delayed trick, write a direct effect instead of making a card physically become that card.
+
+Avoid nesting high-risk insertions inside dying, HP-change, or current card-use resolution. If a design wants a dramatic interrupt, prefer recording a pending effect and resolving it after the current resolution, or narrow it to prevention/cancellation before the dangerous event fully starts.
 
 ## Linkage Patterns
 
@@ -157,6 +172,14 @@ Avoid global listeners that reward other characters for paying their own costs a
 
 When changing a draft to remove marks, check whether the removed mark carried memory, storage, or prediction. If so, replace that function with visible cards, current-zone state, or a simple timing window rather than pretending the cost disappeared.
 
+## Role Shape And Breakpoints
+
+Do not make a design good at everything merely to show every historical anchor. A general should have one clear superior lane and one clear weaker lane; avoiding total power creep is about specialization, not making every effect mediocre.
+
+Every strong design needs a visible breakpoint that ordinary opponents can pressure without relying on one specific counter-general. Examples include low defense after burst, hand pressure after using the engine, exposure after choosing an aggressive line, or reliance on a target/state/card class that opponents can disrupt.
+
+Avoid both oppressive "no opening" engines and passive not-moving designs. A sell-blood or defensive general should still create decisions through active self-risk, ally incentives, enemy pressure windows, or timing choices; otherwise it becomes either a blank role or a table-stalling fortress.
+
 ## Play Experience
 
 Pay attention to what the player actually does:
@@ -174,6 +197,15 @@ Before final output, scan the visible skill text for unresolved placeholders. Ne
 
 Check whether each clause can fail. If the latter clause must require the former success, use "并". If the latter can happen after partial execution, use "然后".
 
+Use stable operation pairs:
+
+- "获得/弃": marks;
+- "摸/弃置": ordinary game cards from deck/hand/area;
+- "置于...上/移去": real cards placed on a character or general card as marker cards;
+- "回复/扣减": HP;
+- "加/减": maximum HP;
+- "获得/失去": skills.
+
 State exact ownership/source when it matters:
 
 - "来自其手牌" for hand-origin logic;
@@ -189,3 +221,5 @@ For "视为使用" and source-zone mechanics, separate the virtual card from its
 - who is the user of the resulting card?
 - does the card enter the discard pile, return to equipment, stay on the general card, or get removed?
 - does the owner need compensation?
+
+Prefer clear timing words over vague urgency. Avoid obsolete or fuzzy phrasing such as "每当" and "立即" in final skill text. Use "时/后" deliberately: "时" normally belongs before the main event resolves, while "后" belongs after that event's main effect has completed.

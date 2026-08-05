@@ -24,6 +24,8 @@ Design from the proper发端 first, then translate the character into concise ca
 
 Keep skill groups readable. Target 2-4 skills and avoid excessive marks, hidden counters, repeated prompts, or nested delayed effects.
 
+Assume a design should be playable in face-to-face tabletop games unless the user explicitly asks for online-only or mode-only work. Avoid routine random deck search, large mini-games, opaque system checks, excessive skill rewriting, and cross-turn memory that cannot be represented by visible cards or simple current-window history.
+
 Do not solve power problems only by adding "每回合限一次" unless the user accepts that route. Prefer changing costs, targets, card classes, conversion rules, or locked drawbacks.
 
 Use "锁定技" only when the whole skill is compulsory. Do not create half-locked text where only one clause is mandatory; split the skill or rewrite the timing if needed. When a locked skill is appropriate, use it for unavoidable temperament, structural constraints, identity, or negative consequences. Before writing one, choose whether it expresses 性, 名, 象, 局, or 命.
