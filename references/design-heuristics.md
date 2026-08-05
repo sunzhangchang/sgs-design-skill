@@ -32,6 +32,26 @@ Sources used for this reference:
 - `Play Experience`: check what the player actually does.
 - `Wording Checks`: verify "并/然后", source ownership, and virtual-card flow.
 
+## How To Use This Reference
+
+For fresh design, do not read this as an essay. Use this order:
+
+1. `Design Origin`: decide why this general exists.
+2. `Anchors`: reduce the character to 1-3 usable anchors.
+3. `Effect Role Map`: choose primary and secondary roles.
+4. `Skill Structure` and `Timing Map`: place each skill before polishing text.
+5. `Simplicity`, `Tabletop Feasibility`, and `Linkage Patterns`: remove brittle parts and choose the relationship between skills.
+6. `Balancing Valves`, `Role Shape And Breakpoints`, and `Play Experience`: tune table pressure and solo play.
+7. `Wording Checks`: finalize wording and object names.
+
+For review/rebalance, use this order instead:
+
+1. Identify the user's stated problem and the current main game plan.
+2. Check `Skill Structure` and `Timing Map` first if the problem involves insertion, damage, HP changes, target changes, or phase/turn flow.
+3. Check `Linkage Patterns` if the problem is stiff combo logic, forced synergy, or skills with no independent job.
+4. Check `Balancing Valves` and `Role Shape And Breakpoints` if the problem is strength.
+5. Preserve the user's intended fantasy unless the fantasy itself causes the problem.
+
 ## Design Origin
 
 Choose the design发端 before drafting skills:

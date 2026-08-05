@@ -5,6 +5,17 @@ description: Design, critique, rebalance, and name 三国杀 custom generals and
 
 # Sanguosha General Designer
 
+## Task Modes
+
+Classify the user request before loading references:
+
+- Fresh design: create a new 2-4 skill group from a character, story, play role, or required mechanism.
+- Review/rebalance: diagnose an existing draft, compare versions, or solve named problems such as survival, timing insertion, rigidity, or excessive marks.
+- Naming: generate or revise称号、战功名、技能名、牌名、标记名, or衍生牌/对象名.
+- Reference intake: absorb new articles, documents, or package material into the skill itself.
+
+For fresh design or review, usually read `references/design-heuristics.md`. Read `references/mechanics-and-special-cards.md` only when the user names a mechanism/package/special card, asks for one, or the draft already uses one. Read `references/naming-titles.md` only for naming tasks or when the design creates a named nonstandard object.
+
 ## Core Workflow
 
 Design from the proper发端 first, then translate the character into concise card-game language.
@@ -19,7 +30,25 @@ Design from the proper发端 first, then translate the character into concise ca
 8. Check internal relationships without overfitting linkage. A skill may strongly link, weakly support, cover a role gap, create intentional tension, or stand mostly independent if it preserves character fit and table experience. Prefer natural linear/support/implicit links; avoid forced linkage and high-risk insertion links.
 9. Check table health: support should create decisions for allies and enemies, not only unconditional resources. Solo play should retain operation through target choice, card type choice, timing, or risk management.
 10. Before presenting final skill text, scan every skill description for unresolved placeholders, especially empty card-name brackets. No output may contain `【】`, `【 】`, `【牌名】`, `【某牌】`, or similar blank slots.
-11. If the user provides new reference material and asks to improve the skill, read it, extract reusable design knowledge, and merge it into the closest reference file instead of leaving a raw dump. If the material only restates existing guidance, say so and avoid no-op edits.
+11. If the user provides new reference material and asks to improve the skill, read it, extract reusable design knowledge, and merge it into the closest reference file instead of leaving a raw dump. Keep fetched source text in a workspace-local check folder until the user confirms the absorption is correct; only then clean temporary source files, validate, and commit. If the material only restates existing guidance, say so and avoid no-op edits.
+
+## Working Card
+
+Before writing final skills, build a small internal working card. Use it to keep references actionable instead of reciting them:
+
+```text
+任务类型：
+约束：
+人物锚点：
+发端：
+主定位/副定位：
+主资源轴：
+时机线：
+技能关系：
+主要风险：
+```
+
+For simple requests, this card can stay implicit. For reviews, expose the relevant parts as the design explanation.
 
 ## Design Rules
 
@@ -38,6 +67,8 @@ Respect wording conventions when the user defines them. In this workspace, treat
 Avoid unrestricted duplication or creation of survival cards such as【桃】and【酒】unless the whole design is balanced around that pressure.
 
 When using transverse states such as横置/重置, account for state availability: a role initially counts as重置; a横置 role must be重置 before it can be横置 again, and vice versa.
+
+If a draft mentions damage prevention, target changes, dying, phase ending, extra turns, or HP/max-HP adjustment, run the timing recognition check from `references/design-heuristics.md` before final wording.
 
 When a design creates, searches, materializes, or repeatedly references a nonstandard card-like object, name the object explicitly. This includes衍生牌、专属牌、虚拟牌、标记牌、额外牌堆牌, and named card tokens. If a named object is not needed, say so instead of leaving the naming result blank.
 
@@ -84,6 +115,18 @@ When reviewing a user draft, compare versions by:
 - whether fixes preserve the user's intended fantasy.
 
 When the user asks for称号, 战功名, 技能名, 牌名, 标记名, 衍生牌名, or flavor naming, read `references/naming-titles.md`.
+
+## Final Self-Check
+
+Before finalizing a design or review, verify:
+
+- each skill has a clear timing, condition, cost/action, and payoff, unless it is a pure static rule;
+- the chosen timing matches whether the event is prevented, modified, confirmed, or already finished;
+- internal relationships are natural: strong link, soft support, division of labor, intentional tension, or healthy independence;
+- no skill is weakened only to feed another skill;
+- no unrestricted【桃】/【酒】creation, free extra turns, broad damage prevention, or oppressive target denial slipped in;
+- all marks, stored cards, virtual cards, special zones, and generated card names have visible handling;
+- no blank card brackets or placeholder names remain.
 
 ## Reference Routing
 

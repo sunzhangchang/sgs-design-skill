@@ -63,4 +63,11 @@ If a source is mainly recap, rhetoric, or philosophy, absorb it only when it cha
 
 When a source is absorbed, add one concise provenance entry here and merge the actual design guidance into the closest specialized reference file.
 
+Workflow for user-supplied online sources:
+
+- save fetched text or HTML in a workspace-local check folder, such as `.codex/source-check/`;
+- summarize what was absorbed and where it was written;
+- wait for the user to confirm the absorption before deleting the fetched source, running final cleanup, or committing;
+- after confirmation, remove the temporary source if requested or no longer needed, validate the skill, then make the local commit.
+
 Do not store raw articles, full card tables, code paths, or code-level notes unless the user explicitly asks for a separate coding skill.

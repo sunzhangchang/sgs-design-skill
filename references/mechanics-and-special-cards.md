@@ -20,6 +20,27 @@ If the user names a package, preserve that package scope and avoid borrowing ass
 
 For future source intake, merge new material into the nearest existing concept family. Create a new section only when the source introduces a reusable design category that cannot be found by the headings below.
 
+## Fast Lookup By Design Need
+
+Use this table to decide which section to read. Do not combine several rows unless the character or user brief clearly demands a high-complexity design.
+
+- Need a compulsory drawback or technical label: read `Technical Labels`, then `Design Cautions`.
+- Need a one-shot, transformation, mission, or long-term route: read `Limited, Awakening, Task, And Count Concepts`.
+- Need to cancel, stop, skip, or end a procedure: read `Resolution Control Concepts`, then check timing in `design-heuristics.md`.
+- Need to change who used a card, caused damage, or made a choice: read `Role Reassignment And Control Concepts`.
+- Need virtual cards, changed card names, special card tags, or card identity conversion: read `Card Identity And Conversion Concepts`.
+- Need marks, stored cards, visible memory, special zones, or recent discard-pile logic: read `Card Marks And Zone Concepts`.
+- Need public tasks, cooperation, shared counters, or table-wide progress: read `Public Mark And Public Task Concepts`.
+- Need gift, movement, exact destination, or hand/equipment transfer politics: read `Movement And Transfer Concepts`.
+- Need prediction, guessing, randomness, or side-game flavor: read `Guessing, Randomness, And Out-Of-Game Concepts`.
+- Need contest, negotiation, voting, or allocation of choices: read `Contest, Voting, And Bargaining Concepts` or `Allocation And Choice-Control Concepts`.
+- Need bonds, family, partner selection, or seat geometry: read `Bond And Formation Concepts`.
+- Need HP display, armor, shields, dying threshold, or gem-color logic: read `HP, Armor, And Dying Concepts`.
+- Need turn/phase manipulation, physical state, abolish/recover, or entry/exit: read `Physical State And Turn Flow Concepts`.
+- Need named cards, special cards, equipment vocabulary, or package-scoped inspiration: read `Special Card Design Patterns`, `Equipment And Treasure Vocabulary`, or `Low-Priority Card Vocabulary`.
+
+After reading the relevant row, decide whether the mechanism is the main language, a small support tool, or only naming/flavor inspiration. If it is only inspiration, translate it into ordinary skill text rather than importing the full mechanism.
+
 ## Contents
 
 - `Mechanism Priority Evaluation`: concept scale, priority axes, and source-neutral definition discipline.
