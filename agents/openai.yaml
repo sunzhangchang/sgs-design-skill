@@ -1,0 +1,4 @@
+interface:
+  display_name: "三国杀武将设计"
+  short_description: "创建、评审并命名简洁联动的三国杀武将技能组"
+  default_prompt: "Use $sanguosha-general-designer to create a concise 三国杀武将技能组 with clear anchors and internal synergy."
