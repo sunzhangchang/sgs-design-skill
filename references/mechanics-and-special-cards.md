@@ -140,6 +140,50 @@ Use these concepts when a design stores real cards outside normal hand/equipment
 - Guardrails: define whether the zone is a subset of the discard pile or a separate zone; specify when cards enter/leave, who orders simultaneous entries, and how it interacts with "put into discard pile", "discard pile bottom", and shuffle events.
 - Design test: if the skill only cares about this turn's discarded cards once, use ordinary "本回合进入弃牌堆的牌" wording. Create a named zone only when multiple skills or repeated checks benefit from the shared vocabulary.
 
+## Guessing, Randomness, And Out-Of-Game Concepts
+
+Use these concepts when a design asks players to make predictions, accept random results, or reference information outside ordinary public game state. The core quality test is whether the result feels fair to everyone at the table.
+
+### 猜测 / 心理博弈
+
+- Definition: a player predicts a hidden choice, card property, or private intention, then the relevant result is revealed or otherwise made verifiable.
+- Use when: the character fantasy is bluffing, testing, reading people, prophecy, or intimidation, and the table can enjoy a short mind game.
+- Priority: normal to high for social play. It is intuitive and expressive, but swingy and often worse in fast online environments.
+- Guardrails: options, choice, and result must be public or verifiable after resolution. Keep stakes moderate on both success and failure; avoid "guess right wins, guess wrong dies" patterns. Do not let the optimal line become a fixed routine that removes the actual mind game.
+- Avoid when: the skill needs secret cooperation, unverifiable self-reporting, or repeatedly pauses the table for low-value decisions.
+
+### 不可见元素 / 系统判定
+
+- Definition: a skill uses information players cannot normally verify, or relies on a platform/system to inspect hidden state without disclosure.
+- Use when: the user explicitly wants an online-only design and accepts that it may not work in tabletop play.
+- Priority: low for general custom design. It can open new space, but it damages trust and is hard to port across environments.
+- Guardrails: prefer applying only to the user's own hidden elements; reveal enough after resolution for players to audit fairness; label the design as online-only if a real table cannot execute it. Never require a player to make unverifiable claims for large rewards.
+- Avoid when: the hidden check exposes another player's strategic weakness, creates suspicion of collusion, or could be replaced by a public reveal, guess, judgment, or chosen option.
+
+### 随机执行 / 卜卦
+
+- Definition: one option is selected randomly from a known menu; 卜卦 is a themed top-card/random-sign procedure.
+- Use when: fate, omen, chaos, or uncontrollable orders are central to the character, and the random menu is small enough to understand.
+- Priority: medium for transparent equal-probability random menus; low when probabilities are hidden, uneven, or platform-controlled.
+- Guardrails: state the probability method or use existing public procedures such as judgment, reveal, or dice. Keep branches comparable in value or give players a mitigation choice. For 卜卦-like designs, cap branch count and avoid cross-turn memory unless a physical aid exists.
+- Avoid when: "random" merely hides poor balancing, or when a simple judgment would give the same texture with less baggage.
+
+### 军令 / 道具抽签 / 刮彩票
+
+- Definition: a packaged random or semi-random menu represented by cards, slips, tickets, or other physical aids.
+- Use when: a mode or package wants a shared command deck or a reusable tactical order vocabulary.
+- Priority: medium for a small public menu like 军令; low for one-character props, large ticket sets, or tools that mostly add spectacle.
+- Guardrails: keep the menu small, broadly useful, and similar in value; define whether the recipient may refuse, choose between drawn options, or must execute. If physical components are required, make them replaceable by ordinary cards, dice, or a table.
+- Avoid when: the component is one-to-one bound to a single general, creates setup burden, or has huge variance in normal identity games.
+
+### 游戏外元素 / 小游戏 / 无关文本
+
+- Definition: a skill references player traits, real-world objects, physical dexterity, other games, interface features, or text that does not change rules.
+- Use when: the design is explicitly casual, festive, mode-specific, or an art-first piece.
+- Priority: low for normal generals. It may be charming, but often breaks immersion, privacy, portability, or table pace.
+- Guardrails: game-outside references should affect only setup, tie-breakers, or very small bonuses; consider extreme cases and sensitive information. Mini-games must be quick, optional, and strongly tied to the character fantasy. Non-rules text belongs in title, flavor, notes, or art direction, not in the rules box.
+- Avoid when: it changes core stats from real-world data, asks for private personal information, forces all players to watch a side activity, or depends on online-only cosmetics such as exclusive emotes.
+
 ## Mechanism Selection
 
 Use these patterns by design need:
@@ -154,7 +198,8 @@ Use these patterns by design need:
 - state/rhythm switching: 转换技, 韵律技, 连招技, 连招-like order checks;
 - attack-position branches: 游击, 搏击, 摧坚, 击伤, 起义军;
 - environment or global pressure: 天候, 光环效果, 持恒技;
-- source/response puzzles: 智囊, 卜算, 六经, 妙计, 逐鹿.
+- source/response puzzles: 猜测, 谋弈, 智囊, 卜算, 卜卦, 六经, 妙计, 逐鹿;
+- fate/random menus: 随机执行, 军令, transparent dice/judgment branches.
 
 ## Reviewed Package Mechanism Families
 
@@ -218,6 +263,7 @@ Use these distilled package entries as normal design candidates when they match 
 - 同心: choose a partner until next turn; both execute linked effects. Use for paired or oath designs.
 - 异性双人武将: counts as both male and female. Use for dual-character sex-related interactions.
 - 暴虐值: charge by causing or receiving damage, cap 5, then consume for effects. Use for violent momentum.
+- 卜卦: use a top-card or sign-like procedure to determine one of several omen branches. Use only with a small branch set and clear timing.
 - 武 marks / 布道 skills: large arsenals or spell lists. Use as menu inspiration, but reduce option count for normal designs.
 
 ### 欢乐三国杀
@@ -251,6 +297,14 @@ Use these distilled package entries as normal design candidates when they match 
 - 中央区: a named subset of recent discard-pile cards. Use when several effects repeatedly care about recent cards; otherwise write the time window directly.
 - 有序弃牌堆: discard pile treated as an ordered stack. Use only when the table or platform can maintain order reliably.
 - 牌盒: out-of-game box for special cards. Use for modes or package centerpieces; avoid for one-off ordinary generals.
+
+### Conceptual Social/Random Vocabulary
+
+- 猜测: public/verifiable prediction. Use for bluffing and mind games with moderate stakes.
+- 不可见元素: hidden information not auditable by players. Low priority; usually online-only or self-only.
+- 随机执行: random selection among known options. Prefer judgment/dice and equal transparent odds.
+- 道具抽签 / 刮彩票: physical random props. Low priority unless the mode provides reusable components.
+- 游戏外元素 / 小游戏 / 无关文本: flavor or side activity outside core rules. Keep cosmetic or tiny; avoid normal competitive designs.
 
 ## Special Card Design Patterns
 
