@@ -62,6 +62,57 @@ Use technical labels only when the called rule is clear and useful. They are not
 - 君主技 is narrow; use only for true lord-mode designs.
 - 宗族技 is suitable for clan packages when the shared label helps players see family membership or inherit a common design language. The individual skill still needs to work as rules text even if the label is removed.
 
+## Limited, Awakening, Task, And Count Concepts
+
+Use these concepts when a design changes long-term availability, creates a transformation, or asks the player to complete a task. Their names carry strong presentation weight; do not use them merely as strength patches.
+
+### 限定技 / 觉醒技
+
+- Definition: 限定技 is normally once per game; 觉醒技 is a compulsory transformation after a condition is met.
+- Use when: the character has a true decisive move, rebirth, transformation, or irreversible turning point.
+- Priority: normal for major designs, low for ordinary small payoffs.
+- Guardrails: a limited skill should feel worth remembering but not force the whole table to pre-emptively kill the character. Awakening should preserve some identity before and after transformation; avoid making the pre-awaken and post-awaken forms feel like unrelated generals. If awakening changes max HP, skill set, or faction-like identity, state all lasting changes precisely.
+- Avoid when: the effect is just a one-time minor bonus, a disguised normal skill, or a balance patch for an otherwise bland design.
+
+### 可重置限定技 / 昂扬技 / 蓄势技 / 更始技
+
+- Definition: a once-per-game or high-impact skill can become available again through a condition.
+- Use when: the "recharged decisive move" is itself the fantasy, such as renewed morale, stored power, or a rare second wind.
+- Priority: medium for hard, flavorful reset conditions; low for easy routine resets.
+- Guardrails: reset difficulty should match effect size. Easy resets require smaller effects and may lose the special feeling of a limited skill. Do not combine unrelated reset routes only for strength; if the reset is tied to shuffle/deck exhaustion, check whether the game usually lasts long enough.
+- Avoid when: the skill effectively becomes "once per turn with extra animation".
+
+### 重置技能 / 行置 / 视为满足觉醒条件
+
+- Definition: a rule treats a skill as unused, used, or ready to awaken.
+- Use when: the character explicitly manipulates skill availability or another character's turning point.
+- Priority: low to medium; very context-sensitive.
+- Guardrails: distinguish resetting use count from removing delayed effects or rewinding state. Prefer "次数上限+1" or an explicit extra use when that is the real effect. Let a skill reset only the user's own skills unless the brief needs invasive control. For awakening manipulation, change only the condition unless the timing and lasting changes are clear.
+- Avoid when: delayed skill effects, conversion states, or cards stored by that skill would require retroactive cleanup.
+
+### 全局计次 / 蓄力技 / 奋武技 / 次数封装 / 轮巡年
+
+- Definition: a skill tracks uses across the game, round, phase, deck cycle, or a dynamic value.
+- Use when: long-term rhythm matters more than a simple per-turn cap.
+- Priority: medium for direct "每X限N次"; low for decorative count labels or shared gauges.
+- Guardrails: state whether count belongs to the character, skill, or named resource, and what happens if the skill is lost, stolen, disabled, or regained. Use 轮/巡/年 only when the table can remember the boundary; 轮 is shared, 巡 is personal, 年/deck-cycle is low-frequency and mode-sensitive.
+- Avoid when: an ordinary "每阶段限一次", "每轮限一次", or marker would communicate the same thing.
+
+### 使命技 / 命运线
+
+- Definition: 使命技 frames success/failure tasks; 命运线 organizes multiple tasks, routes, or unlocks into a larger progression.
+- Use when: the character is defined by a vow, doomed task, campaign, mandate, or multi-route destiny.
+- Priority: medium for one clear task; low to medium for large route systems outside deity, boss, or mode centerpiece designs.
+- Guardrails: separate passive/common effects from task success and failure clauses. Define success/failure priority, whether the skill disappears, and whether the task can reset. For 命运线, use cards or a visible route aid; avoid random skill pools unless the design is meant for mode play.
+- Avoid when: the "mission" is a generic upside/downside pair, or the route system exists only to display many borrowed skills.
+
+### 入魔 / 移志技 / 契定技
+
+- Definition: a named delayed transformation or self-bound contract effect.
+- Use when: the named concept precisely matches the character's moral fall, changed will, oath, or pact.
+- Priority: low. Most can be written as a limited skill, awakening, or lasting state.
+- Guardrails: the transformation should change play incentives, not just rename a permanent effect. If a contract carries a forced drawback, the positive reason to accept it must be visible.
+
 ## Resolution Control Concepts
 
 Use these concepts when a design cancels, shortens, or forcibly closes a card/phase/turn flow. The safe question is "what has already entered the event stack, and what cleanup remains?"
@@ -236,6 +287,68 @@ Use these concepts when a design asks players to make predictions, accept random
 - Guardrails: game-outside references should affect only setup, tie-breakers, or very small bonuses; consider extreme cases and sensitive information. Mini-games must be quick, optional, and strongly tied to the character fantasy. Non-rules text belongs in title, flavor, notes, or art direction, not in the rules box.
 - Avoid when: it changes core stats from real-world data, asks for private personal information, forces all players to watch a side activity, or depends on online-only cosmetics such as exclusive emotes.
 
+## Contest, Voting, And Bargaining Concepts
+
+Use these concepts when the design turns cards, choices, or table politics into a contest. The best versions preserve player agency instead of becoming disguised random outcomes.
+
+### 拼点
+
+- Definition: two players reveal one hand card each and compare points, usually resolving win/not-win branches.
+- Use when: the fantasy is duel, debate, test of courage, diplomatic pressure, or using excess cards as leverage.
+- Priority: high as a clean contest operation.
+- Guardrails: remember that pindian is close to zero direct card advantage but can disrupt hands and create alliance play. Do not always attach huge rewards; let the point contest and card choice matter. If using tied/lost branches, define them explicitly because many players expect the traditional win/not-win split.
+- Avoid when: the design only wants random high/low resolution; judgment or reveal may be simpler.
+
+### 多人拼点 / 逐鹿 / 对抗拼点
+
+- Definition: more than two players compare points, either individually, by unique highest, or by teams/factions.
+- Use when: the scene is truly a group debate, contest for leadership, or factional confrontation.
+- Priority: medium-low. It is flashy but dilutes each player's influence.
+- Guardrails: define participation, side selection, tie handling, winner count, and who gets exposed/used cards. Avoid rewarding "all non-winners' pindian cards" without a cap. Keep teams meaningful; otherwise it degenerates into identity math rather than card contest.
+
+### 谋弈 / 锻造 / 议事
+
+- Definition: 谋弈 is a two-option prediction game, 锻造 is a collective/randomized crafting contest, and 议事 is reveal-and-vote by card color.
+- Use when: prediction, public deliberation, or collective construction is more important than point comparison.
+- Priority: high for 议事 when court/public-will flavor fits; medium for 谋弈; low for 锻造 outside artifact-making centerpieces.
+- Guardrails: 谋弈 options should be symmetric enough to be a mind game but not so symmetric that they become pure random guessing. 议事 exposes information, which is part of its cost. 锻造 needs a clear reason for helpers/hinderers and should not jump directly into identity certainty.
+
+## Allocation And Choice-Control Concepts
+
+Use these concepts when a skill gives flexible distribution or changes whether players may choose.
+
+### 共计 / 分配
+
+- Definition: a total amount is divided among targets or effects, then later clauses may refer to each share.
+- Use when: the character expresses large-scale command, charity, devastation, or resource allocation.
+- Priority: high for traditional card/damage distribution, medium-low for broad "new-style" distribution of arbitrary objects.
+- Guardrails: specify total, valid recipients, minimum/maximum per recipient, and whether assigning 0 is allowed. Be careful distributing HP, max HP, damage, or recovery because simultaneous gain/loss can create insertion and dying-timing problems. For a single unit, direct "令一名角色..." is usually clearer than "分配1".
+- Avoid when: the wording only adds grandeur without real flexibility.
+
+### 拒绝 / 放弃
+
+- Definition: a player is allowed to refuse a procedure or decline an otherwise expected action.
+- Use when: the design needs strong self-restraint, defiance, or a way to soften a forced interaction.
+- Priority: medium.
+- Guardrails: treat refusal as a higher-level option; define the result of refusal and whether refusal can be forced by inability. "放弃" reads more voluntary and softer than "拒绝"; choose the word that matches the fantasy.
+- Avoid when: "若你未..." or an ordinary optional clause is clearer.
+
+### 强制发动
+
+- Definition: a normally optional skill or choice is made compulsory for a limited time or branch.
+- Use when: the design tempts the user into overcommitting, losing control, or weaponizing an awkward skill.
+- Priority: medium-low. It is interesting but can feel hostile.
+- Guardrails: prefer forcing your own skill, or give meaningful compensation if forcing another player. Balance the forced and non-forced modes; if the skill is always profitable, making it compulsory is meaningless.
+- Avoid when: it removes important targeting choices or makes another player execute a long skill against their will.
+
+### 重置技 / 枭雄技
+
+- Definition: a multi-option skill tracks which choices have been used, may reset after all options are used, or permanently leaves one option as the final state.
+- Use when: the character has prepared tactics, staged choices, or a "use every plan before returning" rhythm.
+- Priority: low to medium. It is flexible but memory-heavy and easy to overbuild.
+- Guardrails: keep option count small and visible. Options should not have an obvious fixed order, or the skill becomes a conversion/sequence skill. Make reset conditions reachable but not automatic, and define what happens if an option cannot currently be chosen.
+- Avoid when: two options would work better as a conversion skill, or five-plus options make the character a menu.
+
 ## Damage, Tags, And Skill Encapsulation Concepts
 
 Use these concepts when splitting existing concepts into subtypes or turning a recurring operation into a compact tag.
@@ -316,16 +429,18 @@ Use these concepts when a card or resource is turned into a replacement draw or 
 
 Use these patterns by design need:
 
-- delayed payoff: 施法, 蓄谋, 历战, 使命技;
+- delayed payoff: 施法, 蓄谋, 历战, 使命技, 命运线;
+- one-shot or transformation: 限定技, 觉醒技, 昂扬技, 可重置限定技;
 - card identity pressure: 强制更改牌面信息, 强制转化, narrow 视为 rules;
 - resolution control: 作废, scoped 终止结算, 强制结束阶段/回合;
 - card recycling: 重铸, direct discard-then-draw, current-turn discard reuse;
 - damage and tag language: 属性伤害, 额外牌面信息, 应变标签, narrow 附魔;
 - risk/reward overreach: 背水, 妄行, 暴虐值, 奋武技;
-- cooperation or table bargaining: 协力, 议事, 谋弈, 锻造, 同心;
+- cooperation or table bargaining: 拼点, 多人拼点, 协力, 议事, 谋弈, 锻造, 同心;
+- flexible allocation/choice control: 共计, 分配, 拒绝, 强制发动, 重置技, 枭雄技;
 - public or special zones: 标记牌, 仁区, 暗置, 中央区, 额外牌堆, 幻术牌堆, 蓄谋牌, 牌盒, 【影】;
 - hidden or alternate identity: 隐匿, 结党, 休整, 异性双人武将, 双势力;
-- resource counters: 护甲, 标记, 声明数值, 蓄力标记, 谋略值, 暴虐值, 耐久度;
+- resource counters: 护甲, 标记, 声明数值, 蓄力标记, 全局计次, 谋略值, 暴虐值, 耐久度;
 - state/rhythm switching: 转换技, 韵律技, 连招技, 实体性操作, 连招-like order checks;
 - attack-position branches: 游击, 搏击, 摧坚, 击伤, 起义军;
 - environment or global pressure: 天候, 光环效果, 持恒技, carefully scoped 回合变动;
@@ -341,7 +456,7 @@ Use these distilled package entries as normal design candidates when they match 
 | 弃牌堆引用 | 残局余波、回收旧事、因弃置而起势；可看本回合弃牌堆、阶段弃置牌、特定牌进入弃牌堆后的回收。 | 限定时间窗、花色/类型、每阶段次数；避免无脑回收关键防御牌。 | OL、SP、一将成名、军争、十周年、十周年小程序、国战、国际服、小程序、手杀、江山如故、游戏模式、神话再临、线下、蚀心入魔、谋攻篇、通用机制 |
 | 转化/虚拟牌/牌名声明 | 技艺、伪装、号令、临机借势；适合声明牌名、视为使用、把一类牌转为功能牌。 | 限制牌类、目标、时机和是否触发“使用”；谨慎产出【桃】【酒】等生存牌。 | OL、SP、一将成名、军争、十周年、十周年小程序、国战、国际服、小程序、手杀、江山如故、游戏模式、神话再临、线下、蚀心入魔、谋攻篇、通用机制 |
 | 区域选牌/多区交互 | 搜检、调度、拆解装备/判定区/手牌的战术角色。 | 明确可选区域和每区最多数量；避免一次性跨区大拆。 | OL、SP、一将成名、军争、十周年、十周年小程序、国际服、小程序、手杀、江山如故、游戏模式、神话再临、线下、蚀心入魔、通用机制 |
-| 拼点 | 争锋、试胆、较艺、权谋对赌；适合赢/没赢分支或拼点牌归属变化。 | 给没赢一方补偿或代价；避免纯粹高点数压制。 | OL、SP、一将成名、十周年、十周年小程序、国战、国际服、手杀、江山如故、游戏模式、神话再临、线下、蚀心入魔、谋攻篇、通用机制 |
+| 拼点 | 争锋、试胆、较艺、权谋对赌；适合赢/没赢分支或拼点牌归属变化。 | 给没赢一方补偿或代价；不要迷信“拼点无弱将”；多人拼点要定义赢家、平局和拼点牌归属。 | OL、SP、一将成名、十周年、十周年小程序、国战、国际服、手杀、江山如故、游戏模式、神话再临、线下、蚀心入魔、谋攻篇、通用机制 |
 | 横置/重置/连环 | 连环、牵制、阵型、火雷属性联动；可把横置作为状态门槛或结算资源。 | 遵守横置/重置可用性；不要让横置后的再横置变成空结算。 | OL、SP、一将成名、十周年、十周年小程序、国战、国际服、小程序、手杀、江山如故、游戏模式、神话再临、线下、蚀心入魔、谋攻篇 |
 | 武将牌上/私有牌堆 | 记忆、藏物、积累证据、蓄势资源；适合少量命名牌堆。 | 定义进入、上限、离开、可见性、是否可被选取；普通武将少用多堆。 | OL、SP、一将成名、十周年、十周年小程序、国战、国际服、小程序、手杀、江山如故、游戏模式、神话再临、线下、蚀心入魔、通用机制 |
 | 目标转移/取消/增减 | 护卫、误导、战术牵引、攻击面控制。 | 高强度语言；限制为特定牌、特定目标数或付出弃牌/失血成本。 | OL、SP、一将成名、十周年、十周年小程序、国战、国际服、小程序、手杀、江山如故、游戏模式、神话再临、线下、蚀心入魔、通用机制 |
@@ -354,14 +469,14 @@ Use these distilled package entries as normal design candidates when they match 
 ### 三国杀移动版
 
 - 智囊: three ordinary trick names, commonly【无中生有】【过河拆桥】【无懈可击】. Use as a compact "tactical trick set".
-- 使命技: has success/failure conditions and corresponding effects; becomes invalid after success or failure. Use for one-life vows, duties, or doomed quests.
+- 使命技: has success/failure conditions and corresponding effects; becomes invalid after success or failure. Use for one-life vows, duties, or doomed quests. Prefer a clean task template over mixing large passive text into the label.
 - 仁区: a public card zone with a small cap. Use when a character contributes to or consumes a shared moral/political resource. Low priority outside a package that defines cleanup and multiple healthy spenders.
 - 背水: a special option that executes other options, then pays a consequence; cannot be chosen if the consequence cannot execute. Use for all-in lines.
 - 整肃: target chooses/executes a discipline task, then receives reward if not failed. Subtypes: 擂进 uses increasing point sequence; 变阵 uses same suit sequence; 鸣止 discards all different suits.
 - 谋弈: user and target secretly or separately choose options; user succeeds if the target does not pick the matching answer. Use for prediction duels.
 - 协力: choose a cooperation route with another role until that role's turn end. Routes include damage total, draw total, discarded suits, or used/played suits.
 - 护甲: damage buffer with an upper limit. Use for armor-like survivability that is not recovery.
-- 蓄力技: shared charge markers across all charge skills on the same character. Use when multiple effects consume one common battery.
+- 蓄力技: shared charge markers across all charge skills on the same character. Use when multiple effects consume one common battery, but define what happens if charge skills are lost, stolen, or regained.
 - 持恒技: cannot be disabled by other skill effects. Use sparingly for immutable rules.
 - 追思: a status lasting the game; later effects can require targets without that status. Use for memorial/exclusion logic.
 - 虚拟伤害: incomplete damage event that triggers some "about to cause", "after causing", and "after receiving" timings, but does not reduce HP. Use cautiously for "as if harmed" records.
@@ -389,7 +504,7 @@ Use these distilled package entries as normal design candidates when they match 
 - 妄行: user chooses X up to a cap, then pays at turn end if the skill was used. Use for deliberate excess.
 - 摧坚: once per turn after using damage card, X depends on target skill count. Use for anti-expert or armor-breaking attacks.
 - 游击 / 搏击: extra effect based on whether target is outside or inside attack range. Use for distance-position identity.
-- 昂扬技: limited skill that can be refreshed after an "激昂" condition. Use for heroic comeback surges.
+- 昂扬技: limited skill that can be refreshed after an "激昂" condition. Use for heroic comeback surges; keep the refresh condition rare enough that it still feels special.
 - 历战: if used this turn, upgrade/modify the skill at turn end for the whole game. Use for campaign growth.
 - 同心: choose a partner until next turn; both execute linked effects. Use for paired or oath designs.
 - 异性双人武将: counts as both male and female. Use for dual-character sex-related interactions.
@@ -408,8 +523,8 @@ Use these distilled package entries as normal design candidates when they match 
 
 - 韵律技: conversion skill with 平/仄 states; "转韵" flips state and resets use count. Use for poetry, music, rhythm, or alternating tempo.
 - 谋略值 / 妙计: strategy points up to 5; spend 1-3 to use 拆/无懈/无中. Use for tactical resource conversion.
-- 逐鹿: multi-player pindian, unique highest point wins. Use for contesting leadership.
-- 奋武技: per-round use count equals damage caused plus received plus one, capped. Use for battle heat or revenge momentum.
+- 逐鹿: multi-player pindian, unique highest point wins. Use for contesting leadership; define ties and exposed-card handling.
+- 奋武技: per-round use count equals damage caused plus received plus one, capped. Use for battle heat or revenge momentum; an explicit dynamic use limit may be clearer than a new label.
 
 ### 线下
 
@@ -447,6 +562,18 @@ Use these distilled package entries as normal design candidates when they match 
 - 实体性操作: orientation/state changes such as 横置、翻面、叠置. Require unique visual cues.
 - 回合变动: skip, add, or modify turns/phases. Prefer direct actions unless phase triggers matter.
 - 预演: snapshot/rollback or rehearsal. Very low priority outside experimental modes.
+
+### Conceptual Count/Task/Choice Vocabulary
+
+- 限定技: once-per-game decisive skill. Use for real "big move" moments, not small bonuses.
+- 觉醒技: compulsory lasting transformation. Preserve identity across the change.
+- 可重置限定技 / 昂扬技: limited skill with a refresh condition. Match reset rarity to payoff.
+- 使命技: task with success/failure. Keep success and failure ordering explicit.
+- 命运线: route or progression system. Reserve for deity, boss, or mode-centerpiece scale.
+- 共计 / 分配: divide a total among recipients/effects. Define total, per-target bounds, and simultaneity.
+- 拒绝: high-level refusal option. Use to soften or dramatize forced interactions.
+- 强制发动: temporary compulsion of an optional skill. Usually safest on the user's own skills.
+- 重置技 / 枭雄技: multi-option depletion or final-option systems. Keep option count small and visible.
 
 ## Special Card Design Patterns
 
