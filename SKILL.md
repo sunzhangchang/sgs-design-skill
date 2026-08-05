@@ -14,7 +14,21 @@ Classify the user request before loading references:
 - Naming: generate or revise称号、战功名、技能名、牌名、标记名, or衍生牌/对象名.
 - Reference intake: absorb new articles, documents, or package material into the skill itself.
 
-For fresh design or review, usually read `references/design-heuristics.md`. Read `references/mechanics-and-special-cards.md` only when the user names a mechanism/package/special card, asks for one, or the draft already uses one. Read `references/naming-titles.md` only for naming tasks or when the design creates a named nonstandard object.
+For fresh design or review, usually read `references/design-heuristics.md`. Read `references/mechanics-index.md` first, then only one focused mechanics file, when the user names a mechanism/package/special card, asks for one, or the draft already uses one. Read `references/naming-titles.md` only for naming tasks or when the design creates a named nonstandard object.
+
+## Interactive Design Protocol
+
+Default to an interactive design conversation unless the user explicitly asks for an immediate complete draft or already provides enough constraints.
+
+Use small steps:
+
+1. Brief: identify character/source, mode, faction/health if known, role fantasy, complexity limit, required/forbidden mechanics, and whether the user wants official-like or experimental language. Ask only the 1-3 missing questions that would most change the design.
+2. Anchors: propose 1-3 usable character anchors and separate positive capability from negative compulsion. Ask the user to confirm, reject, or add an anchor.
+3. Mechanical direction: propose 2-3 possible resource axes or timing lines. If a route needs special mechanics, read `references/mechanics-index.md` and the one focused slice it routes to after the user chooses or indicates interest.
+4. Skeleton: propose the skill count and each skill's job before writing final text. Use two skills for focused designs, three when main play/support/drawback naturally separate, and four only when an identity skill, awakening/limited turn, clan branch, or mode rule genuinely needs its own slot.
+5. Draft: write the complete skill group, then explain main play line, internal relationship, risks, and adjustable words. If the user continues, revise from the user's chosen concern rather than restarting.
+
+Do not ask for every possible constraint at once. After each user answer, update the internal working card, state what became clear, and ask the next narrow question or present the next small decision. If the user says to proceed with assumptions, proceed and name the assumptions briefly.
 
 ## Core Workflow
 
@@ -26,7 +40,7 @@ Design from the proper发端 first, then translate the character into concise ca
 4. Identify 1-3 character anchors: deeds, temperament, relationships, failure mode, iconic object, or desired play experience. Separate positive capability from negative compulsion.
 5. Choose one main mechanical language for each anchor. Do not include every possible motif merely because it exists.
 6. For each skill, check the structure: type label, timing, condition, cost/action, effect, and aftereffect/price. For timing-heavy text, first place the trigger on a line: game, turn/phase, card-use/target/resolution, damage/dying/death, or skill resolution; then decide whether the referenced event has not started, is being modified, has become certain, or has already finished. Missing timing, fake costs, and overstuffed effects are common failure points.
-7. Draft 2-4 skills with short text, explicit timing, and few moving parts. Prefer one main play line plus optional support, coverage, contrast, or drawback; do not force every skill into the same engine.
+7. Draft as many skills as the design actually needs, normally 2-4, with short text, explicit timing, and few moving parts. Prefer one main play line plus optional support, coverage, contrast, or drawback; do not force every skill into the same engine or pad the group to three skills.
 8. Check internal relationships without overfitting linkage. A skill may strongly link, weakly support, cover a role gap, create intentional tension, or stand mostly independent if it preserves character fit and table experience. Prefer natural linear/support/implicit links; avoid forced linkage and high-risk insertion links.
 9. Check table health: support should create decisions for allies and enemies, not only unconditional resources. Solo play should retain operation through target choice, card type choice, timing, or risk management.
 10. Before presenting final skill text, scan every skill description for unresolved placeholders, especially empty card-name brackets. No output may contain `【】`, `【 】`, `【牌名】`, `【某牌】`, or similar blank slots.
@@ -53,6 +67,8 @@ For simple requests, this card can stay implicit. For reviews, expose the releva
 ## Design Rules
 
 Keep skill groups readable. Target 2-4 skills and avoid excessive marks, hidden counters, repeated prompts, or nested delayed effects.
+
+Do not default to exactly three skills. Choose the count by function: 2 for a clean compact design, 3 for a natural main/support/drawback or main/branch/identity split, and 4 only when a separate rule label, clan skill, transformation, or mode mechanic would make a longer combined skill harder to read.
 
 Assume a design should be playable in face-to-face tabletop games unless the user explicitly asks for online-only or mode-only work. Avoid routine random deck search, large mini-games, opaque system checks, excessive skill rewriting, and cross-turn memory that cannot be represented by visible cards or simple current-window history.
 
@@ -99,6 +115,8 @@ When presenting a design, use this compact form:
 技能名：技能文本。
 技能名：技能文本。
 
+按需要列出2-4个技能；不要为了凑三技能而增加技能。
+
 衍生牌/对象名：若技能创造或依赖非标准牌、专属牌、虚拟牌、标记牌、额外牌堆牌, list each name as【牌名】/【对象名】 with category, brief rule role, and naming reason. This supplements the skill text and does not replace filled card names inside the skills. If the user asked for card names but no named object is recommended, state "不建议新增牌名：" and give the reason plus the simpler wording route.
 
 设计说明：定位、主玩法、联动或分工、强度阀门、单挑空间。
@@ -133,7 +151,7 @@ Before finalizing a design or review, verify:
 Choose the smallest reference set that answers the task:
 
 - Read `references/design-heuristics.md` for ordinary design/review tasks that need deeper design principles, timing-point recognition, clan-skill interpretation, locked-skill diagnosis, balance valves, or source-inspired design philosophy.
-- Read `references/mechanics-and-special-cards.md` for named mechanisms, special cards, special zones, extra decks, package-scoped vocabulary, or user-reviewed package material. Prefer normal-priority mechanism families, treat low-priority special equipment as object-specific inspiration only, and use 国战 cards cautiously unless the user asks for a 国战 design.
+- Read `references/mechanics-index.md` for named mechanisms, special cards, special zones, extra decks, package-scoped vocabulary, or user-reviewed package material. Then read only the focused file it routes to under `references/mechanics/`. Prefer normal-priority mechanism families, treat low-priority special equipment as object-specific inspiration only, and use 国战 cards cautiously unless the user asks for a 国战 design. Do not read the legacy full digest `references/mechanics-and-special-cards.md` during normal design.
 - Read `references/naming-titles.md` when the user asks for称号、战功名、技能名、标记名、衍生牌名, or similar flavor naming.
 - Read `references/source-digests.md` when the user asks where principles came from, provides new source material to absorb, or needs a map of absorbed online/offline references.
 

@@ -46,8 +46,8 @@ Use this file as a provenance and intake map. It summarizes useful content alrea
 ## Local Or Offline Materials
 
 - `prompt.md`: contained the five Bilibili links above and the instruction to absorb design philosophy, image content, and reflections into the skill.
-- 三国杀各服军争新机制与特殊牌汇总 document: source for cross-server mechanism families such as 使命技、仁区、背水、整肃、谋弈、协力、护甲、施法、妄行、历战、议事、蓄谋 and extra-card/special-zone vocabulary. Its distilled content lives in `mechanics-and-special-cards.md`.
-- User-reviewed package card/mechanism table: source for package-scoped special cards, mechanism families, package names, and priority labels. The distilled content lives in `mechanics-and-special-cards.md`; the skill should not require access to the original package files.
+- 三国杀各服军争新机制与特殊牌汇总 document: source for cross-server mechanism families such as 使命技、仁区、背水、整肃、谋弈、协力、护甲、施法、妄行、历战、议事、蓄谋 and extra-card/special-zone vocabulary. The active distilled content starts at `mechanics-index.md` and focused files under `mechanics/`.
+- User-reviewed package card/mechanism table: source for package-scoped special cards, mechanism families, package names, and priority labels. The active distilled content starts at `mechanics-index.md` and focused files under `mechanics/`; `mechanics-and-special-cards.md` is retained only as a legacy consolidated digest. The skill should not require access to the original package files.
 
 ## Intake Rule For Future Sources
 

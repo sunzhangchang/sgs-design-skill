@@ -1,5 +1,7 @@
 # Mechanics And Special Cards Reference
 
+Legacy full digest. Do not read this file during normal skill use. Start with `mechanics-index.md`, then read only the relevant focused file under `mechanics/`. This legacy file is retained as an original consolidated reference until it can be removed or archived safely.
+
 Use this reference when designing a general that could borrow from existing 三国杀 cross-server mechanisms, special cards, special zones, extra decks, or equipment vocabulary.
 
 Sources distilled into this file:

@@ -34,7 +34,7 @@ Sources used for this reference:
 
 ## How To Use This Reference
 
-For fresh design, do not read this as an essay. Use this order:
+For fresh design, do not read this as an essay. Use this order across the conversation:
 
 1. `Design Origin`: decide why this general exists.
 2. `Anchors`: reduce the character to 1-3 usable anchors.
@@ -43,6 +43,8 @@ For fresh design, do not read this as an essay. Use this order:
 5. `Simplicity`, `Tabletop Feasibility`, and `Linkage Patterns`: remove brittle parts and choose the relationship between skills.
 6. `Balancing Valves`, `Role Shape And Breakpoints`, and `Play Experience`: tune table pressure and solo play.
 7. `Wording Checks`: finalize wording and object names.
+
+If the user is still answering early questions, read only the sections needed for the current step. For example, do not read `Balancing Valves` before the rough mechanical direction exists, and do not read naming guidance unless a name or generated object is needed.
 
 For review/rebalance, use this order instead:
 
