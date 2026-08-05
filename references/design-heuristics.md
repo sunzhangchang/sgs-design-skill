@@ -110,7 +110,7 @@ Avoid nesting high-risk insertions inside dying, HP-change, or current card-use 
 
 ## Linkage Patterns
 
-Use internal linkage with restraint. Linkage is a bonus, not a requirement; character fit and readable play come first.
+Use internal linkage with restraint. Linkage is a bonus, not a requirement; character fit and readable play come first. Do not make every skill serve the same engine unless the character is explicitly an engine-style centerpiece.
 
 - produce -> consume: one skill stores or generates a resource, another spends it;
 - hub -> spoke: a locked or passive skill rewards reaching a particular balance point;
@@ -128,11 +128,21 @@ Use these linkage shapes deliberately:
 - Mutual exclusion: one skill makes another harder to trigger or asks the player to choose between routes. Use for contradiction, burden, or character tragedy; avoid accidental self-sabotage.
 - No-link compensation: a second skill may simply cover defense, survivability, or table presence for a focused first skill. This is acceptable when it solves a real play problem rather than pretending to be synergy.
 
+Use a loose relationship scale instead of forcing a combo:
+
+- Strong linkage: one skill directly produces the resource/event another skill spends. Use when the character fantasy is a coherent engine.
+- Soft linkage: one skill improves timing, probability, target quality, or hand shape for another. Prefer this for most ordinary generals.
+- Division of labor: skills cover different table needs such as offense plus defense, support plus duel agency, or engine plus breakpoint. This is not a failure of linkage.
+- Thematic resonance: skills share a character thesis, image, or failure mode without mechanical dependency. Keep this when mechanical linkage would feel contrived.
+- Intentional independence: a skill exists to prevent non-games, reduce passivity, or express a separate anchor. Explain the role instead of inventing a fake trigger connection.
+
 Do not assume all skills must be harmonious. A negative or self-consuming link can be more faithful than a smooth value loop.
 
 When a family/identity skill refreshes or reopens skills, attach a soft cost, compensation, or source restriction so the engine has rhythm instead of repeated free action.
 
 Do not stack too many linkage shapes in one 3-4 skill general. Mixed linkage can become attractive on paper but hard to learn at the table. If the player needs to trace several cross-skill arrows before taking a normal turn, reduce one link or make the default line explicit in the design explanation.
+
+Anti-rigidity check: after drafting, ask whether a skill became worse only to trigger another skill, whether a cost exists only to feed an engine, or whether the design would read cleaner if two skills simply handled different jobs. If yes, loosen the link and preserve the cleaner skill.
 
 ## Clan And Family Design
 

@@ -15,8 +15,8 @@ Design from the proper发端 first, then translate the character into concise ca
 4. Identify 1-3 character anchors: deeds, temperament, relationships, failure mode, iconic object, or desired play experience. Separate positive capability from negative compulsion.
 5. Choose one main mechanical language for each anchor. Do not include every possible motif merely because it exists.
 6. For each skill, check the structure: type label, timing, condition, cost/action, effect, and aftereffect/price. Missing timing, fake costs, and overstuffed effects are common failure points.
-7. Draft 2-4 skills with short text, explicit timing, and few moving parts. Prefer one engine, one support/output skill, and one locked drawback or identity skill when needed.
-8. Check internal linkage: each skill should either feed, constrain, convert, cash out, subtly enable, intentionally conflict with, or compensate for another skill. Prefer linear/support/implicit links; avoid forced linkage and high-risk insertion links.
+7. Draft 2-4 skills with short text, explicit timing, and few moving parts. Prefer one main play line plus optional support, coverage, contrast, or drawback; do not force every skill into the same engine.
+8. Check internal relationships without overfitting linkage. A skill may strongly link, weakly support, cover a role gap, create intentional tension, or stand mostly independent if it preserves character fit and table experience. Prefer natural linear/support/implicit links; avoid forced linkage and high-risk insertion links.
 9. Check table health: support should create decisions for allies and enemies, not only unconditional resources. Solo play should retain operation through target choice, card type choice, timing, or risk management.
 10. Before presenting final skill text, scan every skill description for unresolved placeholders, especially empty card-name brackets. No output may contain `【】`, `【 】`, `【牌名】`, `【某牌】`, or similar blank slots.
 11. If the user provides new reference material and asks to improve the skill, read it, extract reusable design knowledge, and merge it into the closest reference file instead of leaving a raw dump. If the material only restates existing guidance, say so and avoid no-op edits.
@@ -26,6 +26,8 @@ Design from the proper发端 first, then translate the character into concise ca
 Keep skill groups readable. Target 2-4 skills and avoid excessive marks, hidden counters, repeated prompts, or nested delayed effects.
 
 Assume a design should be playable in face-to-face tabletop games unless the user explicitly asks for online-only or mode-only work. Avoid routine random deck search, large mini-games, opaque system checks, excessive skill rewriting, and cross-turn memory that cannot be represented by visible cards or simple current-window history.
+
+Do not design from a linkage diagram first unless the user explicitly asks for a combo engine. Start with character anchors and role shape; let synergy emerge only where it makes the skills more natural. A clean independent defensive skill, drawback, or coverage skill is better than an artificial trigger chain.
 
 Do not solve power problems only by adding "每回合限一次" unless the user accepts that route. Prefer changing costs, targets, card classes, conversion rules, or locked drawbacks.
 
@@ -68,14 +70,15 @@ When presenting a design, use this compact form:
 
 衍生牌/对象名：若技能创造或依赖非标准牌、专属牌、虚拟牌、标记牌、额外牌堆牌, list each name as【牌名】/【对象名】 with category, brief rule role, and naming reason. This supplements the skill text and does not replace filled card names inside the skills. If the user asked for card names but no named object is recommended, state "不建议新增牌名：" and give the reason plus the simpler wording route.
 
-设计说明：定位、主联动、强度阀门、单挑空间。
+设计说明：定位、主玩法、联动或分工、强度阀门、单挑空间。
 可调参数：若偏强/偏弱，优先改哪些字。
 ```
 
 When reviewing a user draft, compare versions by:
 
 - main game plan and whether each skill has work to do;
-- internal linkage and insertion-timing risks;
+- internal relationships: linkage, division of labor, intentional tension, or healthy independence;
+- insertion-timing risks;
 - over-strength sources, especially free牌、回血、防伤、额外使用;
 - complexity and标记 count;
 - whether fixes preserve the user's intended fantasy.
