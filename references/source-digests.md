@@ -11,6 +11,7 @@ Use this file as a provenance and intake map. It summarizes useful content alrea
 - https://www.bilibili.com/opus/674737966604615718, "SP孟获的设计理念与隐喻": source for staged narrative, soft limits, mark removal tradeoffs, and global-listener loop cautions. Key lesson: removing marks may also remove memory, storage, and timing play; replace those functions with visible history or simpler windows.
 - https://www.bilibili.com/opus/815130006444310569, "【WAHX】三国杀新概念全点评·序": source for mechanism-quality evaluation, not a list of mechanisms to import. Key lesson: evaluate new concepts by innovation, generality, and robustness; distinguish small concept expansions from structural rule updates.
 - https://www.bilibili.com/opus/815206035717357571, "【WAHX】三国杀新概念全点评·一（锁定技）": source for technical-label usage. Key lesson: 锁定技、阵法技、君主技、宗族技 should be treated as technical labels that call rules or UI/framework meaning, not as loose flavor; 锁定技 should mark fully compulsory skills rather than half-locked clauses.
+- https://www.bilibili.com/opus/819363083023548439, "【WAHX】三国杀新概念全点评·二（强制更改牌面信息）": source for evaluating forced card-identity changes, virtual existence of equipment/delayed tricks, result inversion, and non-card-resource conversion. Key lesson: changing underlying card information is expressive but rule-fragile; prefer self-contained scopes, direct effects, and explicit virtual-card handling over broad "视为" layers.
 
 ## Local Or Offline Materials
 

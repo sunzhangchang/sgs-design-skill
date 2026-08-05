@@ -6,6 +6,7 @@ Sources distilled into this file:
 
 - 三国杀各服军争新机制与特殊牌汇总 document, revision records through 2025-04-21.
 - User-reviewed package card/mechanism table from selected packages: 游戏模式、国战、军争、OL、SP、手杀、十周年、线下、国际服、江山如故、谋攻篇、蚀心入魔、通用机制 and related packages.
+- WAHX mechanism essays on new concepts, used for priority and robustness evaluation rather than wholesale importing.
 
 This file is self-contained. Do not assume any local codebase exists; package labels are preserved only so a user can include or exclude sources.
 
@@ -61,11 +62,46 @@ Use technical labels only when the called rule is clear and useful. They are not
 - 君主技 is narrow; use only for true lord-mode designs.
 - 宗族技 is suitable for clan packages when the shared label helps players see family membership or inherit a common design language. The individual skill still needs to work as rules text even if the label is removed.
 
+## Card Identity And Conversion Concepts
+
+Use these concepts to judge rules that change what a card "is". They save text only when the changed information is frequently checked by the rest of the design.
+
+### 强制更改牌面信息 / 强制转化 / 双视为
+
+- Definition: a compulsory rule changes a card's name, suit, category, or other card information, unlike optional "将...当...使用/打出".
+- Use when: the character has a stable relationship with one card identity or one visible card element, and that changed identity repeatedly matters.
+- Priority: medium. It has high expressiveness and broad fit, but low robustness because overlapping "视为" effects, category checks, and delayed/equipment cards create many edge cases.
+- Guardrails: keep it self-contained, usually only your own hand cards; avoid double "视为" layers; state whether the new information overwrites or merely grants selection permission if the environment needs that distinction; do not use it mainly to produce unrestricted【桃】 or 【酒】.
+- Design test: if the changed element is checked only once, write the direct effect instead of introducing a forced identity rule.
+
+### 视为存在牌 / 进行延时锦囊判定
+
+- Definition: a character is treated as having a specific equipment or delayed trick, or directly performs a delayed-trick judgment without that card moving normally.
+- Use when: "self-carrying equipment" or a permanent burden is the actual fantasy, especially for the card's rightful owner or an unmistakable artifact theme.
+- Priority: low to medium for equipment-like existence; low for delayed-trick existence. The flavor is narrow and existing equipment/delayed tricks have specific allusions.
+- Guardrails: define attack range conflicts, replacement/cover rules, whether it counts as a card in the area, and whether leaving/losing that virtual existence triggers effects such as recovery or draw. For delayed tricks, prefer a direct skip-phase, judgment-risk, or current-window penalty when that gives the same play texture with less memory.
+- Avoid when: the only goal is to borrow the prestige of a famous equipment or to put a cross-turn debuff on the table.
+
+### 结果反转
+
+- Definition: invert a clearly binary result, such as "hit/fail" or "win/not win".
+- Use when: the original procedure is already a two-outcome check and inversion itself is the character's theme.
+- Priority: low. It is easy to understand, but often forces non-binary procedures into an artificial pair.
+- Guardrails: do not apply it to effects with three or more branches; be especially careful with rare high-risk outcomes such as【闪电】.
+
+### 其他元素的转化
+
+- Definition: describe a non-card resource as being converted into a card or effect, such as life, marks, or equipment-area state becoming a virtual card.
+- Use when: it is presentation shorthand for a very simple cost-to-effect relation.
+- Priority: low as a rules mechanism, medium as flavor wording after translation.
+- Guardrails: in final rules text, usually write the concrete cost and "视为使用/打出" result. Define whether the virtual card has a physical card, whether it triggers use/play timing, and whether it can be obtained or moved by other effects.
+
 ## Mechanism Selection
 
 Use these patterns by design need:
 
 - delayed payoff: 施法, 蓄谋, 历战, 使命技;
+- card identity pressure: 强制更改牌面信息, 强制转化, narrow 视为 rules;
 - risk/reward overreach: 背水, 妄行, 暴虐值, 奋武技;
 - cooperation or table bargaining: 协力, 议事, 谋弈, 锻造, 同心;
 - public or special zones: 仁区, 额外牌堆, 幻术牌堆, 蓄谋牌, 【影】;
