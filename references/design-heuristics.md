@@ -170,6 +170,8 @@ If a strategy is hidden, name it in the design explanation. If the player must r
 
 ## Wording Checks
 
+Before final output, scan the visible skill text for unresolved placeholders. Never output empty or placeholder card brackets such as `【】`, `【 】`, `【牌名】`, or `【某牌】`. Fill the exact official/new card name, or rewrite the effect with an unbracketed category such as "一张基本牌" or "一张普通锦囊牌".
+
 Check whether each clause can fail. If the latter clause must require the former success, use "并". If the latter can happen after partial execution, use "然后".
 
 State exact ownership/source when it matters:

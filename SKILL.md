@@ -17,7 +17,8 @@ Design from the proper发端 first, then translate the character into concise ca
 6. Draft 2-4 skills with short text, explicit timing, and few moving parts. Prefer one engine, one support/output skill, and one locked drawback or identity skill when needed.
 7. Check internal linkage: each skill should either feed, constrain, convert, or cash out another skill. Avoid isolated "plus one value" text.
 8. Check table health: support should create decisions for allies and enemies, not only unconditional resources. Solo play should retain operation through target choice, card type choice, timing, or risk management.
-9. If the user provides new reference material and asks to improve the skill, read it, extract reusable design knowledge, and merge it into the closest reference file instead of leaving a raw dump. If the material only restates existing guidance, say so and avoid no-op edits.
+9. Before presenting final skill text, scan every skill description for unresolved placeholders, especially empty card-name brackets. No output may contain `【】`, `【 】`, `【牌名】`, `【某牌】`, or similar blank slots.
+10. If the user provides new reference material and asks to improve the skill, read it, extract reusable design knowledge, and merge it into the closest reference file instead of leaving a raw dump. If the material only restates existing guidance, say so and avoid no-op edits.
 
 ## Design Rules
 
@@ -34,6 +35,8 @@ Avoid unrestricted duplication or creation of survival cards such as【桃】and
 When using transverse states such as横置/重置, account for state availability: a role initially counts as重置; a横置 role must be重置 before it can be横置 again, and vice versa.
 
 When a design creates, searches, materializes, or repeatedly references a nonstandard card-like object, name the object explicitly. This includes衍生牌、专属牌、虚拟牌、标记牌、额外牌堆牌, and named card tokens. If a named object is not needed, say so instead of leaving the naming result blank.
+
+Never leave a card-name position blank inside skill text. If the effect needs an existing named card, write the exact card name, such as【杀】、【决斗】、【无中生有】. If the exact card name is not necessary or not known, remove the brackets and write the category directly, such as "一张基本牌", "一张普通锦囊牌", "一张非延时锦囊牌", or "一张伤害类牌". If the design needs a new card name, choose a provisional name and define it in the衍生牌/对象名 line.
 
 ## Clan And Family Skills
 
@@ -60,7 +63,7 @@ When presenting a design, use this compact form:
 技能名：技能文本。
 技能名：技能文本。
 
-衍生牌/对象名：若技能创造或依赖非标准牌、专属牌、虚拟牌、标记牌、额外牌堆牌, list each name as【牌名】/【对象名】 with category, brief rule role, and naming reason. If the user asked for card names but no named object is recommended, state "不建议新增牌名：" and give the reason plus the simpler wording route.
+衍生牌/对象名：若技能创造或依赖非标准牌、专属牌、虚拟牌、标记牌、额外牌堆牌, list each name as【牌名】/【对象名】 with category, brief rule role, and naming reason. This supplements the skill text and does not replace filled card names inside the skills. If the user asked for card names but no named object is recommended, state "不建议新增牌名：" and give the reason plus the simpler wording route.
 
 设计说明：定位、主联动、强度阀门、单挑空间。
 可调参数：若偏强/偏弱，优先改哪些字。
