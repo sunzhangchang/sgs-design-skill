@@ -96,6 +96,50 @@ Use these concepts to judge rules that change what a card "is". They save text o
 - Priority: low as a rules mechanism, medium as flavor wording after translation.
 - Guardrails: in final rules text, usually write the concrete cost and "视为使用/打出" result. Define whether the virtual card has a physical card, whether it triggers use/play timing, and whether it can be obtained or moved by other effects.
 
+## Card Marks And Zone Concepts
+
+Use these concepts when a design stores real cards outside normal hand/equipment/judgment flow. The core question is not "can a card be put there", but who owns the memory burden and how the card returns to play.
+
+### 标记牌 / 武将牌上牌
+
+- Definition: real cards are placed on or near a general as visible records, resources, or thresholds.
+- Use when: the card's physical presence reduces memory, creates a visible stockpile, or lets value/suit/type matter later.
+- Priority: normal. It is highly reusable and intuitive, but only if the design controls memory and card-flow pressure.
+- Guardrails: define owner/source, visibility, cap or threshold, how cards leave, and what happens if the skill is lost. Give the player a real reason to remove or spend the cards; pure hoarding thins the deck and can quietly control draw quality.
+- Avoid when: the general already uses several marks, the stored cards never matter as cards, or the only function is a delayed awakening counter.
+
+### 给别人放牌 / 仁区 / 公共区私有资源
+
+- Definition: a skill places cards in another character's area, or creates a public zone consumed by multiple skills.
+- Use when: the design needs short-lived blame, infection, shelter, or shared political/moral resources.
+- Priority: low by default. It is easy to understand but fragile because private areas and shared zones create ownership disputes, stalled resources, and package-level balance dependencies.
+- Guardrails: for cards put on others, prefer same-turn or current-phase expiry; write ownership if another skill can interact with the same area. For public zones, set a cap, automatic cleanup, death/skill-loss handling, and a way for cards to keep flowing even if the original enabler dies.
+- Avoid when: the public zone exists for only one general without enough support, or when several generals can stockpile but only one can spend.
+
+### 专属牌 / 销毁 / 牌盒 / 游戏外牌
+
+- Definition: cards outside the normal deck are introduced, or special cards leave the game after use.
+- Use when: a character's artifact, siege engine, law, poison, or unique order deserves a full card object rather than one line of skill text.
+- Priority: low for ordinary generals, medium for package centerpieces or modes with explicit extra-card support.
+- Guardrails: define where the card comes from, whether it ever enters the main deck/discard pile, whether normal transformation can name it, what "destroy" means in tabletop terms, and whether there can be multiple copies. "销毁" is usually just "移出游戏" unless the environment gives it extra rules.
+- Avoid when: a normal skill line or virtual card can express the same play. Special cards often reduce first-glance skill length while increasing total reading and setup cost.
+
+### 判定区/装备区标记牌, 暗置, 蓄谋
+
+- Definition: cards are stored in judgment/equipment-related areas as delayed resources rather than normal delayed tricks or equipment.
+- Use when: the area itself is the play object, such as delayed release, hidden transfer, or a plotted future use.
+- Priority: low for arbitrary judgment/equipment-area markers; medium for well-defined systems such as 暗置 or 蓄谋 that handle visibility and automatic return.
+- Guardrails: do not casually put generic marker cards in judgment or equipment areas; those areas already have movement rules. If using 暗置/蓄谋-like rules, define visibility, when the card returns or is used, whether it can be obtained/moved/discarded, and how it differs visually from any other stored-card mechanic.
+- For transformed delayed tricks, follow the conservative convention: delayed trick cards do not transform into other delayed trick identities, while non-delayed cards may be mapped by a clear rule. This prevents multiple identical physical cards from representing different delayed tricks with no memory aid.
+
+### 中央区 / 有序弃牌堆
+
+- Definition: a design isolates a current subset of the discard pile, or treats the discard pile as an ordered stack.
+- Use when: recent card history is the core resource, or the design repeatedly cares about "cards that just happened" more than the whole discard pile.
+- Priority: medium for central-zone-like subsets; medium-low for ordered discard piles because they demand table discipline.
+- Guardrails: define whether the zone is a subset of the discard pile or a separate zone; specify when cards enter/leave, who orders simultaneous entries, and how it interacts with "put into discard pile", "discard pile bottom", and shuffle events.
+- Design test: if the skill only cares about this turn's discarded cards once, use ordinary "本回合进入弃牌堆的牌" wording. Create a named zone only when multiple skills or repeated checks benefit from the shared vocabulary.
+
 ## Mechanism Selection
 
 Use these patterns by design need:
@@ -104,7 +148,7 @@ Use these patterns by design need:
 - card identity pressure: 强制更改牌面信息, 强制转化, narrow 视为 rules;
 - risk/reward overreach: 背水, 妄行, 暴虐值, 奋武技;
 - cooperation or table bargaining: 协力, 议事, 谋弈, 锻造, 同心;
-- public or special zones: 仁区, 额外牌堆, 幻术牌堆, 蓄谋牌, 【影】;
+- public or special zones: 标记牌, 仁区, 暗置, 中央区, 额外牌堆, 幻术牌堆, 蓄谋牌, 牌盒, 【影】;
 - hidden or alternate identity: 隐匿, 结党, 休整, 异性双人武将, 双势力;
 - resource counters: 护甲, 蓄力标记, 谋略值, 暴虐值, 耐久度;
 - state/rhythm switching: 转换技, 韵律技, 连招技, 连招-like order checks;
@@ -135,7 +179,7 @@ Use these distilled package entries as normal design candidates when they match 
 
 - 智囊: three ordinary trick names, commonly【无中生有】【过河拆桥】【无懈可击】. Use as a compact "tactical trick set".
 - 使命技: has success/failure conditions and corresponding effects; becomes invalid after success or failure. Use for one-life vows, duties, or doomed quests.
-- 仁区: a public card zone with a small cap. Use when a character contributes to or consumes a shared moral/political resource.
+- 仁区: a public card zone with a small cap. Use when a character contributes to or consumes a shared moral/political resource. Low priority outside a package that defines cleanup and multiple healthy spenders.
 - 背水: a special option that executes other options, then pays a consequence; cannot be chosen if the consequence cannot execute. Use for all-in lines.
 - 整肃: target chooses/executes a discipline task, then receives reward if not failed. Subtypes: 擂进 uses increasing point sequence; 变阵 uses same suit sequence; 鸣止 discards all different suits.
 - 谋弈: user and target secretly or separately choose options; user succeeds if the target does not pick the matching answer. Use for prediction duels.
@@ -195,10 +239,18 @@ Use these distilled package entries as normal design candidates when they match 
 - 议事: participants reveal a hand card; red majority, black majority, or tie determines result. Use for court debate, assembly, or public will.
 - 双势力 / 势力技能 / 变更势力: choose or change faction; faction skills only work when current faction matches. Use for allegiance shifts.
 - 【影】: special spade-A basic cards that cannot be used or played and leave the game after discard. Use for shadow tokens carried as real cards.
-- 蓄谋: set hand cards face down in judgment zone; process later in reverse order. Use for plots that can be disrupted while waiting.
+- 蓄谋: set hand cards face down in judgment zone; process later in reverse order. Use for plots that can be disrupted while waiting; keep visibility and return/use timing explicit.
 - 额外牌堆: separate finite decks for searchable special cards. Use when a design needs named extra cards but should not create infinite supply.
 - 双副类别装备: one equipment occupies two slots and is replaced by either slot. Use for grand artifacts with real opportunity cost.
 - 起义军: indicator with increased slash pressure and end-turn obligation. Use for insurgency, faction infection, or forced aggression.
+
+### Custom/Conceptual Zone Vocabulary
+
+- 标记牌: real cards stored as markers or resources. Use with caps, spending motives, and skill-loss handling.
+- 暗置: a face-down judgment-area storage rule with limited visibility and automatic release. Use for hidden delivery or delayed hand access when the environment supports the rule.
+- 中央区: a named subset of recent discard-pile cards. Use when several effects repeatedly care about recent cards; otherwise write the time window directly.
+- 有序弃牌堆: discard pile treated as an ordered stack. Use only when the table or platform can maintain order reliably.
+- 牌盒: out-of-game box for special cards. Use for modes or package centerpieces; avoid for one-off ordinary generals.
 
 ## Special Card Design Patterns
 
