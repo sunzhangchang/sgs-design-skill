@@ -33,6 +33,11 @@ Rank candidate mechanisms by three axes:
 - 泛用性: Does it match common character anchors, and can most players accept its effect on game experience? A one-character mini-game or a rule that deprives others of their core objective is low priority.
 - 周全性: Does it coexist with existing rules, public resources, zones, and common edge cases? Watch for shared-resource congestion, hidden memory burden, unclear timing, and loops that are only "fixed" by banning pairings.
 
+Apply source-neutral definition discipline:
+
+- Do not accept or reject a concept merely because it is official, non-official, standard-looking, or nonstandard-looking. Require a stable rules definition and judge whether that definition improves this design's communication.
+- When using a non-mainstream concept, either define it briefly in local wording or write the skill so the definition is self-evident. Unified terminology should reduce misunderstanding; it should not force every design into the same style.
+
 Priority guide:
 
 - High priority: intuitive, reusable, low-conflict, and either genuinely expressive or a clear text saver. Use early when it fits the character.

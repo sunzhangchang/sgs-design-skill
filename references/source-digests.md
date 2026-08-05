@@ -37,6 +37,7 @@ Use this file as a provenance and intake map. It summarizes useful content alrea
 - https://www.bilibili.com/opus/1054074473018294272, "【WAHX】三国杀新概念全点评·廿六（对非游戏牌的应用）": source for evaluating non-game cards as card-like objects and 物化/化形牌. Key lesson: using general, HP, identity, or reserve cards can unlock rich physical design, but requires explicit card attributes, movement, ownership, and reset rules to avoid memory and multi-general conflicts.
 - https://www.bilibili.com/opus/914656690630033479, "【WAHX】三国杀新概念全点评·廿七（技能目标）": source for evaluating skill targets, new 追思, 凌越, and 连环. Key lesson: skill-target language is natural but dangerous when generalized; define targets only inside self-contained skill families and prefer direct selected-role wording when possible.
 - https://www.bilibili.com/opus/1210278499380625413, "【WAHX】三国杀新概念全点评·廿八（并行操作）": source for evaluating parallel operations during normal resolution. Key lesson: parallel operations should remain mode-level support for external time/space/UI variables; ordinary skill effects should queue or resolve after the current flow to avoid insertion chaos.
+- https://www.bilibili.com/opus/867432528805363736, "【WAHX】三国杀新概念全点评·后记：为什么新概念需要有统一定义&如何正确看待新概念": source for definition discipline around new concepts. Key lesson: official/non-official status and standard/nonstandard appearance are not quality proofs; judge concepts by clear definition, reasonability, and communicability, and define non-mainstream vocabulary before relying on it.
 
 ## Local Or Offline Materials
 
