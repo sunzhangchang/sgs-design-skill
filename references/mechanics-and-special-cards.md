@@ -141,6 +141,26 @@ Use these concepts when a design cancels, shortens, or forcibly closes a card/ph
 - Guardrails: make clear that ongoing resolution finishes first. Ending the play phase is close to a delayed-trick-level control effect; ending the turn also skips discard, which can be a benefit. Repeated or easy access can create oppressive locks.
 - Avoid when: direct draw reduction, use restriction, or "skip a named phase" can express the same effect with fewer timing issues.
 
+## Role Reassignment And Control Concepts
+
+Use these concepts only when the design deliberately changes responsibility, authorship, or agency. They are expressive but hostile to ordinary trigger expectations, because "who used it", "who caused it", and "who decided it" are often checked by later skills.
+
+### 修改伤害来源 / 修改使用者
+
+- Definition: a current damage event or card-use event is reassigned so another character is treated as the source or user.
+- Use when: the fantasy is scapegoating, commandeering, stealing credit, blame transfer, or forcing someone to bear the consequences of their own scheme.
+- Priority: low to medium. It is flavorful for very specific anchors, but its play role is unclear because causing damage can be reward or liability.
+- Guardrails: restrict it to one named event, card type, or timing; state whether later "造成伤害", "使用牌", "成为来源/使用者", and usage-count checks follow the reassigned role. Prefer target transfer or damage transfer if preserving the original source would solve the scene. Be especially careful with self-targeting【杀】, lord/loyalist blame, and feedback skills that punish the apparent source.
+- Avoid when: the effect is only meant as protection, retaliation, or redirection; simpler cancellation, transfer, or damage prevention is usually cleaner.
+
+### 操控 / 轻量操控
+
+- Definition: one player directly directs another character's choices, cards, or even turn. Light control instead forces one bounded action while leaving the controlled player meaningful choices.
+- Use when: possession, manipulation, divine intervention, or puppet-master flavor is the core identity.
+- Priority: very low for full-turn or full-hand control; medium-low for one small forced action.
+- Guardrails: avoid routine removal of another player's turn or agency. Define who may see hidden information, who pays costs, whether optional skills may be invoked, and how automated/absent players are handled. Prefer "令其使用/打出一张牌", "其选择一项", or "你选择其可执行的一项" over taking a whole turn.
+- Avoid when: the user only wants a strong control skill. The negative play experience and variance are usually larger than the design payoff.
+
 ## Card Identity And Conversion Concepts
 
 Use these concepts to judge rules that change what a card "is". They save text only when the changed information is frequently checked by the rest of the design.
@@ -243,6 +263,26 @@ Use these concepts when a design stores real cards outside normal hand/equipment
 - Guardrails: define whether the zone is a subset of the discard pile or a separate zone; specify when cards enter/leave, who orders simultaneous entries, and how it interacts with "put into discard pile", "discard pile bottom", and shuffle events.
 - Design test: if the skill only cares about this turn's discarded cards once, use ordinary "本回合进入弃牌堆的牌" wording. Create a named zone only when multiple skills or repeated checks benefit from the shared vocabulary.
 
+## Movement And Transfer Concepts
+
+Use these concepts when the design changes where an object goes without ordinary "use", "discard", or "obtain" flow. They are most useful when the destination itself matters.
+
+### 移动 / 置入 / 置于手上
+
+- Definition: move an object between areas, put it into a destination area, or put it specifically into a hand area without using ordinary obtain wording.
+- Use when: the character manipulates board layout, same-zone order, delayed objects, extra zones, backup generals, faction markers, or other objects whose exact position matters.
+- Priority: medium-high for clear "移动"; low for "置入" and "置于手上" when "获得", "交给", "置于武将牌上", or "置入弃牌堆" is more readable.
+- Guardrails: define origin, destination, owner, visibility, and whether the move counts as gaining, discarding, using, replacing, or losing. Do not casually put arbitrary cards into equipment or judgment areas; those areas have existing legality and replacement rules. For hand-area movement, prefer ordinary gain/transfer unless avoiding a loop or trigger is the point.
+- Avoid when: the operation only renames a normal card movement and no later rule checks the special route.
+
+### 合纵 / 赠予
+
+- Definition: card-transfer variants. 合纵 makes helping another player also reward the giver; 赠予 frames a card as a gift, burden, or planted object.
+- Use when: the fantasy is coalition, diplomacy, aid with self-interest, bait, curse-gift, or espionage by object transfer.
+- Priority: high inside 国战 or mode designs built around shifting alliances; medium-low in identity games; low for forced negative equipment unless the brief specifically wants that discomfort.
+- Guardrails: state whether the giver gains a reward, whether the receiver may refuse, whether the card is public, and whether equipment can be replaced. Negative gifts should preserve consent or carry a visible cost; forced equipment replacement is high-friction. If the design is not 国战, avoid importing 合纵 assumptions unless the table politics still matter.
+- Avoid when: a plain "交给一张牌" plus a small rider expresses the same support.
+
 ## Guessing, Randomness, And Out-Of-Game Concepts
 
 Use these concepts when a design asks players to make predictions, accept random results, or reference information outside ordinary public game state. The core quality test is whether the result feels fair to everyone at the table.
@@ -312,6 +352,26 @@ Use these concepts when the design turns cards, choices, or table politics into 
 - Use when: prediction, public deliberation, or collective construction is more important than point comparison.
 - Priority: high for 议事 when court/public-will flavor fits; medium for 谋弈; low for 锻造 outside artifact-making centerpieces.
 - Guardrails: 谋弈 options should be symmetric enough to be a mind game but not so symmetric that they become pure random guessing. 议事 exposes information, which is part of its cost. 锻造 needs a clear reason for helpers/hinderers and should not jump directly into identity certainty.
+
+## Bond And Formation Concepts
+
+Use these concepts when relationship or seat position is the actual play object. Do not add a bond merely because two people knew each other in history; the bond must improve decisions or presentation without making the base design incomplete.
+
+### 羁绊 / 点名配合 / 珠联璧合 / 宗族羁绊 / 同心
+
+- Definition: a skill checks named characters, paired generals, clan membership, oath partners, or other relationship groups for extra effects.
+- Use when: the mode makes the partner reasonably controllable, such as 国战双将, lord-related designs, clan packages, or a skill that asks others to participate with you.
+- Priority: low in random identity draft; medium to high in 双将、国战、宗族包, or activity modes where the relationship framework is visible and expected.
+- Guardrails: make the general functional without the bond. Keep bond bonuses small, visible, and thematically precise; avoid one-in-a-hundred hidden easter eggs that warp the whole text. Define version handling, multi-name variants, skill theft, and whether "same clan" is historical membership or current skill ownership.
+- Avoid when: the skill names a single ally who is unlikely to appear, or when the bond becomes stronger than the character's own design.
+
+### 阵法关系 / 阵法召唤
+
+- Definition: seat adjacency, relative position, or unrevealed ally presence creates a formation relationship or reveals/calls allies into it.
+- Use when: 国战, 3v3/4v4, or another mode already makes seat geometry strategically meaningful.
+- Priority: low outside mode play; medium only when seat manipulation and formation rewards are part of the environment.
+- Guardrails: define the check timing, whether hidden identities count, what happens after seat movement, and whether targets must be same faction or merely adjacent. Give a fallback so the general is not blank because of random seating. 阵法召唤 needs a real incentive for allies to reveal; otherwise it becomes decorative text.
+- Avoid when: the position condition is hard to arrange and the design has no tools to move, invite, or profit without it.
 
 ## Allocation And Choice-Control Concepts
 
@@ -433,10 +493,13 @@ Use these patterns by design need:
 - one-shot or transformation: 限定技, 觉醒技, 昂扬技, 可重置限定技;
 - card identity pressure: 强制更改牌面信息, 强制转化, narrow 视为 rules;
 - resolution control: 作废, scoped 终止结算, 强制结束阶段/回合;
+- role or blame rewriting: 修改伤害来源, 修改使用者, tightly scoped light 操控;
+- card movement or gift politics: 移动, 置入, 置于手上, 合纵, 赠予;
 - card recycling: 重铸, direct discard-then-draw, current-turn discard reuse;
 - damage and tag language: 属性伤害, 额外牌面信息, 应变标签, narrow 附魔;
 - risk/reward overreach: 背水, 妄行, 暴虐值, 奋武技;
 - cooperation or table bargaining: 拼点, 多人拼点, 协力, 议事, 谋弈, 锻造, 同心;
+- relationship or seat scaffolds: 珠联璧合, 宗族羁绊, 同心, 阵法关系, 阵法召唤;
 - flexible allocation/choice control: 共计, 分配, 拒绝, 强制发动, 重置技, 枭雄技;
 - public or special zones: 标记牌, 仁区, 暗置, 中央区, 额外牌堆, 幻术牌堆, 蓄谋牌, 牌盒, 【影】;
 - hidden or alternate identity: 隐匿, 结党, 休整, 异性双人武将, 双势力;
@@ -456,10 +519,13 @@ Use these distilled package entries as normal design candidates when they match 
 | 弃牌堆引用 | 残局余波、回收旧事、因弃置而起势；可看本回合弃牌堆、阶段弃置牌、特定牌进入弃牌堆后的回收。 | 限定时间窗、花色/类型、每阶段次数；避免无脑回收关键防御牌。 | OL、SP、一将成名、军争、十周年、十周年小程序、国战、国际服、小程序、手杀、江山如故、游戏模式、神话再临、线下、蚀心入魔、谋攻篇、通用机制 |
 | 转化/虚拟牌/牌名声明 | 技艺、伪装、号令、临机借势；适合声明牌名、视为使用、把一类牌转为功能牌。 | 限制牌类、目标、时机和是否触发“使用”；谨慎产出【桃】【酒】等生存牌。 | OL、SP、一将成名、军争、十周年、十周年小程序、国战、国际服、小程序、手杀、江山如故、游戏模式、神话再临、线下、蚀心入魔、谋攻篇、通用机制 |
 | 区域选牌/多区交互 | 搜检、调度、拆解装备/判定区/手牌的战术角色。 | 明确可选区域和每区最多数量；避免一次性跨区大拆。 | OL、SP、一将成名、军争、十周年、十周年小程序、国际服、小程序、手杀、江山如故、游戏模式、神话再临、线下、蚀心入魔、通用机制 |
+| 移动/置入/赠牌变体 | 区域调度、对象换位、国战合纵、赠物或负面礼物。 | 写清来源和去向，是否算获得/弃置/使用；非国战设计慎用合纵，负面赠予要能拒绝或有足够代价。 | 国战、SP、神话再临、线下、海外版、通用机制 |
 | 拼点 | 争锋、试胆、较艺、权谋对赌；适合赢/没赢分支或拼点牌归属变化。 | 给没赢一方补偿或代价；不要迷信“拼点无弱将”；多人拼点要定义赢家、平局和拼点牌归属。 | OL、SP、一将成名、十周年、十周年小程序、国战、国际服、手杀、江山如故、游戏模式、神话再临、线下、蚀心入魔、谋攻篇、通用机制 |
+| 羁绊/阵法 | 双将配合、宗族包、座次阵型、关系彩蛋。 | 基础强度不能依赖低概率点名；羁绊奖励宜小，阵法要有可操作的座次或揭示手段。 | 国战、OL、SP、海外版、线下 |
 | 横置/重置/连环 | 连环、牵制、阵型、火雷属性联动；可把横置作为状态门槛或结算资源。 | 遵守横置/重置可用性；不要让横置后的再横置变成空结算。 | OL、SP、一将成名、十周年、十周年小程序、国战、国际服、小程序、手杀、江山如故、游戏模式、神话再临、线下、蚀心入魔、谋攻篇 |
 | 武将牌上/私有牌堆 | 记忆、藏物、积累证据、蓄势资源；适合少量命名牌堆。 | 定义进入、上限、离开、可见性、是否可被选取；普通武将少用多堆。 | OL、SP、一将成名、十周年、十周年小程序、国战、国际服、小程序、手杀、江山如故、游戏模式、神话再临、线下、蚀心入魔、通用机制 |
 | 目标转移/取消/增减 | 护卫、误导、战术牵引、攻击面控制。 | 高强度语言；限制为特定牌、特定目标数或付出弃牌/失血成本。 | OL、SP、一将成名、十周年、十周年小程序、国战、国际服、小程序、手杀、江山如故、游戏模式、神话再临、线下、蚀心入魔、通用机制 |
+| 修改来源/使用者/操控 | 嫁祸、夺功、借刀、夺取选择权。 | 优先轻量化；写清后续触发归属，不要常态剥夺他人回合或把无法预期的负面结算推给第三方。 | 神话再临、一将成名、SP、线下、通用机制 |
 | 体力上限/体力流失 | 欲望、代价、透支、不可逆成长/衰败；适合锁定负面或爆发成本。 | 体力上限变化要给恢复路径或明确终局压力；避免与强防御叠成不死。 | OL、SP、一将成名、十周年、十周年小程序、国战、国际服、小程序、手杀、游戏模式、神话再临、线下、蚀心入魔 |
 | 获得衍生牌/印牌 | 召唤外物、仪式牌、身份信物、临时资源。 | 定义来源、数量、进入区域、离开规则；避免无限印关键牌。 | OL、一将成名、军争、十周年、国战、国际服、手杀、江山如故、游戏模式、神话再临、线下、通用机制 |
 | 重铸 | 滤牌、拆解、换工具、把死牌变选择。 | 明确是一张、多张、依次还是等量；重铸他人牌时说明谁摸牌；多次重铸会增加操作负担。 | OL、一将成名、十周年、十周年小程序、国战、国际服、小程序、手杀、江山如故、游戏模式、神话再临、线下 |
@@ -494,9 +560,17 @@ Use these distilled package entries as normal design candidates when they match 
 
 - 隐匿: starts as male/no-skill hidden form, then reveals after HP loss or before turn. Use for ambush, disguise, or delayed true form.
 - 宗族技: same-clan generals share a clan skill; clan membership follows history, not whether a general owns the skill.
+- 金兰武将 / 宗族羁绊: relationship hooks attached to a small named group. Use as a package-visible bonus, not as the main engine of a random identity general.
 - 卜算X: 观星-like top-deck viewing with explicit count. Use as a concise divination term.
 - 天候: global weather states such as heat, fog, rain, frost. Use for environment-driven generals, but watch passive table burden.
 - 锻造: table chooses助力/妨害, compares revealed point totals, and determines crafting quality. Use for smithing, collective projects, or contested production.
+
+### 三国杀国战
+
+- 珠联璧合: dual-general relationship reward. Use when the pair can be intentionally selected and the base balance accounts for the bonus; avoid treating every historical acquaintance as a bond.
+- 阵法技 / 阵法关系: effects based on seat adjacency or relative position. Use only when formation is a real strategic object; provide fallback value if seating fails.
+- 阵法召唤: invite or reveal unrevealed allies into a formation. Use when allies have a real reason to respond and revealing is worth the risk.
+- 合纵: give a coalition card to another player and usually keep some reward for yourself. Best in 国战 politics; in identity games, translate it into ordinary aid or bargaining instead of importing the label.
 
 ### 三国杀海外版
 
@@ -506,7 +580,7 @@ Use these distilled package entries as normal design candidates when they match 
 - 游击 / 搏击: extra effect based on whether target is outside or inside attack range. Use for distance-position identity.
 - 昂扬技: limited skill that can be refreshed after an "激昂" condition. Use for heroic comeback surges; keep the refresh condition rare enough that it still feels special.
 - 历战: if used this turn, upgrade/modify the skill at turn end for the whole game. Use for campaign growth.
-- 同心: choose a partner until next turn; both execute linked effects. Use for paired or oath designs.
+- 同心: choose a partner until next turn; both execute linked effects. Use for paired or oath designs, but avoid making it a generic wrapper that forces relationship flavor onto unrelated skills.
 - 异性双人武将: counts as both male and female. Use for dual-character sex-related interactions.
 - 暴虐值: charge by causing or receiving damage, cap 5, then consume for effects. Use for violent momentum.
 - 卜卦: use a top-card or sign-like procedure to determine one of several omen branches. Use only with a small branch set and clear timing.
@@ -530,6 +604,7 @@ Use these distilled package entries as normal design candidates when they match 
 
 - 议事: participants reveal a hand card; red majority, black majority, or tie determines result. Use for court debate, assembly, or public will.
 - 双势力 / 势力技能 / 变更势力: choose or change faction; faction skills only work when current faction matches. Use for allegiance shifts.
+- 赠予: give a card as a gift or planted burden. Use for object-based diplomacy or intrigue; let harmful gifts be rejectable or costly, especially when they replace equipment.
 - 【影】: special spade-A basic cards that cannot be used or played and leave the game after discard. Use for shadow tokens carried as real cards.
 - 蓄谋: set hand cards face down in judgment zone; process later in reverse order. Use for plots that can be disrupted while waiting; keep visibility and return/use timing explicit.
 - 额外牌堆: separate finite decks for searchable special cards. Use when a design needs named extra cards but should not create infinite supply.
@@ -539,6 +614,7 @@ Use these distilled package entries as normal design candidates when they match 
 ### Custom/Conceptual Zone Vocabulary
 
 - 标记牌: real cards stored as markers or resources. Use with caps, spending motives, and skill-loss handling.
+- 移动 / 置入 / 置于手上: exact card or object relocation. Use when route matters; otherwise prefer 获得、交给、弃置、置于牌上.
 - 暗置: a face-down judgment-area storage rule with limited visibility and automatic release. Use for hidden delivery or delayed hand access when the environment supports the rule.
 - 中央区: a named subset of recent discard-pile cards. Use when several effects repeatedly care about recent cards; otherwise write the time window directly.
 - 有序弃牌堆: discard pile treated as an ordered stack. Use only when the table or platform can maintain order reliably.
@@ -547,6 +623,9 @@ Use these distilled package entries as normal design candidates when they match 
 ### Conceptual Social/Random Vocabulary
 
 - 猜测: public/verifiable prediction. Use for bluffing and mind games with moderate stakes.
+- 合纵 / 赠予: transfer-with-politics vocabulary. Keep package/mode assumptions visible and define consent for negative gifts.
+- 羁绊 / 珠联璧合 / 宗族羁绊 / 同心: relationship rewards. Best when partner selection is controllable; keep the base skill functional alone.
+- 阵法关系 / 阵法召唤: seat-position relationships. Use for 国战 or team modes with formation tools, not random-seat ordinary identity designs.
 - 不可见元素: hidden information not auditable by players. Low priority; usually online-only or self-only.
 - 随机执行: random selection among known options. Prefer judgment/dice and equal transparent odds.
 - 道具抽签 / 刮彩票: physical random props. Low priority unless the mode provides reusable components.
@@ -557,6 +636,8 @@ Use these distilled package entries as normal design candidates when they match 
 - 作废: declaration-time cancellation of a card use. Use only at the early safe timing.
 - 终止结算: stop a current flow. Low priority; needs one-layer scope and cleanup.
 - 强制结束: forcibly end a phase or turn after current resolution. Strong tempo tool; cost it carefully.
+- 修改伤害来源 / 修改使用者: reassign event responsibility. Low priority unless blame/credit transfer is the character's core.
+- 操控: direct control over another player's choices or turn. Prefer light, bounded control that preserves some agency.
 - 属性伤害: fire/thunder-like damage attributes. Use only when the attribute has supporting rules.
 - 额外牌面信息: card tags or conditional labels. Keep tags visible and rules-light.
 - 实体性操作: orientation/state changes such as 横置、翻面、叠置. Require unique visual cues.
