@@ -62,6 +62,34 @@ Use technical labels only when the called rule is clear and useful. They are not
 - 君主技 is narrow; use only for true lord-mode designs.
 - 宗族技 is suitable for clan packages when the shared label helps players see family membership or inherit a common design language. The individual skill still needs to work as rules text even if the label is removed.
 
+## Resolution Control Concepts
+
+Use these concepts when a design cancels, shortens, or forcibly closes a card/phase/turn flow. The safe question is "what has already entered the event stack, and what cleanup remains?"
+
+### 作废
+
+- Definition: terminate a card's use process at declaration, before normal use-flow triggers and counts fully apply.
+- Use when: the fantasy is disruption, bluff exposure, wasted effort, or "try again" without the full frustration of ordinary nullification.
+- Priority: medium. The timing is narrow but relatively robust if kept at declaration.
+- Guardrails: phrase the timing as "声明使用牌时" or an equally early point. State whether the card is discarded, whether usage count is consumed, and whether the player may use another card afterward. Do not move this later into target confirmation or damage resolution.
+- Avoid when: a simpler invalidation, target cancellation, or response tax gives the same play texture.
+
+### 终止结算
+
+- Definition: stop an already-started resolution flow.
+- Use when: the current flow has a natural private window and the remaining resolution can be safely cleaned up.
+- Priority: low by default, medium only for carefully scoped one-layer flows.
+- Guardrails: terminate only one clearly named layer unless the mode defines deeper cleanup. Add a closing action such as discarding the processing card or ending the current flow so cards cannot remain stuck in an intermediate zone. Prefer "于当前结算结束后" when the intent is not to interrupt nested events.
+- Avoid when: the skill can interrupt dying, damage, judgment replacement, or multi-skill insertion without a cleanup rule.
+
+### 强制结束阶段/回合
+
+- Definition: after the current resolution, force a phase or turn to end.
+- Use when: the design wants a strong debuff, retreat, command halt, or preserved advantage.
+- Priority: medium for ending play phase or a defined current phase; low for ending a whole turn unless heavily costed.
+- Guardrails: make clear that ongoing resolution finishes first. Ending the play phase is close to a delayed-trick-level control effect; ending the turn also skips discard, which can be a benefit. Repeated or easy access can create oppressive locks.
+- Avoid when: direct draw reduction, use restriction, or "skip a named phase" can express the same effect with fewer timing issues.
+
 ## Card Identity And Conversion Concepts
 
 Use these concepts to judge rules that change what a card "is". They save text only when the changed information is frequently checked by the rest of the design.
@@ -108,6 +136,14 @@ Use these concepts when a design stores real cards outside normal hand/equipment
 - Guardrails: define owner/source, visibility, cap or threshold, how cards leave, and what happens if the skill is lost. Give the player a real reason to remove or spend the cards; pure hoarding thins the deck and can quietly control draw quality.
 - Avoid when: the general already uses several marks, the stored cards never matter as cards, or the only function is a delayed awakening counter.
 
+### 标记 / 跨回合记忆
+
+- Definition: named non-card markers or remembered states created by a skill.
+- Use when: the design needs a visible personal token, an identity-defining resource, or a cross-turn state that cannot be expressed by current-turn history.
+- Priority: low for plain numeric counters, normal for distinctive tokens with strong character meaning.
+- Guardrails: avoid more than one marker axis on an ordinary general. Define acquisition, loss, cap, cleanup, and skill-loss handling. Cross-turn memory without a marker should usually last at most one round; if flip/skip effects can stretch it, add a visible reminder.
+- Avoid when: a temporary variable, current-turn condition, hand limit change, or stored card can carry the same information.
+
 ### 给别人放牌 / 仁区 / 公共区私有资源
 
 - Definition: a skill places cards in another character's area, or creates a public zone consumed by multiple skills.
@@ -131,6 +167,22 @@ Use these concepts when a design stores real cards outside normal hand/equipment
 - Priority: low for arbitrary judgment/equipment-area markers; medium for well-defined systems such as 暗置 or 蓄谋 that handle visibility and automatic return.
 - Guardrails: do not casually put generic marker cards in judgment or equipment areas; those areas already have movement rules. If using 暗置/蓄谋-like rules, define visibility, when the card returns or is used, whether it can be obtained/moved/discarded, and how it differs visually from any other stored-card mechanic.
 - For transformed delayed tricks, follow the conservative convention: delayed trick cards do not transform into other delayed trick identities, while non-delayed cards may be mapped by a clear rule. This prevents multiple identical physical cards from representing different delayed tricks with no memory aid.
+
+### 手牌标签 / 明置暗置 / 连接
+
+- Definition: specific hand cards receive a label, orientation, visibility state, or sub-zone membership.
+- Use when: the design needs a card to remain identifiable while still being a hand card.
+- Priority: medium for one self-contained label; low for shared or cross-character hand tags.
+- Guardrails: protect the ordinary randomness of hand cards. Make labels public or otherwise auditable; define whether labeled cards count as hand cards, can be randomly chosen, and lose labels when moved or when the skill is lost. Do not overload the same physical cue for both 明置/暗置 and another system such as 连接.
+- Avoid when: the rule must secretly know "usable hand cards" or other platform-only states that a table cannot verify.
+
+### 标记型数值 / 能力值 / 声明数值
+
+- Definition: a named value, gauge, or declared variable is introduced and later referenced.
+- Use when: a temporary X or a compact resource genuinely improves decisions.
+- Priority: low for new blue-bar-like resources, medium for temporary declared values.
+- Guardrails: prefer ordinary marks unless the value has package-wide support. Declare variables before use and define duration; undefined X should not be silently assumed by players. Cross-turn declared values need a marker or visible aid.
+- Avoid when: the value is only a renamed mark, or when several skills share a variable whose ownership and reset timing are unclear.
 
 ### 中央区 / 有序弃牌堆
 
@@ -184,20 +236,99 @@ Use these concepts when a design asks players to make predictions, accept random
 - Guardrails: game-outside references should affect only setup, tie-breakers, or very small bonuses; consider extreme cases and sensitive information. Mini-games must be quick, optional, and strongly tied to the character fantasy. Non-rules text belongs in title, flavor, notes, or art direction, not in the rules box.
 - Avoid when: it changes core stats from real-world data, asks for private personal information, forces all players to watch a side activity, or depends on online-only cosmetics such as exclusive emotes.
 
+## Damage, Tags, And Skill Encapsulation Concepts
+
+Use these concepts when splitting existing concepts into subtypes or turning a recurring operation into a compact tag.
+
+### 属性伤害
+
+- Definition: damage has an attribute variable, usually fire or thunder, while ordinary damage remains available.
+- Use when: the attribute has meaningful support in cards, skills, or defenses, not merely decorative flavor.
+- Priority: high as a model concept; normal in new designs because too much attribute support can warp the environment.
+- Guardrails: preserve ordinary damage as a useful baseline. Give each attribute a distinct job and enough but not excessive support. Avoid adding a new attribute unless it has repeated interactions and a clean rule identity.
+- Design test: if the only difference is one skill line, use direct wording such as "此伤害+1" or "此伤害不能被防止" instead of defining a new damage type.
+
+### 特殊属性伤害 / 视为造成过伤害
+
+- Definition: a damage subtype carries an extra optional or compulsory rider, or a partial "as if damage happened" event is recorded.
+- Use when: the design needs a rare signature damage identity or a controlled fake-damage puzzle that mostly serves the user's own skills.
+- Priority: low. It is expressive but narrow and easy to over-combo.
+- Guardrails: state whether transmitted/chain damage carries the rider. Do not let fake damage freely trigger broad sell-blood or damage-record skills unless that is the whole design and has a cost.
+- Avoid when: the rider helps the damaged player more than it hurts, or when the design depends on other characters' skills to matter.
+
+### 额外牌面信息 / 应变标签
+
+- Definition: a card carries an extra tag or condition, such as a special Slash tag, Yingbian-like condition, or strengthened state.
+- Use when: the tag is medium-frequency, easy to check, and gives a card family a recognizable tactical identity.
+- Priority: medium.
+- Guardrails: define whether transformed/virtual cards may gain the tagged version, whether the tag changes card name/category, and whether the effect is compulsory. Conditions should be achievable but not automatic; extreme conditions are better for comeback cards than universal card vocabulary.
+- Avoid when: the tag becomes a pile of unrelated bonuses or requires players to remember invisible card text.
+
+### 技能封装 / 卜算 / 附魔
+
+- Definition: a known skill operation is packaged as a keyword or attached to a card as a temporary callable ability.
+- Use when: every player already knows the operation and the keyword greatly shortens repeated text.
+- Priority: low to medium. Good encapsulation saves words; bad encapsulation makes rules feel like private jargon.
+- Guardrails: define which version of the source skill is being invoked, what parameters mean, and which hidden clauses are included or excluded. Encapsulation should follow ordinary reading order; avoid phrases that require players to mentally expand several skills at once.
+- Avoid when: the original skill has context-sensitive side effects, optional follow-ups, or a famous version mismatch.
+
+## Physical State And Turn Flow Concepts
+
+Use these concepts when the design changes card orientation, player order, or the temporal structure of turns.
+
+### 实体性操作
+
+- Definition: a physical component is turned, tapped, flipped, stacked, restored, or otherwise oriented to indicate state.
+- Use when: the state must remain visible and the operation is unique on the component.
+- Priority: medium for established operations such as 横置/重置 and 翻面; low for new orientation systems.
+- Guardrails: each physical cue must be visually unique and must not block reading core information. Define initial state, available inverse operation, and what happens if the target is already in that state. Similar names should not hide different rules; distinguish reset, restore, recover, and unchain-like effects.
+- Avoid when: the table already uses that orientation for another memory task, or the state could be represented by an existing mark/card.
+
+### 回合变动
+
+- Definition: a rule skips, adds, swaps, or modifies turns/phases/seats.
+- Use when: the character fantasy is time control, command seizure, imprisonment, or extreme tempo conversion.
+- Priority: low for ordinary generals because it is high impact and environment-sensitive.
+- Guardrails: extra turns and forced flip/skip scale upward with every future strong skill. Extra phases inside another turn lack some turn-end cleanup; prefer direct bottom-level actions such as drawing, using a card, or discarding unless phase triggers are the point. Seat swaps are platform/table dependent.
+- Avoid when: a smaller action can express the same tempo change without denying another player's turn.
+
+### 预演 / 回溯
+
+- Definition: a design records a game state, runs a temporary future or alternate sequence, then restores part of the state.
+- Use when: the brief explicitly asks for experimental, boss, dream, or art-first time-loop play.
+- Priority: very low.
+- Guardrails: define the snapshot scope: HP, cards, marks, deaths, delayed effects, skill changes, and public zones. If the snapshot does not restore most of those, do not call it full rehearsal or rollback. Keep it short and rare.
+- Avoid when: it would require reconstructing a past turn, nesting with other rollback/termination effects, or asking the table to maintain many records.
+
+## Recast And Recycling Concepts
+
+Use these concepts when a card or resource is turned into a replacement draw or comparable recycle effect.
+
+### 重铸
+
+- Definition: put a card into the discard pile and draw; later designs may extend the object count, owner, or even non-card objects.
+- Use when: a design needs dead-card recycling, flexible filtering, or a low-drama auxiliary benefit.
+- Priority: high as a small support operation, medium as a main engine.
+- Guardrails: define the rule version if using anything beyond one card you own. Ambiguities include whether multiple cards draw one or equal cards, whether the actor or owner draws when another player's card is recast, and how non-card objects are handled. "依次重铸" is the safest wording when multiple cards are involved.
+- Avoid when: it is filler for "give a small reward" but adds no character logic or decision.
+
 ## Mechanism Selection
 
 Use these patterns by design need:
 
 - delayed payoff: 施法, 蓄谋, 历战, 使命技;
 - card identity pressure: 强制更改牌面信息, 强制转化, narrow 视为 rules;
+- resolution control: 作废, scoped 终止结算, 强制结束阶段/回合;
+- card recycling: 重铸, direct discard-then-draw, current-turn discard reuse;
+- damage and tag language: 属性伤害, 额外牌面信息, 应变标签, narrow 附魔;
 - risk/reward overreach: 背水, 妄行, 暴虐值, 奋武技;
 - cooperation or table bargaining: 协力, 议事, 谋弈, 锻造, 同心;
 - public or special zones: 标记牌, 仁区, 暗置, 中央区, 额外牌堆, 幻术牌堆, 蓄谋牌, 牌盒, 【影】;
 - hidden or alternate identity: 隐匿, 结党, 休整, 异性双人武将, 双势力;
-- resource counters: 护甲, 蓄力标记, 谋略值, 暴虐值, 耐久度;
-- state/rhythm switching: 转换技, 韵律技, 连招技, 连招-like order checks;
+- resource counters: 护甲, 标记, 声明数值, 蓄力标记, 谋略值, 暴虐值, 耐久度;
+- state/rhythm switching: 转换技, 韵律技, 连招技, 实体性操作, 连招-like order checks;
 - attack-position branches: 游击, 搏击, 摧坚, 击伤, 起义军;
-- environment or global pressure: 天候, 光环效果, 持恒技;
+- environment or global pressure: 天候, 光环效果, 持恒技, carefully scoped 回合变动;
 - source/response puzzles: 猜测, 谋弈, 智囊, 卜算, 卜卦, 六经, 妙计, 逐鹿;
 - fate/random menus: 随机执行, 军令, transparent dice/judgment branches.
 
@@ -216,7 +347,7 @@ Use these distilled package entries as normal design candidates when they match 
 | 目标转移/取消/增减 | 护卫、误导、战术牵引、攻击面控制。 | 高强度语言；限制为特定牌、特定目标数或付出弃牌/失血成本。 | OL、SP、一将成名、十周年、十周年小程序、国战、国际服、小程序、手杀、江山如故、游戏模式、神话再临、线下、蚀心入魔、通用机制 |
 | 体力上限/体力流失 | 欲望、代价、透支、不可逆成长/衰败；适合锁定负面或爆发成本。 | 体力上限变化要给恢复路径或明确终局压力；避免与强防御叠成不死。 | OL、SP、一将成名、十周年、十周年小程序、国战、国际服、小程序、手杀、游戏模式、神话再临、线下、蚀心入魔 |
 | 获得衍生牌/印牌 | 召唤外物、仪式牌、身份信物、临时资源。 | 定义来源、数量、进入区域、离开规则；避免无限印关键牌。 | OL、一将成名、军争、十周年、国战、国际服、手杀、江山如故、游戏模式、神话再临、线下、通用机制 |
-| 重铸 | 滤牌、拆解、换工具、把死牌变选择。 | 适合作为副效果或协作出口；多次重铸会增加操作负担。 | OL、一将成名、十周年、十周年小程序、国战、国际服、小程序、手杀、江山如故、游戏模式、神话再临、线下 |
+| 重铸 | 滤牌、拆解、换工具、把死牌变选择。 | 明确是一张、多张、依次还是等量；重铸他人牌时说明谁摸牌；多次重铸会增加操作负担。 | OL、一将成名、十周年、十周年小程序、国战、国际服、小程序、手杀、江山如故、游戏模式、神话再临、线下 |
 
 ## Mechanism Index
 
@@ -305,6 +436,17 @@ Use these distilled package entries as normal design candidates when they match 
 - 随机执行: random selection among known options. Prefer judgment/dice and equal transparent odds.
 - 道具抽签 / 刮彩票: physical random props. Low priority unless the mode provides reusable components.
 - 游戏外元素 / 小游戏 / 无关文本: flavor or side activity outside core rules. Keep cosmetic or tiny; avoid normal competitive designs.
+
+### Conceptual Resolution/State Vocabulary
+
+- 作废: declaration-time cancellation of a card use. Use only at the early safe timing.
+- 终止结算: stop a current flow. Low priority; needs one-layer scope and cleanup.
+- 强制结束: forcibly end a phase or turn after current resolution. Strong tempo tool; cost it carefully.
+- 属性伤害: fire/thunder-like damage attributes. Use only when the attribute has supporting rules.
+- 额外牌面信息: card tags or conditional labels. Keep tags visible and rules-light.
+- 实体性操作: orientation/state changes such as 横置、翻面、叠置. Require unique visual cues.
+- 回合变动: skip, add, or modify turns/phases. Prefer direct actions unless phase triggers matter.
+- 预演: snapshot/rollback or rehearsal. Very low priority outside experimental modes.
 
 ## Special Card Design Patterns
 
