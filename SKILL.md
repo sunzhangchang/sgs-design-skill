@@ -14,7 +14,7 @@ Design from the proper发端 first, then translate the character into concise ca
 3. Decide the design发端: 立意驱动, 隐喻驱动, 玩法驱动, or 命题作文. Do not force all characters into the same process.
 4. Identify 1-3 character anchors: deeds, temperament, relationships, failure mode, iconic object, or desired play experience. Separate positive capability from negative compulsion.
 5. Choose one main mechanical language for each anchor. Do not include every possible motif merely because it exists.
-6. For each skill, check the structure: type label, timing, condition, cost/action, effect, and aftereffect/price. Missing timing, fake costs, and overstuffed effects are common failure points.
+6. For each skill, check the structure: type label, timing, condition, cost/action, effect, and aftereffect/price. For timing-heavy text, first place the trigger on a line: game, turn/phase, card-use/target/resolution, damage/dying/death, or skill resolution; then decide whether the referenced event has not started, is being modified, has become certain, or has already finished. Missing timing, fake costs, and overstuffed effects are common failure points.
 7. Draft 2-4 skills with short text, explicit timing, and few moving parts. Prefer one main play line plus optional support, coverage, contrast, or drawback; do not force every skill into the same engine.
 8. Check internal relationships without overfitting linkage. A skill may strongly link, weakly support, cover a role gap, create intentional tension, or stand mostly independent if it preserves character fit and table experience. Prefer natural linear/support/implicit links; avoid forced linkage and high-risk insertion links.
 9. Check table health: support should create decisions for allies and enemies, not only unconditional resources. Solo play should retain operation through target choice, card type choice, timing, or risk management.
@@ -89,7 +89,7 @@ When the user asks for称号, 战功名, 技能名, 牌名, 标记名, 衍生牌
 
 Choose the smallest reference set that answers the task:
 
-- Read `references/design-heuristics.md` for ordinary design/review tasks that need deeper design principles, clan-skill interpretation, locked-skill diagnosis, balance valves, or source-inspired design philosophy.
+- Read `references/design-heuristics.md` for ordinary design/review tasks that need deeper design principles, timing-point recognition, clan-skill interpretation, locked-skill diagnosis, balance valves, or source-inspired design philosophy.
 - Read `references/mechanics-and-special-cards.md` for named mechanisms, special cards, special zones, extra decks, package-scoped vocabulary, or user-reviewed package material. Prefer normal-priority mechanism families, treat low-priority special equipment as object-specific inspiration only, and use 国战 cards cautiously unless the user asks for a 国战 design.
 - Read `references/naming-titles.md` when the user asks for称号、战功名、技能名、标记名、衍生牌名, or similar flavor naming.
 - Read `references/source-digests.md` when the user asks where principles came from, provides new source material to absorb, or needs a map of absorbed online/offline references.

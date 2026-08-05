@@ -12,12 +12,14 @@ Sources used for this reference:
 - https://www.bilibili.com/opus/657130146618146848
 - https://www.bilibili.com/opus/767005993036939264
 - https://www.bilibili.com/opus/771493374882480193
+- https://www.bilibili.com/opus/802610872555929635
 
 ## Contents
 
 - `Design Origin`: choose the design发端 before drafting.
 - `Anchors`: translate character facts, temperament, and failure modes into rules.
 - `Skill Structure`: build and diagnose type, timing, condition, cost/action, effect, and aftereffect.
+- `Timing Map`: place triggers on game, turn, card-use, or damage lines, then identify whether the event is pending, being modified, settled, or finished.
 - `Effect Role Map`: map character anchors to attack, defense, burst, control, support, neutral, or special roles.
 - `Simplicity`: keep the resource axis, memory, and trigger burden low.
 - `Tabletop Feasibility`: keep designs executable in face-to-face play unless the brief says otherwise.
@@ -67,6 +69,56 @@ Use the six-part structure as a drafting and debugging lens:
 - Aftereffect/price: the tail consequence, often negative or delayed. Use it to show failure, overreach, backlash, or risk, but avoid attaching a decorative punishment that does not tax the route the skill encourages.
 
 When a draft feels wrong, identify which structural part is failing: missing timing, false cost, overbroad condition, overloaded effect, or unrelated aftereffect.
+
+## Timing Map
+
+Treat timing as both a rules hook and a reading-cost signal. A simple, familiar timing makes a skill easier to trust; a timing that mixes several conditions or inserts into another resolution should earn that complexity.
+
+Before writing exact text, place the skill on a line:
+
+- Game line: game setup, game start, game end. Use for initial identity, starting resources, global premises, or victory-related structures.
+- Turn/phase line: before a turn or phase, phase start, phase body, phase end, turn end, after turn. Use "before" mostly for skipping or replacing the next procedure; use phase start to modify the phase; use phase end to summarize what happened in that phase.
+- Card-use line: use a card, specify targets, become a target, target is settled, card takes effect, card resolves. Use active target changes at "指定目标时"; defensive target changes at "成为目标时"; use "后" only when the result is known.
+- Damage/dying/death line: causing damage, receiving damage, HP loss, entering or resolving dying, death, after damage. Use "造成/受到伤害时" for prevention or damage-number changes; use "造成/受到伤害后" for rewards, sell-blood, or checks that require actual damage.
+- Skill-resolution or other created lines: use only when the design really needs to respond to another skill or special event. Prefer resolving after the current flow if the exact insertion point would be hard to explain.
+
+Use this recognition pass before choosing the final phrase:
+
+- If the effect skips, replaces, or blocks a future procedure, the timing usually belongs before that procedure starts.
+- If the effect changes a number, target set, validity, or damage amount, the timing usually belongs while that event is being created or settled.
+- If the effect rewards, punishes, or summarizes something, the timing usually belongs after the event has actually happened.
+- If the condition says "used", "discarded", "damaged", "lost HP", "entered the discard pile", or "became the target", check whether the wording needs the attempt, the confirmed event, or the completed result. Do not use an after-timing for an effect that must prevent the event.
+
+Phase timing shorthand:
+
+- 回合开始前 is mainly for skipping or replacing the turn before the normal turn line exists. 回合开始时 means the turn has started and start-of-turn cleanup or triggers may matter.
+- 判定阶段开始时 belongs before delayed tricks resolve; 判定阶段结束时 belongs after their result.
+- 摸牌阶段开始时 changes or replaces the draw; 摸牌阶段结束时 should care about the cards just drawn or set up a short next-step effect.
+- 出牌阶段开始时 starts a phase route or phase-long effect; 出牌阶段结束时 summarizes what the player did during that phase.
+- 弃牌阶段开始时 can change hand limit or spend cards that are likely to be discarded; 弃牌阶段结束时 should care about cards actually discarded.
+- 结束阶段 and 回合结束时 are not interchangeable when cleanup matters. If the effect depends on "until end of turn" states, extra turns, or other players' end-turn triggers, explain the intended ordering or choose an earlier, cleaner timing.
+
+Card-use timing shorthand:
+
+- 使用牌时 follows the decision to use a card and its ordinary target choice; use it for effects tied to the card itself, not for most target changes.
+- 指定目标时 is mainly the user's active window for adding, reducing, or changing targets.
+- 成为目标时 is mainly the target's defensive window for avoiding, redirecting, or responding to being chosen.
+- 指定目标后/成为目标后 means the target relation is more settled; use these for effects that care who was actually pointed at, but not for basic target editing.
+- 生效前 is the window for validity checks, cancellation, or no-effect decisions; 生效时 starts effect resolution; 生效后/结算后 should be used for aftermath that can tolerate the card having already resolved or failed.
+
+Damage timing shorthand:
+
+- 造成伤害前 is an exceptional early gate for changing whether the damage event starts at all; use it sparingly.
+- If the skill prevents or reduces damage, put it at "造成伤害时" or "受到伤害时" as appropriate.
+- "造成伤害时" belongs more naturally to the source side; "受到伤害时" belongs more naturally to the damaged side. Both are before the damage has become completed aftermath.
+- Damage reduced to 0 is normally treated as prevented for downstream "after damage" purposes; do not trigger "受到伤害后" payoffs from fully prevented damage.
+- If the skill needs actual lost HP regardless of cause, use HP reduction/loss timing instead of damage timing.
+- Treat dying as a closed, high-risk event. Avoid adding broad card-use, draw, or target-changing insertion inside dying unless the entire design is built around that risk.
+- Use 进入濒死状态时 for effects that happen before the main rescue process and may fail; use 处于濒死状态时 for rescue-window effects; use 脱离濒死状态时 only for small cleanup or follow-up, because the causing event may still be resolving.
+
+Ordering caution: if a design only works because multiple same-timing skills resolve in a precise order, it is probably too fragile for ordinary custom-general design. Prefer visible prerequisites, current-turn history, or after-resolution text.
+
+Same-timing caution: official/server ordering can differ. When the design needs same-timing resolution, make the dependency visible in the skill's own condition or result instead of relying on hidden priority. As a tabletop baseline, same-owner timing often follows武将技能 before card skills before game rules, and different characters' same-timing skills resolve from the current turn player by seat order, often described as逆时针; if that order changes the design's balance, rewrite the timing.
 
 ## Effect Role Map
 
