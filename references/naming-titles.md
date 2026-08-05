@@ -1,16 +1,18 @@
 # Naming Titles And Achievements
 
-Use this reference when generating or revising称号, 战功名, 技能名, 标记名, or similar flavor names for 三国杀 generals.
+Use this reference when generating or revising称号, 战功名, 技能名, 牌名, 衍生牌名, 专属牌名, 虚拟牌名, 标记名, or similar flavor names for 三国杀 generals.
 
 The goal is not "pretty ancient words" by default. Good names should compress a character's life, skill image, and design thesis into a short phrase that can survive explanation.
 
 ## Workflow
 
-1. Identify the naming target:称号, 战功名, 技能名, 衍生技名, or mark/card name.
+1. Identify the naming target:称号, 战功名, 技能名, 衍生技名, 牌名, 衍生牌名, 专属牌名, 虚拟牌名, or mark/card name.
 2. List the character's key anchors: deed, temperament, failure, relation, object, quote, place, family language, or play pattern.
 3. Choose one naming method below. Do not combine too many methods unless the name remains readable.
 4. Check the name against the skill: it should illuminate what the player does or what the character suffers, not merely cite a source.
 5. Provide 3-8 candidates with one-line explanations when the user is choosing.
+
+For generated card names, never leave the naming output empty. If the skill creates or depends on a nonstandard card-like object, output at least one concrete【牌名】with its category, rule role, and naming reason. If the cleaner design should not create a named card, state that explicitly and provide the simpler wording route.
 
 ## Naming Methods
 

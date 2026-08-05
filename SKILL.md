@@ -1,6 +1,6 @@
 ---
 name: sanguosha-general-designer
-description: Design, critique, rebalance, and name 三国杀 custom generals and skill groups. Use when the user asks to create or revise 三国杀武将技能, check skill linkage and balance, design 宗族技, adapt a historical or fictional character into concise 2-4 skill designs, or generate称号/战功/技能名.
+description: Design, critique, rebalance, and name 三国杀 custom generals and skill groups. Use when the user asks to create or revise 三国杀武将技能, check skill linkage and balance, design 宗族技, adapt a historical or fictional character into concise 2-4 skill designs, or generate称号/战功/技能名/牌名/标记名/衍生牌名.
 ---
 
 # Sanguosha General Designer
@@ -33,6 +33,8 @@ Avoid unrestricted duplication or creation of survival cards such as【桃】and
 
 When using transverse states such as横置/重置, account for state availability: a role initially counts as重置; a横置 role must be重置 before it can be横置 again, and vice versa.
 
+When a design creates, searches, materializes, or repeatedly references a nonstandard card-like object, name the object explicitly. This includes衍生牌、专属牌、虚拟牌、标记牌、额外牌堆牌, and named card tokens. If a named object is not needed, say so instead of leaving the naming result blank.
+
 ## Clan And Family Skills
 
 For宗族技, first determine the character's life-story orientation, then choose the corresponding design language. Do not automatically use every branch of the family mechanic.
@@ -58,6 +60,8 @@ When presenting a design, use this compact form:
 技能名：技能文本。
 技能名：技能文本。
 
+衍生牌/对象名：若技能创造或依赖非标准牌、专属牌、虚拟牌、标记牌、额外牌堆牌, list each name as【牌名】/【对象名】 with category, brief rule role, and naming reason. If the user asked for card names but no named object is recommended, state "不建议新增牌名：" and give the reason plus the simpler wording route.
+
 设计说明：定位、主联动、强度阀门、单挑空间。
 可调参数：若偏强/偏弱，优先改哪些字。
 ```
@@ -70,7 +74,7 @@ When reviewing a user draft, compare versions by:
 - complexity and标记 count;
 - whether fixes preserve the user's intended fantasy.
 
-When the user asks for称号, 战功名, 技能名, or flavor naming, read `references/naming-titles.md`.
+When the user asks for称号, 战功名, 技能名, 牌名, 标记名, 衍生牌名, or flavor naming, read `references/naming-titles.md`.
 
 ## Reference Routing
 
