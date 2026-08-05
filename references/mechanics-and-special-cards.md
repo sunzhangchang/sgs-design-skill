@@ -12,6 +12,41 @@ This file is self-contained. Do not assume any local codebase exists; package la
 
 Do not import mechanisms wholesale by default. Choose one mechanism family that matches the character's play fantasy, simplify its wording, and add costs or constraints that fit the new general.
 
+## How To Use This File
+
+Start with `Mechanism Priority Evaluation` when choosing whether a mechanism belongs in a design at all. Then jump to the closest concept family, package index, or special-card pattern instead of reading every section as a menu of things to use.
+
+If the user names a package, preserve that package scope and avoid borrowing assumptions from excluded packages. If the user names a mechanism, read its concept section first, then check the package index only for examples. Always finish with `Design Cautions` before drafting final text.
+
+For future source intake, merge new material into the nearest existing concept family. Create a new section only when the source introduces a reusable design category that cannot be found by the headings below.
+
+## Contents
+
+- `Mechanism Priority Evaluation`: concept scale, priority axes, and source-neutral definition discipline.
+- `Technical Labels`: locked, formation, lord, and clan labels.
+- `Limited, Awakening, Task, And Count Concepts`: one-shot, task, charge, and count systems.
+- `Resolution Control Concepts`: cancellation, termination, forced ending, and parallel operation.
+- `Role Reassignment And Control Concepts`: source/user reassignment and control effects.
+- `Card Identity And Conversion Concepts`: forced identity changes, virtual existence, and conversion.
+- `Card Marks And Zone Concepts`: stored cards, marks, private/public zones, and discard-pile structures.
+- `Non-Game Card And Materialization Concepts`: general, HP, identity, and reserve cards as card-like objects.
+- `Public Mark And Public Task Concepts`: shared counters, 整肃, 协力, and public tasks.
+- `Movement And Transfer Concepts`: exact movement, gift, and coalition vocabulary.
+- `Guessing, Randomness, And Out-Of-Game Concepts`: prediction, hidden checks, randomizers, and side activities.
+- `Contest, Voting, And Bargaining Concepts`: 拼点, 逐鹿, 谋弈, 锻造, and 议事.
+- `Bond And Formation Concepts`: named relationship and seat-geometry mechanics.
+- `Victory, Faction, And Objective Concepts`: victory/faction changes and lord-like systems.
+- `Allocation And Choice-Control Concepts`: distribution, refusal, forced activation, and option depletion.
+- `Damage, Tags, And Skill Encapsulation Concepts`: damage attributes, card tags, and encapsulated subskills.
+- `HP, Armor, And Dying Concepts`: abnormal HP, armor/shields, HP-card operation, and dying thresholds.
+- `Physical State And Turn Flow Concepts`: orientation, abolition/recovery, turn changes, rollback, and entry/exit.
+- `Skill Existence And Off-Board Concepts`: hidden skills, borrowed skills, global effects, and reserve effects.
+- `Recast And Recycling Concepts`: 重铸 and dead-card recycling.
+- `Search And Extra Deck Concepts`: search, listening decks, and extra decks.
+- `Mechanism Selection`, `Reviewed Package Mechanism Families`, and `Mechanism Index`: quick package-scoped lookup.
+- `Special Card Design Patterns`, `Equipment And Treasure Vocabulary`, and `Low-Priority Card Vocabulary`: card-pattern inspiration.
+- `Design Cautions` and `Adding Future Mechanism References`: final checks and update rules.
+
 ## Mechanism Priority Evaluation
 
 Use this section only to judge whether a mechanism is worth choosing. It does not require writing every referenced mechanism into a new design.

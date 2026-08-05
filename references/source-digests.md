@@ -55,4 +55,8 @@ When adding a new source, preserve only reusable design knowledge:
 - one short example or naming pattern;
 - caution that prevents bad loops, excessive marks, or survival-card abuse.
 
+If a source is mainly recap, rhetoric, or philosophy, absorb it only when it changes a decision rule, reference routing, naming method, or caution. Otherwise note in the final response that no skill update was needed.
+
+When a source is absorbed, add one concise provenance entry here and merge the actual design guidance into the closest specialized reference file.
+
 Do not store raw articles, full card tables, code paths, or code-level notes unless the user explicitly asks for a separate coding skill.

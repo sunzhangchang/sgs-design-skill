@@ -10,6 +10,19 @@ Sources used for this reference:
 - https://www.bilibili.com/opus/693405298689310759
 - https://www.bilibili.com/opus/674737966604615718
 
+## Contents
+
+- `Design Origin`: choose the design发端 before drafting.
+- `Anchors`: translate character facts, temperament, and failure modes into rules.
+- `Simplicity`: keep the resource axis, memory, and trigger burden low.
+- `Linkage Patterns`: build produce/consume, hub/spoke, relay, open-node, or conflict links.
+- `Clan And Family Design` and `太原王氏: 中流`: choose family language by individual orientation.
+- `Locked Skills`: use locked labels for true compulsory structure and choose the lock type.
+- `Support With Solo Play`: keep assist designs playable in duel.
+- `Balancing Valves`: tune power through costs, targets, card classes, and source zones before hard limits.
+- `Play Experience`: check what the player actually does.
+- `Wording Checks`: verify "并/然后", source ownership, and virtual-card flow.
+
 ## Design Origin
 
 Choose the design发端 before drafting skills:

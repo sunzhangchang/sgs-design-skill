@@ -17,7 +17,7 @@ Design from the proper发端 first, then translate the character into concise ca
 6. Draft 2-4 skills with short text, explicit timing, and few moving parts. Prefer one engine, one support/output skill, and one locked drawback or identity skill when needed.
 7. Check internal linkage: each skill should either feed, constrain, convert, or cash out another skill. Avoid isolated "plus one value" text.
 8. Check table health: support should create decisions for allies and enemies, not only unconditional resources. Solo play should retain operation through target choice, card type choice, timing, or risk management.
-9. If the user provides new mechanism reference material and asks to improve the skill, read it, extract use cases and guardrails, then fold it into `references/mechanics-and-special-cards.md` instead of leaving a raw dump.
+9. If the user provides new reference material and asks to improve the skill, read it, extract reusable design knowledge, and merge it into the closest reference file instead of leaving a raw dump. If the material only restates existing guidance, say so and avoid no-op edits.
 
 ## Design Rules
 
@@ -72,11 +72,14 @@ When reviewing a user draft, compare versions by:
 
 When the user asks for称号, 战功名, 技能名, or flavor naming, read `references/naming-titles.md`.
 
-## References
+## Reference Routing
 
-Read `references/design-heuristics.md` when a task needs deeper design principles, clan-skill interpretation, balance review, or source-inspired design philosophy.
+Choose the smallest reference set that answers the task:
 
-Read `references/mechanics-and-special-cards.md` when a task can benefit from existing 三国杀 mechanisms, special cards, special zones, extra decks, package-scoped vocabulary, or user-reviewed cards from selected packages. Prefer normal-priority mechanism families, treat low-priority special equipment as object-specific inspiration only, and use 国战 cards cautiously unless the user asks for a 国战 design.
+- Read `references/design-heuristics.md` for ordinary design/review tasks that need deeper design principles, clan-skill interpretation, locked-skill diagnosis, balance valves, or source-inspired design philosophy.
+- Read `references/mechanics-and-special-cards.md` for named mechanisms, special cards, special zones, extra decks, package-scoped vocabulary, or user-reviewed package material. Prefer normal-priority mechanism families, treat low-priority special equipment as object-specific inspiration only, and use 国战 cards cautiously unless the user asks for a 国战 design.
+- Read `references/naming-titles.md` when the user asks for称号、战功名、技能名、标记名、衍生牌名, or similar flavor naming.
+- Read `references/source-digests.md` when the user asks where principles came from, provides new source material to absorb, or needs a map of absorbed online/offline references.
 
-Read `references/source-digests.md` when the user asks where the design principles came from, wants to add new source material to the skill, or needs a quick map of absorbed online/offline references.
+When adding new material to the skill, update `references/source-digests.md` with a one-line provenance note and update only the reference section that would actually change future designs.
 
