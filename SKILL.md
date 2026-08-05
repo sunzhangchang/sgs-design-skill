@@ -14,11 +14,12 @@ Design from the proper发端 first, then translate the character into concise ca
 3. Decide the design发端: 立意驱动, 隐喻驱动, 玩法驱动, or 命题作文. Do not force all characters into the same process.
 4. Identify 1-3 character anchors: deeds, temperament, relationships, failure mode, iconic object, or desired play experience. Separate positive capability from negative compulsion.
 5. Choose one main mechanical language for each anchor. Do not include every possible motif merely because it exists.
-6. Draft 2-4 skills with short text, explicit timing, and few moving parts. Prefer one engine, one support/output skill, and one locked drawback or identity skill when needed.
-7. Check internal linkage: each skill should either feed, constrain, convert, or cash out another skill. Avoid isolated "plus one value" text.
-8. Check table health: support should create decisions for allies and enemies, not only unconditional resources. Solo play should retain operation through target choice, card type choice, timing, or risk management.
-9. Before presenting final skill text, scan every skill description for unresolved placeholders, especially empty card-name brackets. No output may contain `【】`, `【 】`, `【牌名】`, `【某牌】`, or similar blank slots.
-10. If the user provides new reference material and asks to improve the skill, read it, extract reusable design knowledge, and merge it into the closest reference file instead of leaving a raw dump. If the material only restates existing guidance, say so and avoid no-op edits.
+6. For each skill, check the structure: type label, timing, condition, cost/action, effect, and aftereffect/price. Missing timing, fake costs, and overstuffed effects are common failure points.
+7. Draft 2-4 skills with short text, explicit timing, and few moving parts. Prefer one engine, one support/output skill, and one locked drawback or identity skill when needed.
+8. Check internal linkage: each skill should either feed, constrain, convert, or cash out another skill. Avoid isolated "plus one value" text.
+9. Check table health: support should create decisions for allies and enemies, not only unconditional resources. Solo play should retain operation through target choice, card type choice, timing, or risk management.
+10. Before presenting final skill text, scan every skill description for unresolved placeholders, especially empty card-name brackets. No output may contain `【】`, `【 】`, `【牌名】`, `【某牌】`, or similar blank slots.
+11. If the user provides new reference material and asks to improve the skill, read it, extract reusable design knowledge, and merge it into the closest reference file instead of leaving a raw dump. If the material only restates existing guidance, say so and avoid no-op edits.
 
 ## Design Rules
 

@@ -10,11 +10,14 @@ Sources used for this reference:
 - https://www.bilibili.com/opus/693405298689310759
 - https://www.bilibili.com/opus/674737966604615718
 - https://www.bilibili.com/opus/657130146618146848
+- https://www.bilibili.com/opus/767005993036939264
 
 ## Contents
 
 - `Design Origin`: choose the design发端 before drafting.
 - `Anchors`: translate character facts, temperament, and failure modes into rules.
+- `Skill Structure`: build and diagnose type, timing, condition, cost/action, effect, and aftereffect.
+- `Effect Role Map`: map character anchors to attack, defense, burst, control, support, neutral, or special roles.
 - `Simplicity`: keep the resource axis, memory, and trigger burden low.
 - `Tabletop Feasibility`: keep designs executable in face-to-face play unless the brief says otherwise.
 - `Linkage Patterns`: build produce/consume, hub/spoke, relay, open-node, or conflict links.
@@ -50,6 +53,33 @@ Make positive and negative anchors interact. A good pattern is:
 For sparse historical records, do not merely restate the record. Add one deliberate再创作 angle: contrast, imagined emotional viewpoint, inherited symbol, or a "what problem does this life pose?" question. Keep that angle visible in skill names, costs, or target logic.
 
 Prefer a layered story over repainting one static trait. Let different clauses show different stages, routes, or contradictions if the added complexity pays for itself.
+
+## Skill Structure
+
+Use the six-part structure as a drafting and debugging lens:
+
+- Type label: technical or flavor label such as 锁定技, 限定技, 觉醒技, 转换技, 宗族技, or no label. Use a label only when it clarifies execution, presentation, or family/mode handling.
+- Timing: the exact point on a line such as game start/end, turn phases, card use/target/resolution, damage/dying, death, pindian, discard, or skill resolution. Most non-static skills need explicit timing.
+- Condition: the gate that must be true, such as hand/HP comparison, target identity, card type, zone state, or whether a previous event happened. Avoid global/deck-structure conditions unless the character or mode truly needs them.
+- Cost/action: the commitment that makes the skill really fire, such as discarding cards, losing HP, reducing max HP, giving cards, choosing targets, or viewing cards. If later effects require this action to happen, make that dependency explicit with "若如此做", "并", or equivalent wording.
+- Effect: the actual payoff. Keep it focused; if an effect contains new timing, condition, action, and payoff layers, check whether it should become another skill or be simplified.
+- Aftereffect/price: the tail consequence, often negative or delayed. Use it to show failure, overreach, backlash, or risk, but avoid attaching a decorative punishment that does not tax the route the skill encourages.
+
+When a draft feels wrong, identify which structural part is failing: missing timing, false cost, overbroad condition, overloaded effect, or unrelated aftereffect.
+
+## Effect Role Map
+
+Translate anchors into game roles before writing exact text. The same mechanical effect may change role by timing, so judge by what the player actually gains at that moment.
+
+- Attack: extra attacks, direct damage, damage increase, response restriction, range/distance compression. Good anchors include martial force, ambush, decisive strike, ranged pressure, revenge, and successful harsh schemes.
+- Defense: sell-blood payoff, recovery, extra HP-like buffers, damage prevention/reduction, distance increase, hiding or retreat. Defensive text should still create choices, especially for sell-blood designs.
+- Burst: drawing, card access, multiple uses, temporary card economy, or reward after victory. Use as a balance knob carefully; "just draw more" can patch strength but may weaken character identity.
+- Control: discard, theft, target/phase/use restriction, hand information pressure, imprisonment, intimidation, or political suppression. Cost aggressive control because it removes others' agency.
+- Support: third-person versions of the above roles, such as helping allies attack, defend, draw, recover, move cards, or complete plans. Avoid pure ally-only support if the user wants duel space.
+- Neutral/negative: failed schemes, bad temperament, betrayal, isolation, arrogance, or self-harm. Negative effects work best when they constrain the exact strong line rather than randomly punishing play.
+- Special: broad invention spaces such as unusual talents, literature, craftsmanship, mysticism, or package-centerpiece gimmicks. Use only one unusual axis at a time unless the brief asks for complexity.
+
+Design flow: collect deeds and scenes, propose several possible roles, choose one primary role plus at most one secondary role, then expand that role into structure. After the first draft, remove anchors that only made the skill longer.
 
 ## Simplicity
 
