@@ -1,6 +1,6 @@
 # Special Cards And Equipment Vocabulary
 
-This file is a focused slice split from `../mechanics-and-special-cards.md`. Read it only when the index routes here for the current design need.
+This file is a focused mechanics slice. Read it only when `../mechanics-index.md` routes here for the current design need.
 
 ## Special Card Design Patterns
 

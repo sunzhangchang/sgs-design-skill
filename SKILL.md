@@ -151,7 +151,7 @@ Before finalizing a design or review, verify:
 Choose the smallest reference set that answers the task:
 
 - Read `references/design-heuristics.md` for ordinary design/review tasks that need deeper design principles, timing-point recognition, clan-skill interpretation, locked-skill diagnosis, balance valves, or source-inspired design philosophy.
-- Read `references/mechanics-index.md` for named mechanisms, special cards, special zones, extra decks, package-scoped vocabulary, or user-reviewed package material. Then read only the focused file it routes to under `references/mechanics/`. Prefer normal-priority mechanism families, treat low-priority special equipment as object-specific inspiration only, and use 国战 cards cautiously unless the user asks for a 国战 design. Do not read the legacy full digest `references/mechanics-and-special-cards.md` during normal design.
+- Read `references/mechanics-index.md` for named mechanisms, special cards, special zones, extra decks, package-scoped vocabulary, or user-reviewed package material. Then read only the focused file it routes to under `references/mechanics/`. Prefer normal-priority mechanism families, treat low-priority special equipment as object-specific inspiration only, and use 国战 cards cautiously unless the user asks for a 国战 design.
 - Read `references/naming-titles.md` when the user asks for称号、战功名、技能名、标记名、衍生牌名, or similar flavor naming.
 - Read `references/source-digests.md` when the user asks where principles came from, provides new source material to absorb, or needs a map of absorbed online/offline references.
 
