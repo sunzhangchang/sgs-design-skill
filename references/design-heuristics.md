@@ -11,6 +11,7 @@ Sources used for this reference:
 - https://www.bilibili.com/opus/674737966604615718
 - https://www.bilibili.com/opus/657130146618146848
 - https://www.bilibili.com/opus/767005993036939264
+- https://www.bilibili.com/opus/771493374882480193
 
 ## Contents
 
@@ -109,7 +110,7 @@ Avoid nesting high-risk insertions inside dying, HP-change, or current card-use 
 
 ## Linkage Patterns
 
-Use internal linkage with restraint:
+Use internal linkage with restraint. Linkage is a bonus, not a requirement; character fit and readable play come first.
 
 - produce -> consume: one skill stores or generates a resource, another spends it;
 - hub -> spoke: a locked or passive skill rewards reaching a particular balance point;
@@ -117,9 +118,21 @@ Use internal linkage with restraint:
 - open node: a self-linking node also interacts with other players, preventing solitaire;
 - conflict: skills can constrain or consume each other to tell a fall, collapse, or self-harm story.
 
+Use these linkage shapes deliberately:
+
+- Linear trigger: skill A finishes or creates a normal event, then skill B can trigger afterward. This is usually the cleanest visible link.
+- Insertion trigger: skill B fires in the middle of skill A's resolution, then returns to A. Use sparingly; it feels tight but can create timing knots, especially around dying, HP change, moving equipment, or current card-use resolution.
+- Split design: two skills are parts of one complete engine. Use only when splitting improves readability, separates historical anchors, or prevents a single skill from becoming too long. If both halves are incomprehensible alone, add a short explanation or simplify.
+- Support link: one skill raises the probability, resource supply, or output ceiling of another without sharing a timing window. This often feels natural and avoids insertion problems.
+- Implicit link: both skills are complete alone but become better through play pattern, such as one skill helping the user empty hand for another. This is elegant but should not hide the basic line from first-time players.
+- Mutual exclusion: one skill makes another harder to trigger or asks the player to choose between routes. Use for contradiction, burden, or character tragedy; avoid accidental self-sabotage.
+- No-link compensation: a second skill may simply cover defense, survivability, or table presence for a focused first skill. This is acceptable when it solves a real play problem rather than pretending to be synergy.
+
 Do not assume all skills must be harmonious. A negative or self-consuming link can be more faithful than a smooth value loop.
 
 When a family/identity skill refreshes or reopens skills, attach a soft cost, compensation, or source restriction so the engine has rhythm instead of repeated free action.
+
+Do not stack too many linkage shapes in one 3-4 skill general. Mixed linkage can become attractive on paper but hard to learn at the table. If the player needs to trace several cross-skill arrows before taking a normal turn, reduce one link or make the default line explicit in the design explanation.
 
 ## Clan And Family Design
 
