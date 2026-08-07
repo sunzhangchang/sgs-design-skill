@@ -28,6 +28,8 @@ Read `references/description-glossary.md` when finalizing labels and agency word
 
 Read `references/flow-glossary.md` when a design changes turn order, grants extra turns or phases, skips or ends turns/phases, depends on before/within/after timing windows, activates outside every character's turn, or references dying, death, and kills.
 
+Read `references/event-glossary.md` when a design responds to or inserts into an event, distinguishes invalid/ignore/counteract/cancel, changes target lists or resolution scope, or depends on the continued existence of a source skill or equipment.
+
 ## Interactive Design Protocol
 
 Default to an interactive design conversation unless the user explicitly asks for an immediate complete draft or already provides enough constraints.
@@ -195,6 +197,7 @@ Before finalizing a design or review, verify:
 - all marks, stored cards, virtual cards, special zones, and generated card names have visible handling;
 - no blank card brackets or placeholder names remain.
 - extra turns, extra phases, skipped procedures, outside-turn durations, nested dying, and maximum-HP-to-0 death follow `references/flow-glossary.md` when relevant.
+- event insertion, invalidity, ignoring, counteraction, target cancellation, and effect scope follow `references/event-glossary.md` when relevant.
 
 Also check the conversation state: answer the user's latest requested stage, preserve confirmed choices, and do not reopen a settled question unless a later rule makes it inconsistent.
 
@@ -212,6 +215,7 @@ Choose the smallest reference set that answers the task:
 - Read `references/value-glossary.md` for foundational numeric definitions and assignment semantics. Load it for value-sensitive designs, especially HP/max-HP, distance/range, X, and extrema.
 - Read `references/description-glossary.md` for foundational skill-description semantics. Load it when wording changes legal choices, trigger counts, attribution, transfer, targets, or visibility.
 - Read `references/flow-glossary.md` for foundational turn/phase flow and dying/death semantics. Load it for extra or skipped turns/phases, boundary timing, outside-turn effects, nested dying, maximum-HP-to-0 death, or kill attribution.
+- Read `references/event-glossary.md` for foundational event, response, resolution, interruption, invalidity, ignoring, counteraction, and target-cancellation semantics. Load it when the design changes an ongoing event or its scope.
 
 When adding new material to the skill, update `references/source-digests.md` with a one-line provenance note and update only the reference section that would actually change future designs.
 

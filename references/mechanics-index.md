@@ -37,6 +37,7 @@ Use mechanisms interactively:
 - Foundational points, HP/HP value/maximum HP/lost HP, hand limit, damage base, distance/range, X, assignment, extrema, counts, or halves: read [value-glossary.md](value-glossary.md).
 - Foundational labels/agency, sequential versus simultaneous operations, damage transfer, HP loss/recovery, user/source/channel, option legality, role/target references, or visibility: read [description-glossary.md](description-glossary.md).
 - Foundational turn order, extra turns/phases, skipped procedures, phase boundaries, outside-turn scope, dying/death, or kill attribution: read [flow-glossary.md](flow-glossary.md).
+- Foundational event, response, resolution, insertion, invalidity, ignoring, counteraction, target cancellation, or effect scope: read [event-glossary.md](event-glossary.md).
 
 ## Selection Rule
 
@@ -64,6 +65,7 @@ Use low-priority or mode-heavy mechanisms only when the user explicitly asks for
 - If a skill sets a value, uses HP/max HP, distance/range, X, maximum/minimum, most/least, or half, check `value-glossary.md`; zero, ties, direction, and “为/视为” can change the result.
 - If wording uses “任意数量”“依次”“转移”“需/须/可以”, changes attribution, presents options, or refers to targets after transfer/chain, check `description-glossary.md` and preserve the workspace “并/然后” convention.
 - If a skill grants, repeats, skips, or ends a turn/phase, works outside every character's turn, or references dying/death/kills, check `flow-glossary.md`; do not equate extra turns with extra phases or death with being killed.
+- If a skill responds to an ongoing event or uses “无效”“无视”“抵消”“取消目标”, check `event-glossary.md`; identify whether it changes the target, effect, condition, or target list.
 
 ## Future Updates
 
