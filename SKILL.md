@@ -24,6 +24,8 @@ Read `references/zone-glossary.md` when the design names “场上” or a card 
 
 Read `references/value-glossary.md` when the design calculates or assigns card points, HP/HP value/maximum HP/lost HP, hand limit, damage value, distance, attack range, X, differences, extrema, counts, or halves.
 
+Read `references/description-glossary.md` when finalizing labels and agency words, sequential/simultaneous operations, damage transfer, HP loss/recovery, user/source/channel attribution, option legality, role/target references, or visibility.
+
 ## Interactive Design Protocol
 
 Default to an interactive design conversation unless the user explicitly asks for an immediate complete draft or already provides enough constraints.
@@ -205,6 +207,7 @@ Choose the smallest reference set that answers the task:
 - Read `references/card-glossary.md` for foundational game-card classification and equipment dependency rules. Load it only when those distinctions affect the draft.
 - Read `references/zone-glossary.md` for foundational zone, visibility, ownership, processing-area, judgment-area, and pile-refill rules. Load it only for zone-sensitive designs.
 - Read `references/value-glossary.md` for foundational numeric definitions and assignment semantics. Load it for value-sensitive designs, especially HP/max-HP, distance/range, X, and extrema.
+- Read `references/description-glossary.md` for foundational skill-description semantics. Load it when wording changes legal choices, trigger counts, attribution, transfer, targets, or visibility.
 
 When adding new material to the skill, update `references/source-digests.md` with a one-line provenance note and update only the reference section that would actually change future designs.
 

@@ -35,6 +35,7 @@ Use mechanisms interactively:
 - Foundational card categories, printed general-card skills versus current skills, delayed/non-delayed trick distinction, equipment positions/replacement, equipment-as-card/cost dependency, or equipment stacking: read [card-glossary.md](card-glossary.md).
 - Foundational zones, “场上”, ownership versus area, hidden-hand choice, processing-area cards, judgment-area identity, or draw-pile refill/exhaustion: read [zone-glossary.md](zone-glossary.md).
 - Foundational points, HP/HP value/maximum HP/lost HP, hand limit, damage base, distance/range, X, assignment, extrema, counts, or halves: read [value-glossary.md](value-glossary.md).
+- Foundational labels/agency, sequential versus simultaneous operations, damage transfer, HP loss/recovery, user/source/channel, option legality, role/target references, or visibility: read [description-glossary.md](description-glossary.md).
 
 ## Selection Rule
 
@@ -60,6 +61,7 @@ Use low-priority or mode-heavy mechanisms only when the user explicitly asks for
 - If a skill manipulates equipment or card categories, check `card-glossary.md` before choosing movement/conversion wording; “使用”, “置入”, “移动”, “弃置”, and “当其他牌使用” are not equivalent.
 - If a skill says “其牌”“其区域内的牌”“场上的牌” or touches the processing/judgment area, check `zone-glossary.md`; zone membership does not automatically imply ownership or permission to choose/operate a card.
 - If a skill sets a value, uses HP/max HP, distance/range, X, maximum/minimum, most/least, or half, check `value-glossary.md`; zero, ties, direction, and “为/视为” can change the result.
+- If wording uses “任意数量”“依次”“转移”“需/须/可以”, changes attribution, presents options, or refers to targets after transfer/chain, check `description-glossary.md` and preserve the workspace “并/然后” convention.
 
 ## Future Updates
 
