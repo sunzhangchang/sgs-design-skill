@@ -1,5 +1,7 @@
 # Design Heuristics For 三国杀 Generals
 
+These heuristics are applied only after the rules-first gate in `rules-priority.md`. Character fit, linkage, balance, and novelty choose among rules-legal implementations; they do not override the foundational card, zone, value, wording, flow, event, or identity-environment rules.
+
 These notes condense recurring design ideas from the referenced Bilibili design essays. Use them as heuristics, not as canon text to quote at length.
 
 Sources used for this reference:

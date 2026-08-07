@@ -43,6 +43,10 @@ Use this file as a provenance and intake map. It summarizes useful content alrea
 - https://www.bilibili.com/opus/1210278499380625413, "【WAHX】三国杀新概念全点评·廿八（并行操作）": source for evaluating parallel operations during normal resolution. Key lesson: parallel operations should remain mode-level support for external time/space/UI variables; ordinary skill effects should queue or resolve after the current flow to avoid insertion chaos.
 - https://www.bilibili.com/opus/867432528805363736, "【WAHX】三国杀新概念全点评·后记：为什么新概念需要有统一定义&如何正确看待新概念": source for definition discipline around new concepts. Key lesson: official/non-official status and standard/nonstandard appearance are not quality proofs; judge concepts by clear definition, reasonability, and communicability, and define non-mainstream vocabulary before relying on it.
 
+## Priority Note
+
+The reviewed `gltjk.com` glossary and identity-mode card-flow materials are foundational rule references for design, not merely inspiration. Their distilled files must be checked before the heuristic and mechanism material whenever a draft touches the corresponding object or timing; the user's explicit workspace conventions remain the highest-priority override.
+
 ## Local Or Offline Materials
 
 - `https://gltjk.com/sanguosha/rules/glossary/flow.html`, "流程 | 三国杀官方规则集 3.0": source for turn order and outside-turn scope, normal versus extra turns/phases, phase skipping and boundary timing, nested dying, maximum-HP-to-0 direct death, and the distinction between death and being killed. Distilled into `flow-glossary.md` as flow-sensitive design checks.

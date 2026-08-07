@@ -2,6 +2,8 @@
 
 Use this file as the routing index for 三国杀 cross-server mechanisms, special cards, special zones, extra decks, equipment vocabulary, and package-scoped material.
 
+This index is subordinate to `rules-priority.md` and the foundational glossaries it routes to. Package mechanics and mechanism essays may inspire a legal implementation but never redefine card, zone, value, wording, flow, or event semantics.
+
 Do not read every mechanics file before designing. Start here, choose the smallest relevant slice, read only that slice during the current interaction step, and return to the user with a concrete question or draft.
 
 Sources distilled into this reference set:

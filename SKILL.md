@@ -14,7 +14,9 @@ Classify the user request before loading references:
 - Naming: generate or revise称号、战功名、技能名、牌名、标记名, or衍生牌/对象名.
 - Reference intake: absorb new articles, documents, or package material into the skill itself.
 
-For fresh design or review, usually read `references/design-heuristics.md`. Read `references/mechanics-index.md` first, then only one focused mechanics file, when the user names a mechanism/package/special card, asks for one, or the draft already uses one. Read `references/naming-titles.md` only for naming tasks or when the design creates a named nonstandard object.
+For every fresh design or review, first read the compact `references/rules-priority.md`. Treat the user's explicit conventions and the foundational rules distilled from the reviewed `gltjk.com` pages and identity-mode material as higher priority than design heuristics, mechanism essays, package vocabulary, or flavor. Then read only the focused glossary rows hit by the actual skeleton or draft.
+
+After the rules gate, usually read `references/design-heuristics.md`. Read `references/mechanics-index.md` first, then only one focused mechanics file, when the user names a mechanism/package/special card, asks for one, or the draft already uses one. Read `references/naming-titles.md` only for naming tasks or when the design creates a named nonstandard object.
 
 Read `references/identity-card-environment.md` only when the design depends on identity-mode deck composition, exact card-name density, color/suit availability, equipment or delayed-trick density, opening hand, kill rewards, death-area discard, or deck exhaustion.
 
@@ -58,11 +60,12 @@ Do not ask for every possible constraint at once. After each user answer, update
 
 Use this order unless the user explicitly requests another one:
 
-1. Character and role: determine what the character is good at and what limits or failure mode should remain.
-2. Play line: choose the primary action, resource, or timing window. Do not start from a linkage diagram.
-3. Skill jobs: assign each skill one main job. A skill may support another, cover a weakness, create tension, or remain independent; it does not need to trigger another skill.
-4. Rules language: write the shortest text that implements the chosen play line, then resolve timing, target, cost, and state availability.
-5. Pressure test: test team play, solo play, low-resource turns, and the strongest obvious abuse case.
+1. Rules gate: read `references/rules-priority.md`; after a skeleton exists, open only the foundational glossaries it triggers.
+2. Character and role: determine what the character is good at and what limits or failure mode should remain.
+3. Play line: choose the primary action, resource, or timing window. Do not start from a linkage diagram.
+4. Skill jobs: assign each skill one main job. A skill may support another, cover a weakness, create tension, or remain independent; it does not need to trigger another skill.
+5. Rules language: write the shortest text that implements the chosen play line, then resolve object, timing, agency/cost, resolution, attribution, target, and state availability.
+6. Pressure test: only after rules legality, test team play, solo play, low-resource turns, and the strongest obvious abuse case.
 
 When the design is still undecided, present the skill skeleton rather than polished skill text. The skeleton should contain skill count, skill job, trigger, cost, payoff, and the one unresolved choice. This prevents attractive wording from hiding an unresolved design decision.
 
@@ -75,14 +78,15 @@ Design from the proper发端 first, then translate the character into concise ca
 3. Decide the design发端: 立意驱动, 隐喻驱动, 玩法驱动, or 命题作文. Do not force all characters into the same process.
 4. Identify 1-3 character anchors: deeds, temperament, relationships, failure mode, iconic object, or desired play experience. Separate positive capability from negative compulsion.
 5. Choose one main mechanical language for each anchor. Do not include every possible motif merely because it exists.
-6. For each skill, check the structure: type label, timing, condition, cost/action, effect, and aftereffect/price. For timing-heavy text, first place the trigger on a line: game, turn/phase, card-use/target/resolution, damage/dying/death, or skill resolution; then decide whether the referenced event has not started, is being modified, has become certain, or has already finished. Missing timing, fake costs, and overstuffed effects are common failure points.
-7. Draft as many skills as the design actually needs, normally 2-4, with short text, explicit timing, and few moving parts. Prefer one main play line plus optional support, coverage, contrast, or drawback; do not force every skill into the same engine or pad the group to three skills.
-8. Check internal relationships without overfitting linkage. A skill may strongly link, weakly support, cover a role gap, create intentional tension, or stand mostly independent if it preserves character fit and table experience. Prefer natural linear/support/implicit links; avoid forced linkage and high-risk insertion links.
-9. Check table health: support should create decisions for allies and enemies, not only unconditional resources. Solo play should retain operation through target choice, card type choice, timing, or risk management.
+6. Run the rules-first scan from `references/rules-priority.md`, then open every focused foundational glossary hit by the skeleton. For each skill, check object, timing, agency/cost, resolution, attribution, target, and state before judging elegance or linkage.
+7. Check the structure: type label, timing, condition, cost/action, effect, and aftereffect/price. For timing-heavy text, first place the trigger on a line: game, turn/phase, card-use/target/resolution, damage/dying/death, or skill resolution; then decide whether the referenced event has not started, is being modified, has become certain, or has already finished. Missing timing, fake costs, and overstuffed effects are common failure points.
+8. Draft as many skills as the design actually needs, normally 2-4, with short text, explicit timing, and few moving parts. Prefer one main play line plus optional support, coverage, contrast, or drawback; do not force every skill into the same engine or pad the group to three skills.
+9. Check internal relationships without overfitting linkage. A skill may strongly link, weakly support, cover a role gap, create intentional tension, or stand mostly independent if it preserves character fit and table experience. Prefer natural linear/support/implicit links; avoid forced linkage and high-risk insertion links.
+10. Check table health: support should create decisions for allies and enemies, not only unconditional resources. Solo play should retain operation through target choice, card type choice, timing, or risk management.
 
 For internal linkage, classify every pair of skills as one of: strong link, soft support, division of labor, intentional tension, or independent coverage. Require a reason for strong link. If two skills only link because one skill was weakened to feed the other, remove the artificial link and repair each skill's own play value.
-10. Before presenting final skill text, scan every skill description for unresolved placeholders, especially empty card-name brackets. No output may contain `【】`, `【 】`, `【牌名】`, `【某牌】`, or similar blank slots.
-11. If the user provides new reference material and asks to improve the skill, read it, extract reusable design knowledge, and merge it into the closest reference file instead of leaving a raw dump. Keep fetched source text in a workspace-local ignored check folder for future rereading. Validate and make a local commit after absorption unless the user explicitly asks to review before commit. If the material only restates existing guidance, say so and avoid a no-op commit.
+11. Before presenting final skill text, scan every skill description for unresolved placeholders, especially empty card-name brackets. No output may contain `【】`, `【 】`, `【牌名】`, `【某牌】`, or similar blank slots.
+12. If the user provides new reference material and asks to improve the skill, read it, extract reusable design knowledge, and merge it into the closest reference file instead of leaving a raw dump. Keep fetched source text in a workspace-local ignored check folder for future rereading. Validate and make a local commit after absorption unless the user explicitly asks to review before commit. If the material only restates existing guidance, say so and avoid a no-op commit.
 
 ## Working Card
 
@@ -96,6 +100,7 @@ Before writing final skills, build a small internal working card. Use it to keep
 主定位/副定位：
 主资源轴：
 时机线：
+规则命中：card / zone / value / description / flow / event / identity environment
 技能关系：
 主要风险：
 ```
@@ -187,7 +192,7 @@ When the user asks for称号, 战功名, 技能名, 牌名, 标记名, 衍生牌
 
 ## Final Self-Check
 
-Before finalizing a design or review, verify:
+Before finalizing a design or review, run `references/rules-priority.md` first. Rules legality and the user's explicit conventions outrank character metaphor, linkage, balance targets, mechanism novelty, and official-looking prose. Then verify:
 
 - each skill has a clear timing, condition, cost/action, and payoff, unless it is a pure static rule;
 - the chosen timing matches whether the event is prevented, modified, confirmed, or already finished;
@@ -205,6 +210,7 @@ Also check the conversation state: answer the user's latest requested stage, pre
 
 Choose the smallest reference set that answers the task:
 
+- Always read `references/rules-priority.md` for fresh design and review. It is the authority and routing gate for the foundational rules absorbed from the reviewed `gltjk.com` and identity-mode materials.
 - Read `references/design-heuristics.md` for ordinary design/review tasks that need deeper design principles, timing-point recognition, clan-skill interpretation, locked-skill diagnosis, balance valves, or source-inspired design philosophy.
 - Read `references/mechanics-index.md` for named mechanisms, special cards, special zones, extra decks, package-scoped vocabulary, or user-reviewed package material. Then read only the focused file it routes to under `references/mechanics/`. Prefer normal-priority mechanism families, treat low-priority special equipment as object-specific inspiration only, and use 国战 cards cautiously unless the user asks for a 国战 design.
 - Read `references/naming-titles.md` when the user asks for称号、战功名、技能名、标记名、衍生牌名, or similar flavor naming.
