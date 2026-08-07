@@ -1,0 +1,34 @@
+model:
+  name_or_path: Qwen/Qwen3-8B
+  trust_remote_code: true
+  load_in_4bit: true
+  compute_dtype: bfloat16
+  use_lora: true
+
+data:
+  train_file: data/train.jsonl
+  eval_file: data/eval.jsonl
+  max_seq_length: 1024
+
+training:
+  output_dir: outputs/qwen3-8b-sgs-lora
+  num_train_epochs: 3
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 16
+  gradient_checkpointing: true
+  learning_rate: 0.0002
+  logging_steps: 5
+  save_steps: 100
+  eval_steps: 100
+  save_total_limit: 2
+  warmup_ratio: 0.05
+  max_grad_norm: 0.3
+  optim: paged_adamw_8bit
+  report_to: none
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]

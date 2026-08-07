@@ -1,0 +1,227 @@
+# Social Choice And Identity Concepts
+
+This file is a focused mechanics slice. Read it only when `../mechanics-index.md` routes here for the current design need.
+
+## Guessing, Randomness, And Out-Of-Game Concepts
+
+Use these concepts when a design asks players to make predictions, accept random results, or reference information outside ordinary public game state. The core quality test is whether the result feels fair to everyone at the table.
+
+### 猜测 / 心理博弈
+
+- Definition: a player predicts a hidden choice, card property, or private intention, then the relevant result is revealed or otherwise made verifiable.
+- Use when: the character fantasy is bluffing, testing, reading people, prophecy, or intimidation, and the table can enjoy a short mind game.
+- Priority: normal to high for social play. It is intuitive and expressive, but swingy and often worse in fast online environments.
+- Guardrails: options, choice, and result must be public or verifiable after resolution. Keep stakes moderate on both success and failure; avoid "guess right wins, guess wrong dies" patterns. Do not let the optimal line become a fixed routine that removes the actual mind game.
+- Avoid when: the skill needs secret cooperation, unverifiable self-reporting, or repeatedly pauses the table for low-value decisions.
+
+### 不可见元素 / 系统判定
+
+- Definition: a skill uses information players cannot normally verify, or relies on a platform/system to inspect hidden state without disclosure.
+- Use when: the user explicitly wants an online-only design and accepts that it may not work in tabletop play.
+- Priority: low for general custom design. It can open new space, but it damages trust and is hard to port across environments.
+- Guardrails: prefer applying only to the user's own hidden elements; reveal enough after resolution for players to audit fairness; label the design as online-only if a real table cannot execute it. Never require a player to make unverifiable claims for large rewards.
+- Avoid when: the hidden check exposes another player's strategic weakness, creates suspicion of collusion, or could be replaced by a public reveal, guess, judgment, or chosen option.
+
+### 随机执行 / 卜卦
+
+- Definition: one option is selected randomly from a known menu; 卜卦 is a themed top-card/random-sign procedure.
+- Use when: fate, omen, chaos, or uncontrollable orders are central to the character, and the random menu is small enough to understand.
+- Priority: medium for transparent equal-probability random menus; low when probabilities are hidden, uneven, or platform-controlled.
+- Guardrails: state the probability method or use existing public procedures such as judgment, reveal, or dice. Keep branches comparable in value or give players a mitigation choice. For 卜卦-like designs, cap branch count and avoid cross-turn memory unless a physical aid exists.
+- Avoid when: "random" merely hides poor balancing, or when a simple judgment would give the same texture with less baggage.
+
+### 军令 / 道具抽签 / 刮彩票
+
+- Definition: a packaged random or semi-random menu represented by cards, slips, tickets, or other physical aids.
+- Use when: a mode or package wants a shared command deck or a reusable tactical order vocabulary.
+- Priority: medium for a small public menu like 军令; low for one-character props, large ticket sets, or tools that mostly add spectacle.
+- Guardrails: keep the menu small, broadly useful, and similar in value; define whether the recipient may refuse, choose between drawn options, or must execute. If physical components are required, make them replaceable by ordinary cards, dice, or a table.
+- Avoid when: the component is one-to-one bound to a single general, creates setup burden, or has huge variance in normal identity games.
+
+### 游戏外元素 / 小游戏 / 无关文本
+
+- Definition: a skill references player traits, real-world objects, physical dexterity, other games, interface features, or text that does not change rules.
+- Use when: the design is explicitly casual, festive, mode-specific, or an art-first piece.
+- Priority: low for normal generals. It may be charming, but often breaks immersion, privacy, portability, or table pace.
+- Guardrails: game-outside references should affect only setup, tie-breakers, or very small bonuses; consider extreme cases and sensitive information. Mini-games must be quick, optional, and strongly tied to the character fantasy. Non-rules text belongs in title, flavor, notes, or art direction, not in the rules box.
+- Avoid when: it changes core stats from real-world data, asks for private personal information, forces all players to watch a side activity, or depends on online-only cosmetics such as exclusive emotes.
+
+## Contest, Voting, And Bargaining Concepts
+
+Use these concepts when the design turns cards, choices, or table politics into a contest. The best versions preserve player agency instead of becoming disguised random outcomes.
+
+### 拼点
+
+- Definition: two players reveal one hand card each and compare points, usually resolving win/not-win branches.
+- Use when: the fantasy is duel, debate, test of courage, diplomatic pressure, or using excess cards as leverage.
+- Priority: high as a clean contest operation.
+- Guardrails: remember that pindian is close to zero direct card advantage but can disrupt hands and create alliance play. Do not always attach huge rewards; let the point contest and card choice matter. If using tied/lost branches, define them explicitly because many players expect the traditional win/not-win split.
+- Avoid when: the design only wants random high/low resolution; judgment or reveal may be simpler.
+
+### 多人拼点 / 逐鹿 / 对抗拼点
+
+- Definition: more than two players compare points, either individually, by unique highest, or by teams/factions.
+- Use when: the scene is truly a group debate, contest for leadership, or factional confrontation.
+- Priority: medium-low. It is flashy but dilutes each player's influence.
+- Guardrails: define participation, side selection, tie handling, winner count, and who gets exposed/used cards. Avoid rewarding "all non-winners' pindian cards" without a cap. Keep teams meaningful; otherwise it degenerates into identity math rather than card contest.
+
+### 谋弈 / 锻造 / 议事
+
+- Definition: 谋弈 is a two-option prediction game, 锻造 is a collective/randomized crafting contest, and 议事 is reveal-and-vote by card color.
+- Use when: prediction, public deliberation, or collective construction is more important than point comparison.
+- Priority: high for 议事 when court/public-will flavor fits; medium for 谋弈; low for 锻造 outside artifact-making centerpieces.
+- Guardrails: 谋弈 options should be symmetric enough to be a mind game but not so symmetric that they become pure random guessing. 议事 exposes information, which is part of its cost. 锻造 needs a clear reason for helpers/hinderers and should not jump directly into identity certainty.
+
+## Bond And Formation Concepts
+
+Use these concepts when relationship or seat position is the actual play object. Do not add a bond merely because two people knew each other in history; the bond must improve decisions or presentation without making the base design incomplete.
+
+### 羁绊 / 点名配合 / 珠联璧合 / 宗族羁绊 / 同心
+
+- Definition: a skill checks named characters, paired generals, clan membership, oath partners, or other relationship groups for extra effects.
+- Use when: the mode makes the partner reasonably controllable, such as 国战双将, lord-related designs, clan packages, or a skill that asks others to participate with you.
+- Priority: low in random identity draft; medium to high in 双将、国战、宗族包, or activity modes where the relationship framework is visible and expected.
+- Guardrails: make the general functional without the bond. Keep bond bonuses small, visible, and thematically precise; avoid one-in-a-hundred hidden easter eggs that warp the whole text. Define version handling, multi-name variants, skill theft, and whether "same clan" is historical membership or current skill ownership.
+- Avoid when: the skill names a single ally who is unlikely to appear, or when the bond becomes stronger than the character's own design.
+
+### 阵法关系 / 阵法召唤
+
+- Definition: seat adjacency, relative position, or unrevealed ally presence creates a formation relationship or reveals/calls allies into it.
+- Use when: 国战, 3v3/4v4, or another mode already makes seat geometry strategically meaningful.
+- Priority: low outside mode play; medium only when seat manipulation and formation rewards are part of the environment.
+- Guardrails: define the check timing, whether hidden identities count, what happens after seat movement, and whether targets must be same faction or merely adjacent. Give a fallback so the general is not blank because of random seating. 阵法召唤 needs a real incentive for allies to reveal; otherwise it becomes decorative text.
+- Avoid when: the position condition is hard to arrange and the design has no tools to move, invite, or profit without it.
+
+## Victory, Faction, And Objective Concepts
+
+Use these only when identity or faction is the character's core. They can override the emotional contract of the table, so ordinary designs should prefer rewards, tasks, or awakening over changing who wins.
+
+### 改变胜利条件 / 额外胜利
+
+- Definition: a skill changes identity, adds an alternate win, or declares a winner through a route other than the normal mode objective.
+- Use when: the whole design is about betrayal, usurpation, survival-to-the-end, prophetic victory, or multi-game scoring.
+- Priority: very low in normal identity games; medium in modes that already track points, rounds, ranks, or explicit alternate objectives.
+- Guardrails: do not swap another player's win condition without consent or strong mode framing. Prefer "after the game, also count as winning" or mode score progress over immediately ending the game and nullifying prior play. If a condition is easy, the character becomes a public target; if impossible, it is only noise. Make clear whether normal victory still applies, whether teammates share the alternate result, and whether the game ends immediately.
+- Avoid when: the goal is only to make a weak character interesting.
+
+### 君主 / 定鼎 / 溃散
+
+- Definition: 国战-like lord mechanics introduce a faction center, often through early declaration, replacement by a 君主 card, and faction collapse after that center dies.
+- Use when: the mode needs a protect-the-center structure, such as 国战 variants, campaign battles, or two-sided activity modes.
+- Priority: low outside mode design.
+- Guardrails: keep declaration early enough to fit the lord fantasy. Define how faction size, wild ambition, defeat, and remaining allies are recalculated. Do not force an entire team to inherit one player's punishment unless the mode is built around that risk.
+
+### 改变势力 / 双势力武将 / 势力技
+
+- Definition: a character's faction changes, can be chosen, can switch between several factions, or unlocks skills only while in a matching faction.
+- Use when: the historical anchor genuinely crosses factions, returns home, defects, or lives between powers.
+- Priority: medium in identity designs where faction is mostly flavor or a visible skill condition; low in 国战 when faction equals victory condition.
+- Guardrails: define whether the character is one faction at a time, a stacked dual faction, or a switchable faction. State when the choice is made and how faction count is calculated. If the faction choice effectively creates two versions of one general, balance both versions; a switchable design should give the player reasons to move between factions rather than lock one best answer.
+
+### 暴露野心 / 僭位
+
+- Definition: a hidden or ordinary character becomes a 野心家, or an ordinary general transforms into a stronger ambition form after meeting a condition.
+- Use when: ambition, rebellion, usurpation, or hidden final-side identity is the core story.
+- Priority: low and mostly 国战/mode-specific.
+- Guardrails: avoid forcing the player to stay underpowered or single-general until the final stage with no agency. A 僭位-like transformation is usually cleaner than a late reveal if the condition, cost, and new victory position are visible. Account for "jumping ship" in losing or winning positions; the transformation must create risk, not just opportunistic betrayal.
+
+## Allocation And Choice-Control Concepts
+
+Use these concepts when a skill gives flexible distribution or changes whether players may choose.
+
+### 共计 / 分配
+
+- Definition: a total amount is divided among targets or effects, then later clauses may refer to each share.
+- Use when: the character expresses large-scale command, charity, devastation, or resource allocation.
+- Priority: high for traditional card/damage distribution, medium-low for broad "new-style" distribution of arbitrary objects.
+- Guardrails: specify total, valid recipients, minimum/maximum per recipient, and whether assigning 0 is allowed. Be careful distributing HP, max HP, damage, or recovery because simultaneous gain/loss can create insertion and dying-timing problems. For a single unit, direct "令一名角色..." is usually clearer than "分配1".
+- Avoid when: the wording only adds grandeur without real flexibility.
+
+### 拒绝 / 放弃
+
+- Definition: a player is allowed to refuse a procedure or decline an otherwise expected action.
+- Use when: the design needs strong self-restraint, defiance, or a way to soften a forced interaction.
+- Priority: medium.
+- Guardrails: treat refusal as a higher-level option; define the result of refusal and whether refusal can be forced by inability. "放弃" reads more voluntary and softer than "拒绝"; choose the word that matches the fantasy.
+- Avoid when: "若你未..." or an ordinary optional clause is clearer.
+
+### 强制发动
+
+- Definition: a normally optional skill or choice is made compulsory for a limited time or branch.
+- Use when: the design tempts the user into overcommitting, losing control, or weaponizing an awkward skill.
+- Priority: medium-low. It is interesting but can feel hostile.
+- Guardrails: prefer forcing your own skill, or give meaningful compensation if forcing another player. Balance the forced and non-forced modes; if the skill is always profitable, making it compulsory is meaningless.
+- Avoid when: it removes important targeting choices or makes another player execute a long skill against their will.
+
+### 重置技 / 枭雄技
+
+- Definition: a multi-option skill tracks which choices have been used, may reset after all options are used, or permanently leaves one option as the final state.
+- Use when: the character has prepared tactics, staged choices, or a "use every plan before returning" rhythm.
+- Priority: low to medium. It is flexible but memory-heavy and easy to overbuild.
+- Guardrails: keep option count small and visible. Options should not have an obvious fixed order, or the skill becomes a conversion/sequence skill. Make reset conditions reachable but not automatic, and define what happens if an option cannot currently be chosen.
+- Avoid when: two options would work better as a conversion skill, or five-plus options make the character a menu.
+
+## Description Shorthand Concepts
+
+Use these only when the shortcut is less confusing than the fully expanded text.
+
+### 对方 / 二元操作指代
+
+- Definition: in a binary interaction, "对方" means the other participant relative to the skill owner, such as the other side of a Slash response, Duel exchange, damage-source/recipient pair, or pindian.
+- Use when: a skill repeatedly refers to the other participant in a clean one-on-one operation and the expanded wording would be much longer.
+- Priority: medium. The word is highly reusable and readable, but it is more colloquial than most 三国杀 rules text.
+- Guardrails: use only for clear binary operations. In one-to-many, treat each pair separately only if the timing already resolves by target; avoid using it for multi-party, substitute-response, or nested operations where there are several plausible "other sides". If the skill can trigger from multiple event types, name examples or write the full roles instead.
+- Avoid when: the event has more than two meaningful participants, or when a named role such as "伤害来源", "使用者", "目标角色", or "响应的角色" is just as short.
+
+## Skill Existence And Off-Board Concepts
+
+Use these when a skill exists on a card, in a mode, in a reserve area, or outside the current character. They are useful for mode design and fragile for ordinary generals.
+
+### 技能目标 / 技能卡式目标
+
+- Definition: a skill treats one or more chosen characters as its targets, similar to a card's targets.
+- Use when: one active skill is deliberately written like a skill-card and later clauses need to refer to selected roles.
+- Priority: low as a general mechanism, medium only for a self-contained skill family that defines its own target rule.
+- Guardrails: do not assume every skill has a universal target. Equivalent text can choose one character once or choose two characters in sequence, and broad target rules may distinguish descriptions that otherwise resolve identically. Prefer "你选择的角色", "前者/后者", or a named target list inside the skill. If the design grants or steals skills, do not rely on unknown borrowed skills having meaningful targets.
+
+### 追思·新 / 凌越 / 连环
+
+- Definition: weak encapsulations built on skill target logic: 追思-like rules stop later selection of the same role, 凌越 checks a size/quantity comparison with a selected role, and 连环 adds or links extra skill targets under a shared condition.
+- Use when: the design specifically needs target history, bullying/overmatching by a larger value, or a team-mode link between roles selected by a skill.
+- Priority: medium for direct 凌越-like comparison; low for target-history labels and skill-target expansion.
+- Guardrails: "每名角色限一次" or direct history wording is often clearer than a named追思 rule. 凌越 can usually avoid skill-target baggage by comparing with "一名角色". 连环-style target expansion is risky because skill rewards are less bounded than card rewards; define target order, symmetry, mandatory/optional linking, and whether added targets receive the same or modified effect.
+
+### 奥秘技 / 隐匿技 / 隐匿标签
+
+- Definition: a skill effect is executed without ordinary declaration, usually before general information is public or because every candidate shares a hiding wrapper.
+- Use when: the effect must happen at setup while preserving hidden information, such as initial HP adjustment, hidden-entry state, or equalized opening protection.
+- Priority: low and mode-specific.
+- Guardrails: the hidden result must be either unobservable or given to all relevant candidates. Do not hide a meaningful choice that other players need to audit. If "隐匿" is only a tag on a broader skill, write which part is hidden and what remains after reveal.
+
+### 主副将技 / 身份技 / 势力技
+
+- Definition: a skill appears on the card but only exists or functions in a matching position, identity, or faction.
+- Use when: the mode's visible framework naturally supports the axis, especially 国战主副将 or switchable faction designs.
+- Priority: medium for visible two-state axes; low for hidden identity.
+- Guardrails: hidden identity skills are hard to balance and reveal. Position/faction skills should be functional in both states, or the user is effectively choosing between two incomplete generals. If a faction skill belongs to a dual-faction design, decide whether the player chooses at setup, switches later, or counts as stacked.
+
+### 发动不属于自己的技能 / 纵横
+
+- Definition: a character borrows, grants, or causes another player to gain a modified version of a skill for a short duration.
+- Use when: the fantasy is alliance, teaching, command delegation, possession, or political skill-sharing.
+- Priority: low to medium.
+- Guardrails: define whose skill version is used, who pays costs, who chooses targets, who is the skill owner/source, whether granted copies stack, and duration. A granted skill should not be so weakened that allies avoid it or so strengthened that it is better to give away than use. Cross-turn grants need a visible reminder.
+
+### 事件牌 / 法则技 / 持恒技
+
+- Definition: a mode card, global rule, or hard-to-disable skill changes the rules outside ordinary personal skill timing.
+- Use when: the entire mode is about a law, event, weather, battlefield rule, or deity-like presence.
+- Priority: very low for normal generals; medium for modes with explicit event infrastructure.
+- Guardrails: do not stack several highest-priority rules without conflict resolution. Leave a defined way for the rule to end, be removed, or be scoped. "Cannot be invalidated" is weaker and safer than "dominates every rule"; use it only when the design would otherwise be invalidated by common seal effects.
+
+### 跨武将效果 / 跨局效果 / 备战技
+
+- Definition: a skill persists across replacement generals, future games, reserve/selection areas, or pre-game setup.
+- Use when: 1V1, long campaign, multi-game match, or reserve-general strategy is the mode's real subject.
+- Priority: low outside mode play.
+- Guardrails: favor comeback or texture rewards over winner snowball. Define where the effect is recorded, when it expires, what happens if the next general or next game cannot use it, and whether it changes selection fairness. In identity games, a reserve-area buff easily becomes a hidden general-spirit bonus; keep it small and optional.
