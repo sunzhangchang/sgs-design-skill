@@ -45,6 +45,7 @@ Use this file as a provenance and intake map. It summarizes useful content alrea
 
 ## Local Or Offline Materials
 
+- `https://gltjk.com/sanguosha/rules/glossary/flow.html`, "流程 | 三国杀官方规则集 3.0": source for turn order and outside-turn scope, normal versus extra turns/phases, phase skipping and boundary timing, nested dying, maximum-HP-to-0 direct death, and the distinction between death and being killed. Distilled into `flow-glossary.md` as flow-sensitive design checks.
 - `prompt.md`: contained the five Bilibili links above and the instruction to absorb design philosophy, image content, and reflections into the skill.
 - `https://gltjk.com/sanguosha/rules/glossary/description.html`, "技能描述 | 三国杀官方规则集 3.0": source for technical labels, choice/mandatory wording, zero-inclusive arbitrary quantity, sequential operations, transfer, HP loss/recovery, user/source/channel, option legality, role/target references, and visibility. Distilled into `description-glossary.md`; its broad “并/然后” definitions are recorded but overridden by the user's explicit workspace convention.
 - `https://gltjk.com/sanguosha/rules/glossary/value.html`, "数值 | 三国杀官方规则集 3.0": source for card-point bounds, HP versus HP value, maximum HP, hand limit, damage base, distance/range, zero-valued X, modifiable “为” versus final “视为”, extrema/ties, initial player count, and floor division. Distilled into `value-glossary.md` as numeric design checks.
