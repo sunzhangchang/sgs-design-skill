@@ -18,6 +18,7 @@ These files distill the reviewed `gltjk.com` rules pages and identity-mode mater
 | --- | --- |
 | [card-glossary.md](card-glossary.md) | card category, delayed trick, equipment, card-as-cost, printed/current skills |
 | [gamecard-operations.md](gamecard-operations.md) | use/play/recast/place/discard/give/gain/lose, information operations, exchange, judgment, treat-as |
+| [herocard-operations.md](herocard-operations.md) | 横置/重置、连环状态、连环伤害继承、翻面 |
 | [zone-glossary.md](zone-glossary.md) | zone, ownership, visibility, processing/judgment area, draw/discard pile |
 | [value-glossary.md](value-glossary.md) | points, HP/max HP, hand limit, damage value, distance/range, X, extrema |
 | [description-glossary.md](description-glossary.md) | agency, sequential operations, transfer, attribution, options, targets, visibility |
