@@ -20,6 +20,16 @@ For fresh design or review, usually read `references/design-heuristics.md`. Read
 
 Default to an interactive design conversation unless the user explicitly asks for an immediate complete draft or already provides enough constraints.
 
+### Turn Contract
+
+At each interactive turn, do exactly one of the following:
+
+- ask 1-3 focused questions when a missing choice would materially change the design;
+- propose a small set of alternatives when the current choice is clear enough to compare;
+- produce the requested draft or review when the user has supplied enough information.
+
+Begin the response with a one-sentence state update, then show only the current working decision. Do not repeat the full skill group or all loaded references after every answer. If the user says “直接设计”“按你的判断继续” or gives a complete brief, skip the remaining questions and state the assumptions before drafting.
+
 Use small steps:
 
 1. Brief: identify character/source, mode, faction/health if known, role fantasy, complexity limit, required/forbidden mechanics, and whether the user wants official-like or experimental language. Ask only the 1-3 missing questions that would most change the design.
@@ -29,6 +39,18 @@ Use small steps:
 5. Draft: write the complete skill group, then explain main play line, internal relationship, risks, and adjustable words. If the user continues, revise from the user's chosen concern rather than restarting.
 
 Do not ask for every possible constraint at once. After each user answer, update the internal working card, state what became clear, and ask the next narrow question or present the next small decision. If the user says to proceed with assumptions, proceed and name the assumptions briefly.
+
+### Working Order
+
+Use this order unless the user explicitly requests another one:
+
+1. Character and role: determine what the character is good at and what limits or failure mode should remain.
+2. Play line: choose the primary action, resource, or timing window. Do not start from a linkage diagram.
+3. Skill jobs: assign each skill one main job. A skill may support another, cover a weakness, create tension, or remain independent; it does not need to trigger another skill.
+4. Rules language: write the shortest text that implements the chosen play line, then resolve timing, target, cost, and state availability.
+5. Pressure test: test team play, solo play, low-resource turns, and the strongest obvious abuse case.
+
+When the design is still undecided, present the skill skeleton rather than polished skill text. The skeleton should contain skill count, skill job, trigger, cost, payoff, and the one unresolved choice. This prevents attractive wording from hiding an unresolved design decision.
 
 ## Core Workflow
 
@@ -43,6 +65,8 @@ Design from the proper发端 first, then translate the character into concise ca
 7. Draft as many skills as the design actually needs, normally 2-4, with short text, explicit timing, and few moving parts. Prefer one main play line plus optional support, coverage, contrast, or drawback; do not force every skill into the same engine or pad the group to three skills.
 8. Check internal relationships without overfitting linkage. A skill may strongly link, weakly support, cover a role gap, create intentional tension, or stand mostly independent if it preserves character fit and table experience. Prefer natural linear/support/implicit links; avoid forced linkage and high-risk insertion links.
 9. Check table health: support should create decisions for allies and enemies, not only unconditional resources. Solo play should retain operation through target choice, card type choice, timing, or risk management.
+
+For internal linkage, classify every pair of skills as one of: strong link, soft support, division of labor, intentional tension, or independent coverage. Require a reason for strong link. If two skills only link because one skill was weakened to feed the other, remove the artificial link and repair each skill's own play value.
 10. Before presenting final skill text, scan every skill description for unresolved placeholders, especially empty card-name brackets. No output may contain `【】`, `【 】`, `【牌名】`, `【某牌】`, or similar blank slots.
 11. If the user provides new reference material and asks to improve the skill, read it, extract reusable design knowledge, and merge it into the closest reference file instead of leaving a raw dump. Keep fetched source text in a workspace-local check folder until the user confirms the absorption is correct; only then clean temporary source files, validate, and commit. If the material only restates existing guidance, say so and avoid no-op edits.
 
@@ -79,6 +103,8 @@ Do not solve power problems only by adding "每回合限一次" unless the user 
 Use "锁定技" only when the whole skill is compulsory. Do not create half-locked text where only one clause is mandatory; split the skill or rewrite the timing if needed. When a locked skill is appropriate, use it for unavoidable temperament, structural constraints, identity, or negative consequences. Before writing one, choose whether it expresses 性, 名, 象, 局, or 命.
 
 Respect wording conventions when the user defines them. In this workspace, treat "并" as requiring the previous part to execute before the latter part can execute; treat "然后" as allowing the later part if any previous part executed.
+
+For conditional chains, resolve the verbs in order. “并” is a gate: if the preceding action cannot execute, stop that branch. “然后” is a continuation: continue if the preceding clause executed at least partly. Never use “然后” merely to make two unrelated effects sound linked, and never use “并” when the latter effect should remain available after a failed cost or target choice.
 
 Avoid unrestricted duplication or creation of survival cards such as【桃】and【酒】unless the whole design is balanced around that pressure.
 
@@ -132,6 +158,17 @@ When reviewing a user draft, compare versions by:
 - complexity and标记 count;
 - whether fixes preserve the user's intended fantasy.
 
+During an interactive draft, use a smaller interim format:
+
+```text
+当前结论：已确定的人物锚点、定位和限制。
+当前方案：技能数量及每个技能的工作，不写尚未决定的牌名或数字。
+联动关系：强联动/软支持/分工/张力/独立覆盖，并说明理由。
+待确认：最多3个会改变方案的选择。
+```
+
+Only use the full `Output Shape` after the user asks for完整技能组、定稿、最终版或同等意思。对评审请求，先列问题和优先级，再给修改稿；不要把未经用户确认的多个版本混成一个最终答案。
+
 When the user asks for称号, 战功名, 技能名, 牌名, 标记名, 衍生牌名, or flavor naming, read `references/naming-titles.md`.
 
 ## Final Self-Check
@@ -145,6 +182,8 @@ Before finalizing a design or review, verify:
 - no unrestricted【桃】/【酒】creation, free extra turns, broad damage prevention, or oppressive target denial slipped in;
 - all marks, stored cards, virtual cards, special zones, and generated card names have visible handling;
 - no blank card brackets or placeholder names remain.
+
+Also check the conversation state: answer the user's latest requested stage, preserve confirmed choices, and do not reopen a settled question unless a later rule makes it inconsistent.
 
 ## Reference Routing
 
