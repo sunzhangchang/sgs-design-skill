@@ -21,6 +21,7 @@ For each proposed skill, identify only the rows it touches and open the linked f
 | Skill touches | Required reference |
 | --- | --- |
 | Card category, delayed trick, equipment slot/replacement/dependency, printed versus possessed skill | `card-glossary.md` |
+| Use/play/recast/place/discard/give/gain/lose/reveal/view/exchange/judge/treat-as operation | `gamecard-operations.md` |
 | Zone, ownership, visibility, processing/judgment area, draw/discard pile | `zone-glossary.md` |
 | Points, HP/max HP, hand limit, damage value, distance/range, X, extrema, division | `value-glossary.md` |
 | Optional/mandatory wording, sequential operations, transfer, attribution, options, actor/target | `description-glossary.md` |

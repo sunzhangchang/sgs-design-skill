@@ -46,7 +46,7 @@ Before writing final skills, build a small internal working card. Use it to keep
 主定位/副定位：
 主资源轴：
 时机线：
-规则命中：card / zone / value / description / flow / event / identity environment
+规则命中：card / gamecard operations / zone / value / description / flow / event / identity environment
 技能关系：
 主要风险：
 ```
