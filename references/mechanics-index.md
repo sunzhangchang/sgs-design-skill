@@ -31,6 +31,7 @@ Use mechanisms interactively:
 - Attribute damage, fake damage records, card tags, skill encapsulation, HP display, armor, shields, dying thresholds, gem-color logic: read [damage-hp-and-tags.md](mechanics/damage-hp-and-tags.md).
 - Package-scoped mechanism lookup by Chinese package name: search [package-index.md](mechanics/package-index.md) for the package or mechanism name first, then read the nearby section.
 - Named special cards, package special-card patterns, equipment and treasure vocabulary, low-priority special equipment: read [special-cards-and-equipment.md](mechanics/special-cards-and-equipment.md).
+- Standard plus 军争 identity-deck counts, color/suit ecology, equipment/delayed-trick density, opening hand, kill rewards, death discard, or deck exhaustion: read [identity-card-environment.md](identity-card-environment.md).
 
 ## Selection Rule
 
@@ -52,6 +53,7 @@ Use low-priority or mode-heavy mechanisms only when the user explicitly asks for
 - Virtual or generated cards need exact names or clear category wording; check survival cards and response timing.
 - Package names are not universal permission. 国战 material should be translated cautiously unless the user asks for a 国战 design.
 - If a mechanism changes timing, phase/turn flow, damage, dying, card use, or targets, also read the `Timing Map` section in `design-heuristics.md`.
+- If a skill names a specific ordinary card, relies on a card color/suit/category appearing, or repeatedly searches the normal deck, check `identity-card-environment.md` instead of assuming all names and categories are equally available.
 
 ## Future Updates
 

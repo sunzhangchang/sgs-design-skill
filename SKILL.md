@@ -16,6 +16,8 @@ Classify the user request before loading references:
 
 For fresh design or review, usually read `references/design-heuristics.md`. Read `references/mechanics-index.md` first, then only one focused mechanics file, when the user names a mechanism/package/special card, asks for one, or the draft already uses one. Read `references/naming-titles.md` only for naming tasks or when the design creates a named nonstandard object.
 
+Read `references/identity-card-environment.md` only when the design depends on identity-mode deck composition, exact card-name density, color/suit availability, equipment or delayed-trick density, opening hand, kill rewards, death-area discard, or deck exhaustion.
+
 ## Interactive Design Protocol
 
 Default to an interactive design conversation unless the user explicitly asks for an immediate complete draft or already provides enough constraints.
@@ -193,6 +195,7 @@ Choose the smallest reference set that answers the task:
 - Read `references/mechanics-index.md` for named mechanisms, special cards, special zones, extra decks, package-scoped vocabulary, or user-reviewed package material. Then read only the focused file it routes to under `references/mechanics/`. Prefer normal-priority mechanism families, treat low-priority special equipment as object-specific inspiration only, and use 国战 cards cautiously unless the user asks for a 国战 design.
 - Read `references/naming-titles.md` when the user asks for称号、战功名、技能名、标记名、衍生牌名, or similar flavor naming.
 - Read `references/source-digests.md` when the user asks where principles came from, provides new source material to absorb, or needs a map of absorbed online/offline references.
+- Read `references/identity-card-environment.md` when exact identity-mode game-card ecology or card-related mode flow affects feasibility or balance. Do not load it for ordinary designs that only use common card categories.
 
 When adding new material to the skill, update `references/source-digests.md` with a one-line provenance note and update only the reference section that would actually change future designs.
 
