@@ -46,6 +46,7 @@ Use this file as a provenance and intake map. It summarizes useful content alrea
 ## Local Or Offline Materials
 
 - `prompt.md`: contained the five Bilibili links above and the instruction to absorb design philosophy, image content, and reflections into the skill.
+- `https://gltjk.com/sanguosha/rules/glossary/zone.html`, "区域 | 三国杀官方规则集 3.0": source for draw/discard/processing/hand/equipment/judgment zones, “场上”, visibility, ownership versus area, hidden-hand random selection, draw-pile refill/exhaustion, and judgment-area identity. Distilled into `zone-glossary.md` as wording and legality checks.
 - `https://gltjk.com/sanguosha/rules/glossary/card.html`, "牌 | 三国杀官方规则集 3.0": source for foundational card categories, printed general-card skills versus currently owned skills, trick subtypes, equipment positions and replacement, equipment-as-card/cost dependency, default equipment target, and stacking with general-skill modifiers. Long examples were reduced to reusable design checks in `card-glossary.md`.
 - `https://gltjk.com/sanguosha/rules/info/role.html`, "身份局资料 | 三国杀官方规则集 3.0": source for the reviewed 162-card standard plus 军争 identity-deck composition. Only game-card counts and their design implications were absorbed; identity and victory-condition material were intentionally excluded.
 - `.codex/source-check/role-mode.md`: retained local identity-mode summary used only for card-related flow: four-card opening hand, death-area discard, rebel-kill draw-three reward, lord-kills-loyalist full discard, and insufficient draw/discard-pile cards ending in a draw.
@@ -70,7 +71,8 @@ Workflow for user-supplied online sources:
 
 - save fetched text or HTML in a workspace-local check folder, such as `.codex/source-check/`;
 - summarize what was absorbed and where it was written;
-- wait for the user to confirm the absorption before deleting the fetched source, running final cleanup, or committing;
-- after confirmation, remove the temporary source if requested or no longer needed, validate the skill, then make the local commit.
+- retain the fetched source in the ignored check folder for future rereading;
+- validate the skill and make a local commit after absorption unless the user explicitly asks to review first;
+- do not push or synchronize the plugin unless the user explicitly requests it.
 
 Do not store raw articles, full card tables, code paths, or code-level notes unless the user explicitly asks for a separate coding skill.

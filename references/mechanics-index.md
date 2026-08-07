@@ -33,6 +33,7 @@ Use mechanisms interactively:
 - Named special cards, package special-card patterns, equipment and treasure vocabulary, low-priority special equipment: read [special-cards-and-equipment.md](mechanics/special-cards-and-equipment.md).
 - Standard plus 军争 identity-deck counts, color/suit ecology, equipment/delayed-trick density, opening hand, kill rewards, death discard, or deck exhaustion: read [identity-card-environment.md](identity-card-environment.md).
 - Foundational card categories, printed general-card skills versus current skills, delayed/non-delayed trick distinction, equipment positions/replacement, equipment-as-card/cost dependency, or equipment stacking: read [card-glossary.md](card-glossary.md).
+- Foundational zones, “场上”, ownership versus area, hidden-hand choice, processing-area cards, judgment-area identity, or draw-pile refill/exhaustion: read [zone-glossary.md](zone-glossary.md).
 
 ## Selection Rule
 
@@ -56,6 +57,7 @@ Use low-priority or mode-heavy mechanisms only when the user explicitly asks for
 - If a mechanism changes timing, phase/turn flow, damage, dying, card use, or targets, also read the `Timing Map` section in `design-heuristics.md`.
 - If a skill names a specific ordinary card, relies on a card color/suit/category appearing, or repeatedly searches the normal deck, check `identity-card-environment.md` instead of assuming all names and categories are equally available.
 - If a skill manipulates equipment or card categories, check `card-glossary.md` before choosing movement/conversion wording; “使用”, “置入”, “移动”, “弃置”, and “当其他牌使用” are not equivalent.
+- If a skill says “其牌”“其区域内的牌”“场上的牌” or touches the processing/judgment area, check `zone-glossary.md`; zone membership does not automatically imply ownership or permission to choose/operate a card.
 
 ## Future Updates
 

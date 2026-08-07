@@ -20,6 +20,8 @@ Read `references/identity-card-environment.md` only when the design depends on i
 
 Read `references/card-glossary.md` when the design changes card categories, distinguishes delayed/non-delayed tricks, manipulates equipment positions or replacement, uses equipment as another card/cost, depends on equipment range/distance/skills/stacking, or distinguishes printed general-card skills from currently owned skills.
 
+Read `references/zone-glossary.md` when the design names “场上” or a card zone, operates another character's cards, depends on ownership/visibility, moves cards through the processing area, manipulates judgment-area cards, or performs a draw-pile operation with a variable X.
+
 ## Interactive Design Protocol
 
 Default to an interactive design conversation unless the user explicitly asks for an immediate complete draft or already provides enough constraints.
@@ -72,7 +74,7 @@ Design from the proper发端 first, then translate the character into concise ca
 
 For internal linkage, classify every pair of skills as one of: strong link, soft support, division of labor, intentional tension, or independent coverage. Require a reason for strong link. If two skills only link because one skill was weakened to feed the other, remove the artificial link and repair each skill's own play value.
 10. Before presenting final skill text, scan every skill description for unresolved placeholders, especially empty card-name brackets. No output may contain `【】`, `【 】`, `【牌名】`, `【某牌】`, or similar blank slots.
-11. If the user provides new reference material and asks to improve the skill, read it, extract reusable design knowledge, and merge it into the closest reference file instead of leaving a raw dump. Keep fetched source text in a workspace-local check folder until the user confirms the absorption is correct; only then clean temporary source files, validate, and commit. If the material only restates existing guidance, say so and avoid no-op edits.
+11. If the user provides new reference material and asks to improve the skill, read it, extract reusable design knowledge, and merge it into the closest reference file instead of leaving a raw dump. Keep fetched source text in a workspace-local ignored check folder for future rereading. Validate and make a local commit after absorption unless the user explicitly asks to review before commit. If the material only restates existing guidance, say so and avoid a no-op commit.
 
 ## Working Card
 
@@ -199,6 +201,7 @@ Choose the smallest reference set that answers the task:
 - Read `references/source-digests.md` when the user asks where principles came from, provides new source material to absorb, or needs a map of absorbed online/offline references.
 - Read `references/identity-card-environment.md` when exact identity-mode game-card ecology or card-related mode flow affects feasibility or balance. Do not load it for ordinary designs that only use common card categories.
 - Read `references/card-glossary.md` for foundational game-card classification and equipment dependency rules. Load it only when those distinctions affect the draft.
+- Read `references/zone-glossary.md` for foundational zone, visibility, ownership, processing-area, judgment-area, and pile-refill rules. Load it only for zone-sensitive designs.
 
 When adding new material to the skill, update `references/source-digests.md` with a one-line provenance note and update only the reference section that would actually change future designs.
 
