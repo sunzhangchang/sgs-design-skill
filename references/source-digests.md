@@ -46,6 +46,7 @@ Use this file as a provenance and intake map. It summarizes useful content alrea
 ## Local Or Offline Materials
 
 - `prompt.md`: contained the five Bilibili links above and the instruction to absorb design philosophy, image content, and reflections into the skill.
+- `https://gltjk.com/sanguosha/rules/glossary/card.html`, "牌 | 三国杀官方规则集 3.0": source for foundational card categories, printed general-card skills versus currently owned skills, trick subtypes, equipment positions and replacement, equipment-as-card/cost dependency, default equipment target, and stacking with general-skill modifiers. Long examples were reduced to reusable design checks in `card-glossary.md`.
 - `https://gltjk.com/sanguosha/rules/info/role.html`, "身份局资料 | 三国杀官方规则集 3.0": source for the reviewed 162-card standard plus 军争 identity-deck composition. Only game-card counts and their design implications were absorbed; identity and victory-condition material were intentionally excluded.
 - `.codex/source-check/role-mode.md`: retained local identity-mode summary used only for card-related flow: four-card opening hand, death-area discard, rebel-kill draw-three reward, lord-kills-loyalist full discard, and insufficient draw/discard-pile cards ending in a draw.
 - 三国杀各服军争新机制与特殊牌汇总 document: source for cross-server mechanism families such as 使命技、仁区、背水、整肃、谋弈、协力、护甲、施法、妄行、历战、议事、蓄谋 and extra-card/special-zone vocabulary. The active distilled content starts at `mechanics-index.md` and focused files under `mechanics/`.

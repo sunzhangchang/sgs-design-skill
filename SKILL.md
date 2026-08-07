@@ -18,6 +18,8 @@ For fresh design or review, usually read `references/design-heuristics.md`. Read
 
 Read `references/identity-card-environment.md` only when the design depends on identity-mode deck composition, exact card-name density, color/suit availability, equipment or delayed-trick density, opening hand, kill rewards, death-area discard, or deck exhaustion.
 
+Read `references/card-glossary.md` when the design changes card categories, distinguishes delayed/non-delayed tricks, manipulates equipment positions or replacement, uses equipment as another card/cost, depends on equipment range/distance/skills/stacking, or distinguishes printed general-card skills from currently owned skills.
+
 ## Interactive Design Protocol
 
 Default to an interactive design conversation unless the user explicitly asks for an immediate complete draft or already provides enough constraints.
@@ -116,7 +118,7 @@ If a draft mentions damage prevention, target changes, dying, phase ending, extr
 
 When a design creates, searches, materializes, or repeatedly references a nonstandard card-like object, name the object explicitly. This includes衍生牌、专属牌、虚拟牌、标记牌、额外牌堆牌, and named card tokens. If a named object is not needed, say so instead of leaving the naming result blank.
 
-Never leave a card-name position blank inside skill text. If the effect needs an existing named card, write the exact card name, such as【杀】、【决斗】、【无中生有】. If the exact card name is not necessary or not known, remove the brackets and write the category directly, such as "一张基本牌", "一张普通锦囊牌", "一张非延时锦囊牌", or "一张伤害类牌". If the design needs a new card name, choose a provisional name and define it in the衍生牌/对象名 line.
+Never leave a card-name position blank inside skill text. If the effect needs an existing named card, write the exact card name, such as【杀】、【决斗】、【无中生有】. If the exact card name is not necessary or not known, remove the brackets and write the category directly, such as "一张基本牌", "一张非延时类锦囊牌", or "一张伤害类牌". If the design needs a new card name, choose a provisional name and define it in the衍生牌/对象名 line.
 
 ## Clan And Family Skills
 
@@ -196,6 +198,7 @@ Choose the smallest reference set that answers the task:
 - Read `references/naming-titles.md` when the user asks for称号、战功名、技能名、标记名、衍生牌名, or similar flavor naming.
 - Read `references/source-digests.md` when the user asks where principles came from, provides new source material to absorb, or needs a map of absorbed online/offline references.
 - Read `references/identity-card-environment.md` when exact identity-mode game-card ecology or card-related mode flow affects feasibility or balance. Do not load it for ordinary designs that only use common card categories.
+- Read `references/card-glossary.md` for foundational game-card classification and equipment dependency rules. Load it only when those distinctions affect the draft.
 
 When adding new material to the skill, update `references/source-digests.md` with a one-line provenance note and update only the reference section that would actually change future designs.
 
