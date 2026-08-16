@@ -82,6 +82,8 @@ If a draft mentions damage prevention, target changes, dying, phase ending, extr
 
 When a design creates, searches, materializes, or repeatedly references a nonstandard card-like object, name the object explicitly. This includes衍生牌、专属牌、虚拟牌、标记牌、额外牌堆牌, and named card tokens. If a named object is not needed, say so instead of leaving the naming result blank.
 
+Keep virtual cards distinct from transformed cards. A "视为使用" virtual card has no material card and copies only the referenced card name unless the text explicitly supplies other information. In particular, "视为使用一张明置手牌" uses that face-up hand card only as a card-name reference: the virtual card does not inherit its suit, color, or points, and the original hand card is not consumed or moved by that virtual use. A "将B牌当A牌使用" operation instead uses B as material and follows the transformation rules for derived card information and movement.
+
 Never leave a card-name position blank inside skill text. If the effect needs an existing named card, write the exact card name, such as【杀】、【决斗】、【无中生有】. If the exact card name is not necessary or not known, remove the brackets and write the category directly, such as "一张基本牌", "一张非延时类锦囊牌", or "一张伤害类牌". If the design needs a new card name, choose a provisional name and define it in the衍生牌/对象名 line.
 
 ## Clan And Family Skills
@@ -150,6 +152,7 @@ Before finalizing a design or review, run `references/rules-priority.md` first. 
 - no skill is weakened only to feed another skill;
 - no unrestricted【桃】/【酒】creation, free extra turns, broad damage prevention, or oppressive target denial slipped in;
 - all marks, stored cards, virtual cards, special zones, and generated card names have visible handling;
+- virtual "视为使用" effects copy only the stated card name unless expressly extended, and are not confused with material-based "将牌当作牌使用" transformations;
 - no blank card brackets or placeholder names remain.
 - extra turns, extra phases, skipped procedures, outside-turn durations, nested dying, and maximum-HP-to-0 death follow `references/flow-glossary.md` when relevant.
 - event insertion, invalidity, ignoring, counteraction, target cancellation, and effect scope follow `references/event-glossary.md` when relevant.
