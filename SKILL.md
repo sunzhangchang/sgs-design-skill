@@ -132,7 +132,7 @@ During an interactive draft, use a smaller interim format:
 待确认：最多3个会改变方案的选择。
 ```
 
-Only use the full `Output Shape` after the user asks for完整技能组、定稿、最终版或同等意思。对评审请求，先列问题和优先级，再给修改稿；不要把未经用户确认的多个版本混成一个最终答案。
+Only use the full `Output Shape` after the user asks for完整技能组、定稿、最终版或同等意思。对评审请求，先列问题和优先级，再给修改稿；不要把未经用户确认的多个版本混成一个最终答案。对比赛稿件或评委评价，使用 `contest-evaluation.md` 的“设计链条拆解”和分层评价，不要只给总分或泛泛评价。
 
 When the user asks for称号, 战功名, 技能名, 牌名, 标记名, 衍生牌名, or flavor naming, read `references/naming-titles.md`.
 
@@ -149,6 +149,7 @@ Before finalizing a design or review, run `references/rules-priority.md` first. 
 - no blank card brackets or placeholder names remain.
 - extra turns, extra phases, skipped procedures, outside-turn durations, nested dying, and maximum-HP-to-0 death follow `references/flow-glossary.md` when relevant.
 - event insertion, invalidity, ignoring, counteraction, target cancellation, and effect scope follow `references/event-glossary.md` when relevant.
+- contest or sample reviews identify the first broken layer, cite the concrete prototype/design/evaluation evidence, and separate numeric score from the reasons for it.
 
 Also check the conversation state: answer the user's latest requested stage, preserve confirmed choices, and do not reopen a settled question unless a later rule makes it inconsistent.
 

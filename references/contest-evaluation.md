@@ -39,6 +39,70 @@ Evaluate in this order, after rules legality:
 7. **面杀可执行性**: Can players verify “本回合/本轮失去过的牌”, remembered categories, hidden information, repeated searches, and multi-step allocation without software? If not, define a visible zone/object or simplify the memory requirement.
 8. **规则与结算表达**: Check operation verbs, event timing, target legality, source/channel attribution, and clause executability using the foundational rule files.
 
+## General Decomposition Model
+
+For a new sample, trace the design through this chain instead of jumping from “像不像人物” to “强不强”：
+
+```text
+人物事实/命题
+  -> 人物锚点（能力、行为、关系、性格、失败点）
+  -> 设计隐喻（想让哪一种行动代表这个锚点）
+  -> 机制翻译（牌、区域、数值、状态、时机、资源）
+  -> 玩家主循环（玩家每次如何启动、维持、转化、收束）
+  -> 反馈与代价（收益方向、风险、失败方式、对手回应）
+  -> 结算实现（规则合法性、插入、记忆、面杀可验证性）
+```
+
+At every arrow, ask whether information was lost or distorted:
+
+- **人物事实 → 锚点**：是否从真实人物提炼出可操作的事实，而不是只取一个名词或典故？
+- **锚点 → 隐喻**：玩家做的动作是否真的表现该事实，还是只在技能名/设计思路中解释？
+- **隐喻 → 机制**：机制是否保留了隐喻的方向、节奏和代价？“建设”不应默认变成一次性放牌，“精算”不应默认变成无目标摸牌。
+- **机制 → 主循环**：玩家理性上是否愿意执行设计者希望的动作？对照“不发动技能”和“直接摸牌/直接用牌”的基线。
+- **主循环 → 反馈**：收益是否鼓励下一步正确动作？是否出现先设置再绕过、存牌后只为喂另一技、或负面效果迫使玩家放弃主玩法？
+- **反馈 → 结算**：实际触发次数、资源数量、动态比较、信息记忆和插入顺序能否被规则与面杀环境承载？
+
+If a link breaks, name the broken link. Do not vaguely label the whole design “不够贴合” or “强度有问题”.
+
+## Problem Attribution
+
+Classify a finding by its first broken layer; later symptoms may be consequences:
+
+| Finding | First layer to inspect | Typical symptom |
+| --- | --- | --- |
+| 史料只出现在称号或说明 | 人物事实 → 锚点 | 换一个人物也能使用同一技能 |
+| 技能名能解释，玩家动作不能解释 | 锚点 → 隐喻 | 主题“套皮”、典故没有转化为决策 |
+| 资源增长方向与故事相反 | 隐喻 → 机制 | “筑坝”越用越少、“传承”只消耗存量 |
+| 主技能可被直接摸牌或不开技能替代 | 机制 → 主循环 | 控制效果装饰化、最优解规避核心技能 |
+| 选项很多但没有不同价值 | 主循环内部 | 选项堆叠、BUFF机器、操作繁琐 |
+| 第二技只为第一技提供原料 | 技能关系 | 人工联动、单技能价值不足 |
+| 限制写了但实际收益仍爆炸 | 反馈与代价 | “每回合限三次”仍高产、启动资金越多越强 |
+| 实战有趣但面杀无法确认 | 结算实现 | 失去过的牌、动态最多、牌堆标记无法追踪 |
+| 结算顺序改变技能是否触发 | 结算实现 | 插入自循环、触发次数不确定、时机点错误 |
+
+## Layered Rating
+
+Use words before numbers. For each layer, assign one of these statuses and cite evidence:
+
+- **成立**：原型、玩法和结算互相支持，主要问题只需调参数。
+- **有条件成立**：核心想法成立，但依赖特定牌序、启动手牌、玩家自限或复杂记忆；需要明确阀门。
+- **局部成立**：某个技能或局部体验优秀，但主循环、技能关系或人物映射有明显断点。
+- **表面成立**：名称和说明能解释，实际玩家行为不按设计意图运行。
+- **不成立**：规则、最优解或人物命题直接否定了设计目标。
+
+Suggested review record:
+
+```text
+人物层：成立 / 有条件成立 / 局部成立 / 表面成立 / 不成立；证据：
+玩法层：成立 / 有条件成立 / 局部成立 / 表面成立 / 不成立；证据：
+反馈层：成立 / 有条件成立 / 局部成立 / 表面成立 / 不成立；证据：
+互动层：成立 / 有条件成立 / 局部成立 / 表面成立 / 不成立；证据：
+实现层：成立 / 有条件成立 / 局部成立 / 表面成立 / 不成立；证据：
+首要修复层：
+```
+
+Only convert these statuses to a numeric score after explaining the evidence. A high score in one layer cannot erase a failure in a more fundamental layer: illegal/ambiguous resolution first, then player loop, then character expression, then polish and novelty.
+
 ## Sample 1 Lessons
 
 The `康绚` submission required “4 HP, 1 skill”, so compression and one recognizable construction metaphor were part of the challenge. The samples show:
