@@ -64,6 +64,35 @@ At every arrow, ask whether information was lost or distorted:
 
 If a link breaks, name the broken link. Do not vaguely label the whole design “不够贴合” or “强度有问题”.
 
+## Use The Rubric To Generate Designs
+
+The same chain is a design-generation filter, not only a review tool. Before committing to a mechanism, generate at least one answer for each line:
+
+```text
+人物事实：我要表现人物的哪一件具体事？
+玩家动作：玩家每轮实际做什么才算表现了它？
+资源方向：这个动作让什么积累、转化或消耗？方向是否符合人物命运？
+正反馈：完成一次后，为什么玩家愿意继续做下一次？
+代价与反制：对手如何干预？玩家失败时承担什么具体后果？
+独立价值：每个技能脱离联动后是否仍有自己的工作？
+实现载体：牌、区域、状态或记忆能否在规则和面杀中承载？
+```
+
+Use the answers to choose mechanisms:
+
+- If the character anchor is **建设/积累/传承**, prefer a visible resource whose growth unlocks new choices, and add a meaningful maintenance or collapse pressure. Do not use a stock of cards that is only a one-time setup bank.
+- If the anchor is **计算/观测/判断**, give the player a consequential object to predict, compare, or trade. Do not add卜算 merely beside摸牌 when direct drawing is always better.
+- If the anchor is **预警/失败/反噬**, make the restriction or delayed cost part of the main decision. Do not attach a negative clause that makes the player avoid the skill entirely.
+- If the anchor is **传递/协作/辅助**, define what allies choose and what enemies can disrupt. Do not use a long list of universal benefits as a substitute for interaction.
+
+Before drafting a full skill, run three counterfactuals:
+
+1. **Remove the theme name**: can the player behavior still be described as the character's action?
+2. **Remove the strongest reward**: is the remaining loop still worth operating?
+3. **Remove the linked skill**: does each skill still have an independent job, or was one written only as fuel for the other?
+
+If any answer fails, return to the broken design layer and generate a different mechanism direction instead of polishing the wording.
+
 ## Problem Attribution
 
 Classify a finding by its first broken layer; later symptoms may be consequences:

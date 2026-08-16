@@ -25,8 +25,9 @@ Use this single order:
 1. **Rules gate**: read `references/rules-priority.md`; after the skeleton exists, read only the foundational glossaries hit by the draft and record them in the working card.
 2. **Brief**: identify character/source, mode, faction/health, role fantasy, complexity, required/forbidden mechanics, and official-like versus experimental language. Ask only what would change the design.
 3. **Anchors**: reduce the character to 1-3 usable facts, including positive capability and negative compulsion. Choose the design发端: 立意驱动、隐喻驱动、玩法驱动, or命题作文.
-4. **Play line**: choose the primary action, resource, or timing window. Do not start from a linkage diagram. If a special mechanism is named, route through `references/README.md` and `references/mechanics-index.md`. If reviewing a contest sample or judge feedback, also read `references/contest-evaluation.md`.
-5. **Skeleton**: choose the number of skills by function, not convention: usually 2-4, but never pad to three. Assign each skill a trigger, job, cost, payoff, and unresolved choice before polishing text.
+4. **Evaluation filter**: for contest-informed or high-scrutiny designs, use `references/contest-evaluation.md` to answer the player action, resource direction, positive feedback, counterplay, independent skill value, and tabletop carrier before selecting a mechanism.
+5. **Play line**: choose the primary action, resource, or timing window. Do not start from a linkage diagram. If a special mechanism is named, route through `references/README.md` and `references/mechanics-index.md`. If reviewing a contest sample or judge feedback, also read `references/contest-evaluation.md`.
+6. **Skeleton**: choose the number of skills by function, not convention: usually 2-4, but never pad to three. Assign each skill a trigger, job, cost, payoff, and unresolved choice before polishing text. Run the three counterfactuals from `contest-evaluation.md` before committing to the skeleton.
 6. **Rules language**: for each skill, resolve object, timing, agency/cost, resolution, attribution, target, and state availability; then check type label, condition, effect, and aftereffect/price. For timing-heavy text, place the trigger on a game, turn/phase, card-use/target/resolution, damage/dying/death, or skill-resolution line.
 7. **Linkage and pressure**: classify each skill pair as strong link, soft support, division of labor, intentional tension, or independent coverage. Strong linkage needs a reason; do not weaken one skill merely to feed another. Test team play, solo play, low-resource turns, and the strongest obvious abuse only after legality is sound.
 8. **Output**: use the interim format while decisions remain open; use the full format only for a complete draft/final version. For review, list findings and priorities before the revision.
@@ -150,6 +151,7 @@ Before finalizing a design or review, run `references/rules-priority.md` first. 
 - extra turns, extra phases, skipped procedures, outside-turn durations, nested dying, and maximum-HP-to-0 death follow `references/flow-glossary.md` when relevant.
 - event insertion, invalidity, ignoring, counteraction, target cancellation, and effect scope follow `references/event-glossary.md` when relevant.
 - contest or sample reviews identify the first broken layer, cite the concrete prototype/design/evaluation evidence, and separate numeric score from the reasons for it.
+- new designs may use `contest-evaluation.md` prospectively: every main mechanism should have a player action, resource direction, positive feedback, counterplay, independent skill value, and auditable carrier before wording is finalized.
 
 Also check the conversation state: answer the user's latest requested stage, preserve confirmed choices, and do not reopen a settled question unless a later rule makes it inconsistent.
 
