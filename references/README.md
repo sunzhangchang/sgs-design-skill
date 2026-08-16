@@ -29,6 +29,7 @@ These files distill the reviewed `gltjk.com` rules pages and identity-mode mater
 ## Design Files
 
 - [design-heuristics.md](design-heuristics.md): design origin, anchors, skill structure, timing map, linkage, clan design, locked skills, support, solo play, balance, and wording checks.
+- [contest-evaluation.md](contest-evaluation.md): contest-sample parsing, judge-feedback extraction, rubric, and practical evaluation patterns.
 - [naming-titles.md](naming-titles.md): titles, achievements, skill names, card names, mark names, and names for generated objects.
 
 ## Mechanism Files
