@@ -10,7 +10,8 @@ This directory is a progressive knowledge base. Do not read every file for an or
 4. A named mechanism, package, special card, or special zone: [mechanics-index.md](mechanics-index.md), then one routed file under `mechanics/`.
 5. A contest sample, judge feedback, or contest-style score: [contest-evaluation.md](contest-evaluation.md).
 6. A generated name or named nonstandard object: [naming-titles.md](naming-titles.md).
-7. A question about where a principle came from or how to absorb a source: [source-digests.md](source-digests.md).
+7. Absorbing or incorporating new material: [knowledge-intake.md](knowledge-intake.md), then only the destination it routes.
+8. A question about where an existing principle came from: [source-digests.md](source-digests.md).
 
 ## Foundational Rule Files
 
@@ -42,5 +43,6 @@ These files distill the reviewed `gltjk.com` rules pages and identity-mode mater
 
 ## Provenance And Intake
 
+- [knowledge-intake.md](knowledge-intake.md): the cautious end-to-end procedure for preservation, instruction/data separation, classification, authority conflicts, minimal merging, validation, and local commits.
 - [source-digests.md](source-digests.md): concise provenance and reusable lessons from online/offline material.
 - Raw source pages retained for checking are under the ignored workspace folder `.codex/source-check/`; they are not a substitute for the distilled references.
