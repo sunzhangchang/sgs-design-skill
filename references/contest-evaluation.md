@@ -1,6 +1,6 @@
-# Contest Design Evaluation
+# Contest Evidence And Evaluation
 
-Use this reference when reviewing contest submissions, absorbing judge feedback, or evaluating a draft at contest-level strictness. Contest samples are aesthetic and practical evidence, not rules authority; `rules-priority.md` and the foundational glossaries remain higher priority.
+Use this reference when reviewing contest submissions, absorbing judge feedback, resolving judge disagreement, or producing contest-style scoring. Use `design-evaluation-framework.md` for the canonical evaluation order and diagnosis; this file adds contest parsing, evidence handling, and sample-derived tests. Contest samples are aesthetic and practical evidence, not rules authority; `rules-priority.md` and the foundational glossaries remain higher priority.
 
 ## Read The Whole Sample
 
@@ -26,20 +26,16 @@ Separate each sample into:
 
 Do not average scores blindly. First identify what each judge is measuring: formal structure, actual play, or theme/table practicality. A disagreement is useful evidence about a risk boundary, not automatically an error by one judge.
 
-## Evaluation Rubric
+## Contest Extensions To The Core Rubric
 
-Evaluate in this order, after rules legality:
+Apply these contest-sensitive dimensions after the core framework's rules gate. They elaborate its layers rather than creating a second competing evaluation order:
 
-1. **命题与人物映射**: Does the skill use the biography's actual deed, temperament, relationship, or failure mode? Is the title and design explanation consistent with the mechanism? A clever template without a character connection is a serious deduction.
-2. **玩家欲望与主循环**: What does the player want to do each turn? Does the skill create a reason to build, maintain, spend, or risk its resource? If the metaphor is construction or accumulation, continued construction should be attractive rather than rewarding only one-time setup or immediate liquidation.
-3. **反馈方向与资源趋势**: Do costs and rewards move in the same narrative direction? Construction, equipment, marks, cards, or stored objects should not accidentally shrink when the fiction says the structure is growing unless the reversal is deliberate.
-4. **最优解与反直觉玩法**: Find the strongest low-effort line first. Check free repeated use, defensive-card abuse, high-value trick cards, setup-before-draw bypasses, avoiding the skill entirely, or forcing opponents/allies to choose a negative option. If the rational player should ignore the central action, the fantasy has failed.
-5. **结构与操作负担**: Count distinct choices, branches, state changes, searches, and remembered objects. A compact skill with a few meaningful options is preferable to a long list of loosely related options. More than four parallel options needs a strong structural reason; five or more is presumptively a consolidation candidate.
-6. **互动与角色定位**: A support/buff skill should create decisions for its user, allies, and enemies. Check meaningful enemy response, unconditional team resources, and whether solo play retains target, timing, card, or risk choices.
-7. **面杀可执行性**: Can players verify “本回合/本轮失去过的牌”, remembered categories, hidden information, repeated searches, and multi-step allocation without software? If not, define a visible zone/object or simplify the memory requirement.
-8. **规则与结算表达**: Check operation verbs, event timing, target legality, source/channel attribution, and clause executability using the foundational rule files.
+1. **命题完成度**: check fixed HP, skill count, required mechanism, designated person, mode, and any round-specific constraint before judging elegance.
+2. **证据链完整度**: connect biography, submitted text, author explanation, and each judge's observation. Do not infer a general lesson from a score without its stated reason.
+3. **同题比较与新意**: compare how submissions translate the same anchor into player action. Novelty is useful only after legality, play, and character fit; a familiar template is not automatically bad, and a new mechanism is not automatically good.
+4. **评委分歧**: identify whether judges disagree about rules, table experience, theme, or taste. Test each reading and report the boundary instead of averaging it away.
 
-## General Decomposition Model
+## Contest Evidence Decomposition
 
 For a new sample, trace the design through this chain instead of jumping from “像不像人物” to “强不强”：
 
@@ -64,73 +60,17 @@ At every arrow, ask whether information was lost or distorted:
 
 If a link breaks, name the broken link. Do not vaguely label the whole design “不够贴合” or “强度有问题”.
 
-## Use The Rubric To Generate Designs
+## Feed Contest Evidence Back Into Design
 
-The same chain is a design-generation filter, not only a review tool. Before committing to a mechanism, generate at least one answer for each line:
-
-```text
-人物事实：我要表现人物的哪一件具体事？
-玩家动作：玩家每轮实际做什么才算表现了它？
-资源方向：这个动作让什么积累、转化或消耗？方向是否符合人物命运？
-正反馈：完成一次后，为什么玩家愿意继续做下一次？
-代价与反制：对手如何干预？玩家失败时承担什么具体后果？
-独立价值：每个技能脱离联动后是否仍有自己的工作？
-实现载体：牌、区域、状态或记忆能否在规则和面杀中承载？
-```
-
-Use the answers to choose mechanisms:
-
-- If the character anchor is **建设/积累/传承**, prefer a visible resource whose growth unlocks new choices, and add a meaningful maintenance or collapse pressure. Do not use a stock of cards that is only a one-time setup bank.
-- If the anchor is **计算/观测/判断**, give the player a consequential object to predict, compare, or trade. Do not add卜算 merely beside摸牌 when direct drawing is always better.
-- If the anchor is **预警/失败/反噬**, make the restriction or delayed cost part of the main decision. Do not attach a negative clause that makes the player avoid the skill entirely.
-- If the anchor is **传递/协作/辅助**, define what allies choose and what enemies can disrupt. Do not use a long list of universal benefits as a substitute for interaction.
-
-Before drafting a full skill, run three counterfactuals:
-
-1. **Remove the theme name**: can the player behavior still be described as the character's action?
-2. **Remove the strongest reward**: is the remaining loop still worth operating?
-3. **Remove the linked skill**: does each skill still have an independent job, or was one written only as fuel for the other?
-
-If any answer fails, return to the broken design layer and generate a different mechanism direction instead of polishing the wording.
+Feed a contest lesson back into design only after completing the evidence chain below. Put the reusable conclusion into the matching field or stress test in `design-evaluation-framework.md`; do not copy the winning mechanism, score, HP, or skill count. A lesson is reusable when the judges' concrete observation explains why the submitted player action, resource direction, interaction, or implementation succeeded or failed.
 
 ## Problem Attribution
 
-Classify a finding by its first broken layer; later symptoms may be consequences:
-
-| Finding | First layer to inspect | Typical symptom |
-| --- | --- | --- |
-| 史料只出现在称号或说明 | 人物事实 → 锚点 | 换一个人物也能使用同一技能 |
-| 技能名能解释，玩家动作不能解释 | 锚点 → 隐喻 | 主题“套皮”、典故没有转化为决策 |
-| 资源增长方向与故事相反 | 隐喻 → 机制 | “筑坝”越用越少、“传承”只消耗存量 |
-| 主技能可被直接摸牌或不开技能替代 | 机制 → 主循环 | 控制效果装饰化、最优解规避核心技能 |
-| 选项很多但没有不同价值 | 主循环内部 | 选项堆叠、BUFF机器、操作繁琐 |
-| 第二技只为第一技提供原料 | 技能关系 | 人工联动、单技能价值不足 |
-| 限制写了但实际收益仍爆炸 | 反馈与代价 | “每回合限三次”仍高产、启动资金越多越强 |
-| 实战有趣但面杀无法确认 | 结算实现 | 失去过的牌、动态最多、牌堆标记无法追踪 |
-| 结算顺序改变技能是否触发 | 结算实现 | 插入自循环、触发次数不确定、时机点错误 |
+Use the first-broken-layer table in `design-evaluation-framework.md`. For contest work, preserve which part of the evidence chain supports that attribution and distinguish the judge's direct observation from the reusable conclusion inferred from it.
 
 ## Layered Rating
 
-Use words before numbers. For each layer, assign one of these statuses and cite evidence:
-
-- **成立**：原型、玩法和结算互相支持，主要问题只需调参数。
-- **有条件成立**：核心想法成立，但依赖特定牌序、启动手牌、玩家自限或复杂记忆；需要明确阀门。
-- **局部成立**：某个技能或局部体验优秀，但主循环、技能关系或人物映射有明显断点。
-- **表面成立**：名称和说明能解释，实际玩家行为不按设计意图运行。
-- **不成立**：规则、最优解或人物命题直接否定了设计目标。
-
-Suggested review record:
-
-```text
-人物层：成立 / 有条件成立 / 局部成立 / 表面成立 / 不成立；证据：
-玩法层：成立 / 有条件成立 / 局部成立 / 表面成立 / 不成立；证据：
-反馈层：成立 / 有条件成立 / 局部成立 / 表面成立 / 不成立；证据：
-互动层：成立 / 有条件成立 / 局部成立 / 表面成立 / 不成立；证据：
-实现层：成立 / 有条件成立 / 局部成立 / 表面成立 / 不成立；证据：
-首要修复层：
-```
-
-Only convert these statuses to a numeric score after explaining the evidence. A high score in one layer cannot erase a failure in a more fundamental layer: illegal/ambiguous resolution first, then player loop, then character expression, then polish and novelty.
+Use the evidence-first status language from `design-evaluation-framework.md`. If the contest requires numbers, explain the layer evidence first, preserve each judge's original score separately, and only then state a derived score or range. A high theme or novelty score cannot erase illegal resolution or a failed main loop.
 
 ## Sample 1 Lessons
 

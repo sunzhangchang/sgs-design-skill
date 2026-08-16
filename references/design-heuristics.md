@@ -1,6 +1,6 @@
 # Design Heuristics For 三国杀 Generals
 
-These heuristics are applied only after the rules-first gate in `rules-priority.md`. Character fit, linkage, balance, and novelty choose among rules-legal implementations; they do not override the foundational card, zone, value, wording, flow, event, or identity-environment rules.
+These heuristics are an option library used after the rules-first gate in `rules-priority.md` and within the current stage of `design-evaluation-framework.md`. Character fit, linkage, balance, and novelty choose among rules-legal implementations; they do not override the foundational card, zone, value, wording, flow, event, or identity-environment rules. Use the unified framework, not this file, to decide evaluation order and the first layer to repair.
 
 These notes condense recurring design ideas from the referenced Bilibili design essays. Use them as heuristics, not as canon text to quote at length.
 
@@ -36,7 +36,7 @@ Sources used for this reference:
 
 ## How To Use This Reference
 
-For fresh design, do not read this as an essay. Use this order across the conversation:
+For fresh design, do not read this as an essay. After the unified framework identifies the current stage, route to only the needed sections:
 
 1. `Design Origin`: decide why this general exists.
 2. `Anchors`: reduce the character to 1-3 usable anchors.
@@ -48,7 +48,7 @@ For fresh design, do not read this as an essay. Use this order across the conver
 
 If the user is still answering early questions, read only the sections needed for the current step. For example, do not read `Balancing Valves` before the rough mechanical direction exists, and do not read naming guidance unless a name or generated object is needed.
 
-For review/rebalance, use this order instead:
+For review/rebalance, first diagnose the failed layer with `design-evaluation-framework.md`, then use this file only for candidate repairs:
 
 1. Identify the user's stated problem and the current main game plan.
 2. Check `Skill Structure` and `Timing Map` first if the problem involves insertion, damage, HP changes, target changes, or phase/turn flow.

@@ -14,45 +14,28 @@ Classify the user request before loading references:
 - Naming: generate or revise称号、战功名、技能名、牌名、标记名, or衍生牌/对象名.
 - Reference intake: absorb new articles, documents, or package material into the skill itself.
 
-For every fresh design or review, read `references/rules-priority.md` first, then use `references/README.md` to route only the focused files needed by the current skeleton. The foundational rules distilled from the reviewed `gltjk.com` pages and identity-mode material outrank design heuristics, mechanism essays, package vocabulary, and flavor.
+For every fresh design or review, read `references/rules-priority.md` first and `references/design-evaluation-framework.md` second. Use their shared working sheet so generation and evaluation apply the same criteria, then use `references/README.md` to route only the focused files needed by the current stage. The foundational rules distilled from the reviewed `gltjk.com` pages and identity-mode material outrank the framework, design heuristics, mechanism essays, package vocabulary, and flavor.
 
 ## Workflow
 
 Default to an interactive design conversation unless the user explicitly asks for an immediate complete draft or already provides enough constraints. At each turn, give one sentence of state update, then do exactly one of: ask 1-3 focused questions, present a small set of alternatives, or produce the requested draft/review. Do not repeat the full skill group or all loaded references after every answer. If the user says “直接设计”“按你的判断继续” or gives a complete brief, state assumptions and proceed.
 
-Use this single order:
+Use the closed loop from `design-evaluation-framework.md`:
 
-1. **Rules gate**: read `references/rules-priority.md`; after the skeleton exists, read only the foundational glossaries hit by the draft and record them in the working card.
-2. **Brief**: identify character/source, mode, faction/health, role fantasy, complexity, required/forbidden mechanics, and official-like versus experimental language. Ask only what would change the design.
-3. **Anchors**: reduce the character to 1-3 usable facts, including positive capability and negative compulsion. Choose the design发端: 立意驱动、隐喻驱动、玩法驱动, or命题作文.
-4. **Evaluation filter**: for contest-informed or high-scrutiny designs, use `references/contest-evaluation.md` to answer the player action, resource direction, positive feedback, counterplay, independent skill value, and tabletop carrier before selecting a mechanism.
-5. **Play line**: choose the primary action, resource, or timing window. Do not start from a linkage diagram. If a special mechanism is named, route through `references/README.md` and `references/mechanics-index.md`. If reviewing a contest sample or judge feedback, also read `references/contest-evaluation.md`.
-6. **Skeleton**: choose the number of skills by function, not convention: usually 2-4, but never pad to three. Assign each skill a trigger, job, cost, payoff, and unresolved choice before polishing text. Run the three counterfactuals from `contest-evaluation.md` before committing to the skeleton.
-6. **Rules language**: for each skill, resolve object, timing, agency/cost, resolution, attribution, target, and state availability; then check type label, condition, effect, and aftereffect/price. For timing-heavy text, place the trigger on a game, turn/phase, card-use/target/resolution, damage/dying/death, or skill-resolution line. Separate the frequency scope from the activation timing: "出牌阶段限一次" normally means once at an idle timing of that Play phase, while "每回合限一次" supplies only a per-turn frequency cap and does not itself require an idle timing.
-7. **Linkage and pressure**: classify each skill pair as strong link, soft support, division of labor, intentional tension, or independent coverage. Strong linkage needs a reason; do not weaken one skill merely to feed another. Test team play, solo play, low-resource turns, and the strongest obvious abuse only after legality is sound.
-8. **Output**: use the interim format while decisions remain open; use the full format only for a complete draft/final version. For review, list findings and priorities before the revision.
-9. **Intake**: when absorbing new material, preserve the source in `.codex/source-check/`, merge reusable knowledge into the closest reference, validate, and make a local commit unless the user asks to review first.
+1. **Rules and brief gate**: load priority rules; identify only constraints that change the design.
+2. **Character thesis**: reduce the source to 1-3 usable facts and one intended player experience.
+3. **Play thesis**: choose the primary player action, resource direction, timing line, role, and opponent response before choosing linkage.
+4. **Skeleton**: choose 2-4 skills by function; give each an independent job and an intentional relationship.
+5. **Rules construction**: load only the foundational glossaries hit by the skeleton; resolve object, activation timing, frequency scope, agency/cost, sequence, attribution, target, duration, and cleanup.
+6. **Evaluation and revision**: run the unified evaluation order and stress tests; repair the first broken layer rather than adding compensatory text downstream.
+7. **Output**: use the interim format while decisions remain open and the full format only for a requested complete draft. Reviews lead with findings, evidence, and repair priority.
+8. **Intake**: when absorbing new material, preserve the source in `.codex/source-check/`, merge reusable knowledge into the closest reference, validate, and make a local commit unless the user asks to review first.
 
 Before final output, scan for blank card-name placeholders and run the final self-check below. No output may contain `【】`, `【 】`, `【牌名】`, `【某牌】`, or similar blank slots.
 
 ## Working Card
 
-Before writing final skills, build a small internal working card. Use it to keep references actionable instead of reciting them:
-
-```text
-任务类型：
-约束：
-人物锚点：
-发端：
-主定位/副定位：
-主资源轴：
-时机线：
-规则命中：card / gamecard operations / herocard operations / zone / value / description / flow / event / identity environment
-技能关系：
-主要风险：
-```
-
-For simple requests, this card can stay implicit. For reviews, expose the relevant parts as the design explanation.
+Use the single `Unified Working Sheet` in `references/design-evaluation-framework.md`; do not maintain a second checklist or silently change its fields. Keep it implicit for simple requests. During interactive design, update only fields reached by the current stage; during review, expose the fields that support the diagnosis and proposed repair.
 
 ## Design Rules
 
@@ -137,13 +120,13 @@ During an interactive draft, use a smaller interim format:
 待确认：最多3个会改变方案的选择。
 ```
 
-Only use the full `Output Shape` after the user asks for完整技能组、定稿、最终版或同等意思。对评审请求，先列问题和优先级，再给修改稿；不要把未经用户确认的多个版本混成一个最终答案。对比赛稿件或评委评价，使用 `contest-evaluation.md` 的“设计链条拆解”和分层评价，不要只给总分或泛泛评价。
+Only use the full `Output Shape` after the user asks for完整技能组、定稿、最终版或同等意思。对评审请求，先列问题和优先级，再给修改稿；不要把未经用户确认的多个版本混成一个最终答案。对比赛稿件或评委评价，使用 `contest-evaluation.md` 的比赛证据拆解和分层评价，不要只给总分或泛泛评价。
 
 When the user asks for称号, 战功名, 技能名, 牌名, 标记名, 衍生牌名, or flavor naming, read `references/naming-titles.md`.
 
 ## Final Self-Check
 
-Before finalizing a design or review, run `references/rules-priority.md` first. Rules legality and the user's explicit conventions outrank character metaphor, linkage, balance targets, mechanism novelty, and official-looking prose. Then verify:
+Before finalizing a design or review, run `references/rules-priority.md` and the evaluation order in `references/design-evaluation-framework.md`. Rules legality and the user's explicit conventions outrank character metaphor, linkage, balance targets, mechanism novelty, and official-looking prose. Then verify:
 
 - each skill has a clear timing, condition, cost/action, and payoff, unless it is a pure static rule;
 - the chosen timing matches whether the event is prevented, modified, confirmed, or already finished;
@@ -156,14 +139,14 @@ Before finalizing a design or review, run `references/rules-priority.md` first. 
 - no blank card brackets or placeholder names remain.
 - extra turns, extra phases, skipped procedures, outside-turn durations, nested dying, and maximum-HP-to-0 death follow `references/flow-glossary.md` when relevant.
 - event insertion, invalidity, ignoring, counteraction, target cancellation, and effect scope follow `references/event-glossary.md` when relevant.
-- contest or sample reviews identify the first broken layer, cite the concrete prototype/design/evaluation evidence, and separate numeric score from the reasons for it.
-- new designs may use `contest-evaluation.md` prospectively: every main mechanism should have a player action, resource direction, positive feedback, counterplay, independent skill value, and auditable carrier before wording is finalized.
+- every main mechanism has a player action, resource direction, repeat incentive, counterplay, independent job, and auditable carrier; failures are attributed to the first broken layer.
+- contest or sample reviews additionally cite the concrete prototype/design/explanation/judge evidence from `contest-evaluation.md` and separate numeric score from the reasons for it.
 
 Also check the conversation state: answer the user's latest requested stage, preserve confirmed choices, and do not reopen a settled question unless a later rule makes it inconsistent.
 
 ## Reference Routing
 
-Use `references/README.md` as the single directory map. It routes the rules-first gate, focused foundational glossaries, design heuristics, mechanism slices, naming guidance, and source provenance without requiring the full knowledge base to be loaded at once.
+Use `references/README.md` as the single directory map. It routes the rules-first gate, unified design/evaluation framework, stage-specific heuristics, focused foundational glossaries, contest evidence, mechanism slices, naming guidance, and source provenance without requiring the full knowledge base to be loaded at once.
 
 When adding new material to the skill, update `references/source-digests.md` with a one-line provenance note and update only the reference section that would actually change future designs.
 

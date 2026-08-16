@@ -14,6 +14,8 @@ Apply knowledge in this order:
 
 A lower layer may choose among legal implementations but may not redefine a higher layer. If a character metaphor or desired combo requires an illegal or ambiguous event, timing, zone, value, target, or card operation, repair the implementation rather than weakening the rule interpretation.
 
+After this legality gate, use `design-evaluation-framework.md` as the single process order for both generation and review. That framework decides which design layer to inspect or repair; it does not override the authority order above.
+
 ## Mandatory Rule Scan
 
 For each proposed skill, identify only the rows it touches and open the linked focused reference before final wording:

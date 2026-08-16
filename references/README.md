@@ -5,10 +5,12 @@ This directory is a progressive knowledge base. Do not read every file for an or
 ## Read Order
 
 1. Every fresh design or review: [rules-priority.md](rules-priority.md).
-2. Ordinary character interpretation and balance: the needed sections of [design-heuristics.md](design-heuristics.md).
-3. A named mechanism, package, special card, or special zone: [mechanics-index.md](mechanics-index.md), then one routed file under `mechanics/`.
-4. A generated name or named nonstandard object: [naming-titles.md](naming-titles.md).
-5. A question about where a principle came from or how to absorb a source: [source-digests.md](source-digests.md).
+2. Every fresh design or review: [design-evaluation-framework.md](design-evaluation-framework.md), the shared design/review loop.
+3. Only the current design stage: the needed sections of [design-heuristics.md](design-heuristics.md).
+4. A named mechanism, package, special card, or special zone: [mechanics-index.md](mechanics-index.md), then one routed file under `mechanics/`.
+5. A contest sample, judge feedback, or contest-style score: [contest-evaluation.md](contest-evaluation.md).
+6. A generated name or named nonstandard object: [naming-titles.md](naming-titles.md).
+7. A question about where a principle came from or how to absorb a source: [source-digests.md](source-digests.md).
 
 ## Foundational Rule Files
 
@@ -28,8 +30,9 @@ These files distill the reviewed `gltjk.com` rules pages and identity-mode mater
 
 ## Design Files
 
-- [design-heuristics.md](design-heuristics.md): design origin, anchors, skill structure, timing map, linkage, clan design, locked skills, support, solo play, balance, and wording checks.
-- [contest-evaluation.md](contest-evaluation.md): contest-sample parsing, judge-feedback extraction, rubric, and practical evaluation patterns.
+- [design-evaluation-framework.md](design-evaluation-framework.md): the canonical closed loop, unified working sheet, evaluation order, stress tests, diagnosis, and repair language for both generation and review.
+- [design-heuristics.md](design-heuristics.md): a stage-routed option library for design origin, anchors, skill structure, timing, linkage, clan design, locked skills, support, balance, and wording.
+- [contest-evaluation.md](contest-evaluation.md): contest-only extensions, sample parsing, judge-feedback evidence, disagreements, and practical contest cases. It supplements rather than replaces the unified framework.
 - [naming-titles.md](naming-titles.md): titles, achievements, skill names, card names, mark names, and names for generated objects.
 
 ## Mechanism Files
