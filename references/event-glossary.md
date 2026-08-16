@@ -8,7 +8,23 @@ Use this reference when a skill responds to a card, skill, damage, target, equip
 - A **response** is an event that affects another event. A response may be inserted while the original event is resolving.
 - **Resolution** is the process of handling one event. When an inserted event occurs, the current resolution pauses and the inserted event resolves first.
 - A **timing** is an instant produced by an event. Put the trigger on the event line before deciding whether the skill acts before, during, or after the relevant operation.
+- An **idle timing** is a point where no card, skill, response, or inserted event currently occupies the flow and an ordinary active action may be initiated. A phase can remain active while its idle timing is temporarily unavailable because another event or response window is resolving.
 - An **effect** is the concrete change produced by a card or skill text. Do not use “effect” as a substitute for the event that contains it.
+
+## Idle Timing Versus Frequency
+
+Keep activation timing separate from usage frequency:
+
+- "出牌阶段限一次" normally carries the ordinary active-use meaning of once at an idle timing of the owner's Play phase, although the concrete card or skill rule still controls exceptional cases.
+- "每回合限一次" and "每轮限一次" only cap frequency within a turn or round. They do not themselves say that the skill uses an idle timing; read the trigger, response permission, or active-use text to find the actual timing.
+- An inserted resolution or 【无懈可击】 response window does not become idle merely because it occurs during the owner's Play phase. A skill restricted to ordinary Play-phase idle use cannot be inserted there without a separate legal timing.
+
+For every limited-use skill, identify both fields:
+
+```text
+频次范围：阶段 / 回合 / 轮 / 每名角色 / 其他
+发动时机：空闲时间点 / 明示事件时机 / 响应窗口 / 静态持续
+```
 
 ## Four Different Interruptions
 

@@ -122,6 +122,16 @@ Phase timing shorthand:
 - 弃牌阶段开始时 can change hand limit or spend cards that are likely to be discarded; 弃牌阶段结束时 should care about cards actually discarded.
 - 结束阶段 and 回合结束时 are not interchangeable when cleanup matters. If the effect depends on "until end of turn" states, extra turns, or other players' end-turn triggers, explain the intended ordering or choose an earlier, cleaner timing.
 
+Idle timing and frequency shorthand:
+
+- An idle timing is a point at which no card, skill, response, or other inserted event is currently occupying the flow and the current character is allowed to initiate an ordinary active action. Remaining chronologically inside a phase does not prove that the current point is idle.
+- "出牌阶段限一次" normally abbreviates "出牌阶段的空闲时间点限一次": it combines a Play-phase scope, the ordinary idle-timing gate for active use, and a once-per-phase cap. Check the concrete skill and card rules before applying the shorthand mechanically.
+- If a card or skill event is resolving, or the game is waiting in a specific response window, that point is not converted into an idle timing merely because the owner's Play phase has not ended. A Play-phase active conversion skill therefore cannot enter that window unless its own text or the relevant response rule supplies a legal activation timing.
+- "每回合限一次" and "每轮限一次" state frequency scopes, not activation timings. Do not append an idle-timing restriction to them. Determine the legal timing separately from an explicit trigger such as "当……时/后", a response rule, an active-use rule, or the rest of the skill text.
+- When reviewing a limit phrase, record two fields separately: `频次范围` (phase / turn / round / each character) and `发动时机` (idle / named event / response / static). Never use the first field to invent the second.
+
+Example check: during Xun You's own Play phase, another character's ordinary trick enters its pre-effect 【无懈可击】 response window. The phase is still the Play phase, but the current point is occupied by that card event and its response procedure. The ordinary "出牌阶段限一次" timing of 奇策 does not open there, so the mere fact that the phase continues does not let Xun You activate 奇策 to convert all hand cards into 【无懈可击】.
+
 Card-use timing shorthand:
 
 - 使用牌时 follows the decision to use a card and its ordinary target choice; use it for effects tied to the card itself, not for most target changes.

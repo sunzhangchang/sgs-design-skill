@@ -28,7 +28,7 @@ Use this single order:
 4. **Evaluation filter**: for contest-informed or high-scrutiny designs, use `references/contest-evaluation.md` to answer the player action, resource direction, positive feedback, counterplay, independent skill value, and tabletop carrier before selecting a mechanism.
 5. **Play line**: choose the primary action, resource, or timing window. Do not start from a linkage diagram. If a special mechanism is named, route through `references/README.md` and `references/mechanics-index.md`. If reviewing a contest sample or judge feedback, also read `references/contest-evaluation.md`.
 6. **Skeleton**: choose the number of skills by function, not convention: usually 2-4, but never pad to three. Assign each skill a trigger, job, cost, payoff, and unresolved choice before polishing text. Run the three counterfactuals from `contest-evaluation.md` before committing to the skeleton.
-6. **Rules language**: for each skill, resolve object, timing, agency/cost, resolution, attribution, target, and state availability; then check type label, condition, effect, and aftereffect/price. For timing-heavy text, place the trigger on a game, turn/phase, card-use/target/resolution, damage/dying/death, or skill-resolution line.
+6. **Rules language**: for each skill, resolve object, timing, agency/cost, resolution, attribution, target, and state availability; then check type label, condition, effect, and aftereffect/price. For timing-heavy text, place the trigger on a game, turn/phase, card-use/target/resolution, damage/dying/death, or skill-resolution line. Separate the frequency scope from the activation timing: "出牌阶段限一次" normally means once at an idle timing of that Play phase, while "每回合限一次" supplies only a per-turn frequency cap and does not itself require an idle timing.
 7. **Linkage and pressure**: classify each skill pair as strong link, soft support, division of labor, intentional tension, or independent coverage. Strong linkage needs a reason; do not weaken one skill merely to feed another. Test team play, solo play, low-resource turns, and the strongest obvious abuse only after legality is sound.
 8. **Output**: use the interim format while decisions remain open; use the full format only for a complete draft/final version. For review, list findings and priorities before the revision.
 9. **Intake**: when absorbing new material, preserve the source in `.codex/source-check/`, merge reusable knowledge into the closest reference, validate, and make a local commit unless the user asks to review first.
@@ -65,6 +65,8 @@ Assume a design should be playable in face-to-face tabletop games unless the use
 Do not design from a linkage diagram first unless the user explicitly asks for a combo engine. Start with character anchors and role shape; let synergy emerge only where it makes the skills more natural. A clean independent defensive skill, drawback, or coverage skill is better than an artificial trigger chain.
 
 Do not solve power problems only by adding "每回合限一次" unless the user accepts that route. Prefer changing costs, targets, card classes, conversion rules, or locked drawbacks.
+
+Do not infer activation timing from a frequency clause alone. Treat "出牌阶段限一次" as shorthand that normally opens an active use at an idle timing of the owner's Play phase, subject to the concrete card or skill rules. An inserted card resolution or response window may still lie chronologically inside that Play phase, but it is not therefore an idle timing. Treat "每回合限一次" and "每轮限一次" as frequency scopes only: their actual activation timing must come from the trigger, response rule, active-use rule, or other text. For example, an ordinary "出牌阶段限一次" conversion skill cannot be activated during an inserted 【无懈可击】 response window merely because the owner's Play phase has not ended.
 
 Use "锁定技" only when the whole skill is compulsory. Do not create half-locked text where only one clause is mandatory; split the skill or rewrite the timing if needed. When a locked skill is appropriate, use it for unavoidable temperament, structural constraints, identity, or negative consequences. Before writing one, choose whether it expresses 性, 名, 象, 局, or 命.
 
@@ -143,6 +145,7 @@ Before finalizing a design or review, run `references/rules-priority.md` first. 
 
 - each skill has a clear timing, condition, cost/action, and payoff, unless it is a pure static rule;
 - the chosen timing matches whether the event is prevented, modified, confirmed, or already finished;
+- phase/turn/round frequency wording is not mistaken for the actual activation timing; in particular, check whether a Play-phase active skill needs an idle timing and whether an ongoing response or resolution has occupied it;
 - internal relationships are natural: strong link, soft support, division of labor, intentional tension, or healthy independence;
 - no skill is weakened only to feed another skill;
 - no unrestricted【桃】/【酒】creation, free extra turns, broad damage prevention, or oppressive target denial slipped in;
