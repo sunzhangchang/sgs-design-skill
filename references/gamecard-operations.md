@@ -36,7 +36,6 @@ Do not substitute “置入弃牌堆” for “弃置” when the discard actor,
 
 - “视为使用/打出” creates a virtual card with no owner and no corresponding physical card, so it normally has no color, suit, or points.
 - A virtual card copies only the referenced card name unless the rule or skill explicitly supplies additional information. Its effects follow the rules of that card name, but its color, suit, points, ownership, and material-card identity are not copied merely because a real card was used as the reference.
-- “视为使用一张明置手牌” uses the face-up hand card only to determine the virtual card's card name. The referenced hand card is not a material card, remains in hand, remains face up, and is not consumed or moved by that virtual use. The resulting virtual card does not inherit the referenced card's color, suit, or points unless specially stated.
 - Under the reviewed glossary, “视为使用【杀】” creates an ordinary colorless/suitless/pointless【杀】without distance restriction unless another rule specifies otherwise. Do not assume that every custom rules environment shares this special default without checking.
 - “视为装备着” or “视为拥有技能” creates the stated status without putting a physical card in the zone. The virtual status can be used or affected as stated, but does not create a card that can be moved; a skill only deemed possessed cannot be lost as if physically acquired.
 - “将B牌当A牌” and “视为使用A牌” are different: the first has material cards and preserves derived information; the second has no material card.
