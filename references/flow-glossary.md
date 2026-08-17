@@ -24,6 +24,7 @@ The normal turn has six phases in order: preparation, judgment, draw, play, disc
 
 - “阶段内” covers the interval from that phase's start through its end. If “你的……阶段” or the relevant turn owner is omitted, make sure context still identifies whose phase is meant.
 - An extra phase is executed immediately at the granted point. It is not a full turn and does not naturally carry the separate “before this phase starts” or “after this phase ends” intervals described for the normal phase sequence.
+- If a card or skill mentions “…阶段” without naming whose turn, use the skill owner's phases when the phrase determines that skill's timing; otherwise use the phases of the turn in which the skill was activated. Treat “阶段内” as a time interval, not as an extra activation timing. A granted extra phase has no ordinary phase-start-before or phase-end-after window unless the effect explicitly creates one.
 - Skipping a phase or turn means its internal procedure does not execute. Do not trigger an effect from an event that only would have occurred inside the skipped procedure.
 - A skipped phase can still leave a timing interval between adjacent phases; however, if adjacent phases are also skipped, their shared interval may disappear. Avoid designs that depend on an unspecified gap around several skipped phases.
 - The same phase cannot be skipped twice in one turn. A second attempt should not be treated as another successful skip or another cost payment unless the skill explicitly defines a different event.
@@ -65,6 +66,7 @@ Before finalizing a flow-sensitive skill, verify:
 - an extra phase is not accidentally given the full boundary windows of a normal phase in sequence;
 - skipped procedures do not produce internal events, and cleanup is not stranded inside a skippable turn or phase;
 - an outside-turn effect has an explicit duration and settlement point;
+- a duration such as “本回合内” has a real current turn to anchor to; an effect created outside every character's turn cannot silently borrow the next turn or a previous turn;
 - nested dying cannot make the skill refer to two characters as the current dying character;
 - maximum-HP-to-0 death is handled without a rescue window;
 - “死亡”“杀死”“造成伤害”“令其进入濒死” are used only when their attribution requirements are actually met.

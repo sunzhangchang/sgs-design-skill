@@ -88,6 +88,65 @@ class PreflightTestCase(unittest.TestCase):
         self.assertIn(("references/value-glossary.md", "Card Points"), keys)
         self.assertNotIn(("references/value-glossary.md", "Distance"), keys)
 
+    def test_cached_card_operation_terms_route_to_foundational_rules(self) -> None:
+        bundle = self.context(
+            "把失去过的牌扣置于武将牌上并移出游戏，之后操作所有这些牌",
+            "review",
+            "rules",
+        )
+        keys = self.keys(bundle)
+        self.assertIn(
+            ("references/gamecard-operations.md", "Movement And Core Operations"),
+            keys,
+        )
+        self.assertIn(
+            ("references/gamecard-operations.md", "Discard, Give, Gain, And Lose"),
+            keys,
+        )
+        self.assertIn(("references/gamecard-operations.md", "Other Operations"), keys)
+        self.assertIn(("references/zone-glossary.md", "Ownership And “A Character's Cards”"), keys)
+
+    def test_extra_phase_boundaries_route_to_flow_rules(self) -> None:
+        bundle = self.context(
+            "额外阶段是否有阶段开始前和阶段结束后，阶段内效果如何结算",
+            "review",
+            "rules",
+        )
+        self.assertIn("flow", bundle.matched_routes)
+        self.assertIn(
+            ("references/flow-glossary.md", "Phases And Skipping"),
+            self.keys(bundle),
+        )
+
+    def test_description_routes_do_not_load_unrelated_attribution(self) -> None:
+        bundle = self.context(
+            "前项无法执行时，并与然后分别如何继续",
+            "review",
+            "rules",
+        )
+        keys = self.keys(bundle)
+        self.assertIn("description-sequence", bundle.matched_routes)
+        self.assertIn(
+            ("references/description-glossary.md", "Workspace Rule For “并/然后”"),
+            keys,
+        )
+        self.assertNotIn(
+            ("references/description-glossary.md", "User, Source, And Channel"),
+            keys,
+        )
+
+    def test_identity_lord_hp_route_keeps_mode_scope(self) -> None:
+        bundle = self.context(
+            "身份局五人主公的体力上限如何计算",
+            "review",
+            "rules",
+        )
+        self.assertIn("identity-mode", bundle.matched_routes)
+        self.assertIn(
+            ("references/identity-card-environment.md", "Baseline Deck"),
+            self.keys(bundle),
+        )
+
     def test_intake_does_not_execute_design_routes(self) -> None:
         bundle = self.context(
             "吸收一篇新的机制评价文章，保留原文并处理冲突",

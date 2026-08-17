@@ -10,6 +10,8 @@ The reviewed identity deck contains 162 game cards:
 - 50 trick cards: 43 non-delayed tricks and 7 delayed tricks;
 - 27 equipment cards: 13 weapons, 6 armors, 7 mounts, and 1 treasure.
 
+In identity mode with at least five players, the lord's maximum HP is normally increased by 1. Treat this as a mode-level environment adjustment, not as a property of the lord's general card or a universal design rule.
+
 Non-delayed trick counts:
 
 - 6【过河拆桥】, 5【顺手牵羊】, 3【决斗】, 2【借刀杀人】;
@@ -54,6 +56,7 @@ These rules matter when designing kill rewards, death triggers, source reassignm
 - a death-trigger skill must account for the dead character's area cards being discarded and must not rely on an unspecified order to reclaim them;
 - large search/reveal/draw operations can pressure the finite deck and must state what happens when fewer cards are available;
 - opening-hand effects should be judged against a four-card baseline rather than as free abstract resources.
+- HP and survivability estimates for a lord should include the mode's maximum-HP adjustment before comparing them with non-lord roles.
 
 ## Scope Cautions
 

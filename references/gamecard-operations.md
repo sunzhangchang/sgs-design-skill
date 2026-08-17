@@ -9,9 +9,9 @@ Use this reference when a skill moves, uses, plays, recasts, places, discards, g
 - **打出** means declare a card, move it into the processing area, then move it to the discard pile. Playing a card is not using it and does not automatically create that card's ordinary use effects.
 - **重铸** at the play phase's free timing normally requires a card with a recast label: declare it, move it through the processing area to the discard pile, then draw one card. A skill-granted recast must state which cards and timing it authorizes.
 - **置于/置入** moves a card directly to a destination. It is not automatically “使用”: placing equipment requires the matching empty slot, while placing a delayed trick into a legal judgment area starts a sourceless use resolution from the target timing under the reviewed rule.
-- **扣置** is placement face down. **移出游戏** removes ownership; cards placed on/beside a general card are normally outside the game, and the skill should define their collective name and later handling.
-
-Do not substitute “置入弃牌堆” for “弃置” when the discard actor, discard prohibition, processing-area route, or discard trigger matters.
+- **扣置** is placement face down. **移出游戏** removes ownership; cards placed on/beside a general card are normally outside the game, and the skill should define their collective name and later handling. A card placed on a general card is not a card in that character's hand/equipment area merely because it is physically near the character.
+- When a skill stores a card on/beside a general card and names it X, later “X” in that character's skills normally means the X cards stored on that character's general card. If a skill stores cards beside another character or creates a shared store, name the owner and carrier explicitly instead of relying on table position.
+- **弃** removes a mark; it is not the same as **弃置** a card. **置入弃牌堆** may describe either the operation of moving a card to the discard pile or the result of a previous operation. Use **弃置** when the actor, choice, processing-area route, or discard trigger matters.
 
 ## Discard, Give, Gain, And Lose
 
@@ -19,7 +19,7 @@ Do not substitute “置入弃牌堆” for “弃置” when the discard actor,
 - When an effect makes a character discard X cards but that character has fewer than X eligible cards, they discard all available cards under the reviewed effect rule. This differs from paying an exact activation cost; check option legality in `description-glossary.md`.
 - **交给A** moves cards not owned by A into A's hand. Giving several cards to several characters selects all recipients and the distribution first, gives each at least one, then moves the cards simultaneously.
 - **获得** can mean the operation of moving a card into the actor's hand or the result that a card entered that hand. If choosing from another character's zones, choose the zone first; select randomly from a hidden hand and freely from visible equipment/judgment zones.
-- A character **loses a card** only when a card they own moves outside their hand and equipment zones. Moving a hand card to equipment means losing a hand card but not losing a card; moving equipment to hand means losing an equipment-zone card but not losing a card.
+- A character **loses a card** only when a card they own moves outside their hand and equipment zones. **Loses a hand card** and **loses an equipment-zone card** instead identify the card's zone immediately before movement. Moving a hand card to equipment therefore loses a hand card but not a card; moving equipment to hand loses an equipment-zone card but not a card. Use the narrower trigger when only one route should count.
 - “失去过……牌” checks the card's information before it was lost. One batch movement normally counts as one loss event unless the cards are operated sequentially.
 
 ## Treating Cards As Other Cards
@@ -52,7 +52,7 @@ Do not substitute “置入弃牌堆” for “弃置” when the discard actor,
 - **摸X张牌** gains the top X cards of the draw pile. “补至X张” draws only the positive difference and does nothing when the current count is already at least X.
 - **代替** puts A into B's zone and moves B to the discard pile. **替换** puts A into B's zone and gives B to the replacing character.
 - **交换** first moves both specified sets to the processing area, then moves each original set to the other side. Empty sets can still make the exchange execute under the reviewed rule.
-- **判定** reveals the top card into the processing area, waits for it to take effect, uses its effective suit/points/name as the result, then moves it to the discard pile. The judgment card is not owned by the judging character.
+- **判定** reveals the top card into the processing area, waits for it to take effect, uses its effective suit/points/name as the result, then moves it to the discard pile. The judgment card is not owned by the judging character. If a later clause must operate that card, keep it identifiable until that clause finishes rather than treating it as an ordinary hand card.
 - “A操作所有……牌” is not executed if there are no qualifying cards. This matters when a later “并” clause depends on successful execution.
 
 ## Final Operation Check

@@ -263,7 +263,7 @@
     },
     {
       "id": "card-operation",
-      "terms": ["使用牌", "打出牌", "重铸", "弃置", "获得牌", "交给", "移动牌", "判定", "交换牌"],
+      "terms": ["使用牌", "打出牌", "重铸", "弃置", "获得牌", "交给", "移动牌", "置入弃牌堆", "扣置", "移出游戏", "失去牌", "失去过", "判定牌", "操作所有", "判定", "交换牌"],
       "targets": [
         {
           "path": "references/gamecard-operations.md",
@@ -307,7 +307,7 @@
     },
     {
       "id": "zone",
-      "terms": ["区域", "手牌区", "装备区", "判定区", "处理区", "弃牌堆", "摸牌堆", "牌堆顶", "牌堆底", "所有者"],
+      "terms": ["区域", "手牌区", "装备区", "判定区", "判定牌", "处理区", "弃牌堆", "摸牌堆", "牌堆顶", "牌堆底", "拥有的牌", "角色的牌", "武将牌上", "所有者"],
       "targets": [
         {
           "path": "references/zone-glossary.md",
@@ -346,18 +346,38 @@
       ]
     },
     {
-      "id": "description",
-      "terms": ["并", "然后", "依次", "同时", "选择", "令其", "伤害来源", "牌的使用者", "技能目标"],
+      "id": "description-sequence",
+      "terms": ["并", "然后", "依次", "同时"],
       "targets": [
         {
           "path": "references/description-glossary.md",
-          "sections": ["Sequential And Simultaneous Operations", "Workspace Rule For “并/然后”", "User, Source, And Channel", "Role And Target References"]
+          "sections": ["Sequential And Simultaneous Operations", "Workspace Rule For “并/然后”"]
+        }
+      ]
+    },
+    {
+      "id": "description-agency",
+      "terms": ["选择一项", "任意数量", "需/须", "需与须", "“需”", "“须”", "需使用", "须执行", "需要使用牌"],
+      "targets": [
+        {
+          "path": "references/description-glossary.md",
+          "sections": ["Technical Labels And Choice", "Mandatory And Response Wording", "Option Legality"]
+        }
+      ]
+    },
+    {
+      "id": "description-attribution",
+      "terms": ["以此法", "令其", "A令B", "伤害来源", "牌的使用者", "目标角色", "技能目标"],
+      "targets": [
+        {
+          "path": "references/description-glossary.md",
+          "sections": ["User, Source, And Channel", "Role And Target References"]
         }
       ]
     },
     {
       "id": "flow",
-      "terms": ["回合开始", "回合结束", "阶段开始", "阶段结束", "额外回合", "额外阶段", "跳过阶段", "跳过回合", "濒死", "死亡", "杀死"],
+      "terms": ["回合开始", "回合开始前", "回合结束", "回合结束后", "阶段开始", "阶段开始前", "阶段结束", "阶段结束后", "阶段内", "额外回合", "额外阶段", "跳过阶段", "跳过回合", "濒死", "死亡", "杀死"],
       "targets": [
         {
           "path": "references/flow-glossary.md",
