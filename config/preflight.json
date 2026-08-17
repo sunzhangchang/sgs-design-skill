@@ -132,9 +132,9 @@
       }
     ],
     "rules": [
-      {
-        "path": "references/rules-priority.md",
-        "sections": ["Mandatory Rule Scan", "Final Rule Gate"]
+        {
+          "path": "references/rules-priority.md",
+          "sections": ["Mandatory Rule Scan", "Rule-Premise Consistency", "Final Rule Gate"]
       },
       {
         "path": "references/design-heuristics.md",
@@ -148,9 +148,9 @@
       }
     ],
     "output": [
-      {
-        "path": "references/rules-priority.md",
-        "sections": ["Final Rule Gate"]
+        {
+          "path": "references/rules-priority.md",
+          "sections": ["Rule-Premise Consistency", "Final Rule Gate"]
       },
       {
         "path": "references/design-heuristics.md",
@@ -263,7 +263,7 @@
     },
     {
       "id": "card-operation",
-      "terms": ["使用牌", "打出牌", "重铸", "弃置", "获得牌", "交给", "移动牌", "置入弃牌堆", "扣置", "移出游戏", "失去牌", "失去过", "判定牌", "操作所有", "判定", "交换牌"],
+      "terms": ["使用牌", "使用自己", "打出牌", "重铸", "弃置", "获得牌", "交给", "移动牌", "置入弃牌堆", "扣置", "移出游戏", "失去牌", "失去过", "判定牌", "操作所有", "判定", "交换牌"],
       "targets": [
         {
           "path": "references/gamecard-operations.md",
@@ -307,7 +307,7 @@
     },
     {
       "id": "zone",
-      "terms": ["区域", "手牌区", "装备区", "判定区", "判定牌", "处理区", "弃牌堆", "摸牌堆", "牌堆顶", "牌堆底", "拥有的牌", "角色的牌", "武将牌上", "所有者"],
+      "terms": ["区域", "手牌区", "装备区", "判定区", "判定牌", "处理区", "弃牌堆", "摸牌堆", "牌堆顶", "牌堆底", "拥有的牌", "角色的牌", "武将牌上", "武将牌旁", "所有者"],
       "targets": [
         {
           "path": "references/zone-glossary.md",

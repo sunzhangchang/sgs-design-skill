@@ -34,6 +34,15 @@ For each proposed skill, identify only the rows it touches and open the linked f
 
 Do not load every glossary in full. Use this table as the always-read gate, then load only the references hit by the actual skeleton or draft.
 
+## Rule-Premise Consistency
+
+After construction and before evaluating balance or flavor, record each premise that makes an operative clause possible, with its authority: user convention, foundational rule, or explicitly stated new mechanism. Then test the text in reverse from every payoff to its enabling permission.
+
+- Keep **location**, **ownership**, **visibility**, and **permission to operate** a card separate. A card being beside/on a general card, visible, or associated with a character does not itself establish who owns it or may use, play, select, move, or transform it.
+- When a design needs an exceptional permission, write that permission in the skill; do not rely on an informal reading of a placement term.
+- If the relevant rule is unavailable, ambiguous across versions, or contradicted by a previously recorded premise, do not silently select the interpretation that makes the design work. Verify it, surface it as a user convention, or rewrite the mechanism so its authorization is self-contained.
+- A draft failing this reverse trace is a rules failure. Repair the premise or operative wording first, then repeat all downstream evaluation.
+
 ## Legality Before Quality
 
 Review in this order:
@@ -59,3 +68,4 @@ Before outputting complete skill text, verify:
 - “无效”“无视”“抵消”“取消目标”, and “死亡”“杀死” are not interchanged;
 - package or experimental mechanics do not override foundational semantics;
 - user-defined conventions are preserved where they explicitly override a reviewed source.
+- every recorded rule premise agrees with every operative clause; no reward or later operation relies on a contrary unstated premise.

@@ -175,6 +175,19 @@ class PreflightTestCase(unittest.TestCase):
         self.assertLessEqual(bundle.total_chars, 5000)
         self.assertIn(("references/gamecard-operations.md", "视为"), self.keys(bundle))
 
+    def test_rules_stage_includes_rule_premise_consistency(self) -> None:
+        bundle = self.context(
+            "设计一个使用武将牌旁牌的技能，检查区域、所有权和授权",
+            "fresh-design",
+            "rules",
+            max_chars=20000,
+            max_chunks=20,
+        )
+        self.assertIn(
+            ("references/rules-priority.md", "Rule-Premise Consistency"),
+            self.keys(bundle),
+        )
+
     def test_linter_detects_placeholders_and_survival_virtual_card(self) -> None:
         findings = lint_text("技能：你视为使用【桃】。然后获得【】。", full_group=True)
         rule_ids = {finding.rule_id for finding in findings}

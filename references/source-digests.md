@@ -68,6 +68,8 @@ The reviewed `gltjk.com` glossary and identity-mode card-flow materials are foun
 
 ## Intake Rule For Future Sources
 
+- User-confirmed workflow correction (2026-08-17): the design and evaluation process must preserve and reverse-check the rule-sensitive premises used during construction. Incorporated into `rules-priority.md`, `design-evaluation-framework.md`, and `SKILL.md`; it prevents a skill's operative text from relying on a rule interpretation contrary to the one used to justify its design.
+
 When adding a new source, preserve only reusable design knowledge:
 
 - design principle;

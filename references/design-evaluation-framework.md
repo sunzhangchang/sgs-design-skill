@@ -20,9 +20,10 @@ Work through these stages in order, but expose only the current stage during an 
 2. **Character thesis**: select 1-3 concrete facts. Separate capability, behavior/relationship, and compulsion/failure. State one sentence about what the player should feel or repeatedly choose.
 3. **Play thesis**: choose the primary player verb, resource direction, timing line, role, and opponent response. The player action must express the character without relying on the skill name or explanation.
 4. **Skill skeleton**: give each skill an independent job and choose its relationship to the others. Use 2-4 skills by function; never pad to three.
-5. **Rules construction**: resolve object, timing, frequency, agency/cost, sequence, attribution, target, duration, and cleanup through the focused foundational glossaries.
-6. **Evaluation pass**: test the same thesis against legality, player incentives, feedback, strongest line, interaction, burden, and character fit.
-7. **Targeted revision**: repair the first broken layer, then rerun only the affected layer and every downstream layer. Do not rewrite a legal, functioning core merely to make all skills more tightly linked.
+5. **Rules construction**: resolve object, timing, frequency, agency/cost, sequence, attribution, target, duration, and cleanup through the focused foundational glossaries. Write the resulting rule-sensitive premises into the Unified Working Sheet, including the governing reference or explicit user convention.
+6. **Consistency pass**: read each operative clause back against the recorded premises. Check that its objects, permissions, and consequences do not assume a contrary meaning merely to realize the desired effect. For a card outside an ordinary hand/equipment route, separately establish its location, owner if any, who may select it, and what text authorizes its use, play, movement, or transformation. An unknown premise is a rules failure until verified, explicitly adopted as a convention, or avoided by self-contained wording.
+7. **Evaluation pass**: only after the consistency pass, test the same thesis against legality, player incentives, feedback, strongest line, interaction, burden, and character fit.
+8. **Targeted revision**: repair the first broken layer, then rerun only the affected layer and every downstream layer. Do not rewrite a legal, functioning core merely to make all skills more tightly linked.
 
 If an early layer changes, discard unsupported downstream choices. A polished skill text cannot rescue a broken play thesis.
 
@@ -42,6 +43,8 @@ Use one sheet for both design and review:
 技能关系：强联动 / 软支持 / 分工 / 张力 / 独立覆盖
 对手回应与突破口：
 规则命中：
+规则前提与依据：
+一致性核验：
 首要风险：
 当前阶段：
 ```
@@ -52,7 +55,7 @@ Do not fill unknown fields with invented certainty. Ask only about an unknown th
 
 Evaluate in this order. Stop and repair a failed earlier layer before polishing a later one.
 
-1. **规则成立**: every object, operation, timing, frequency, target, sequence, attribution, duration, and cleanup has a legal path. Separate phase/turn/round frequency from activation timing.
+1. **规则成立**: every object, operation, timing, frequency, target, sequence, attribution, duration, and cleanup has a legal path. Separate phase/turn/round frequency from activation timing. Record the rule-sensitive premises actually used, then reject any operative clause that requires their opposite; location, ownership, visibility, and permission to operate a card are separate facts.
 2. **人物成立**: the actual player action expresses a concrete deed, temperament, relationship, contradiction, or failure. Names and explanations are supporting evidence, not substitutes.
 3. **主循环成立**: the player has a recognizable repeated decision. Compare it with not using the skill and with the simplest direct benefit such as drawing or dealing damage.
 4. **反馈成立**: resource growth, spending, reward, and drawback point in the intended direction. The strongest reward should encourage the character's action rather than bypass it.
@@ -72,6 +75,7 @@ Run these before final wording:
 4. **Take the strongest line**: assume rational players repeatedly choose the best legal card, target, and timing. Does the intended drawback still matter?
 5. **Take the empty line**: with low hand, no ally, no valid enemy target, or an awkward phase, does the general retain acceptable agency without gaining free compensation?
 6. **Play it on a table**: can all players verify the state and reset point with visible cards, current-window history, or at most one simple marker?
+7. **Read it backwards**: for each payoff, trace its required permission and object state back to the clause or foundational rule that supplies them. If the trace depends on an unstated or contrary premise, repair the rule layer before tuning balance.
 
 ## Diagnosis And Repair
 
@@ -80,6 +84,7 @@ Name the first broken layer and choose a matching repair:
 | Symptom | First layer | Prefer repairing |
 | --- | --- | --- |
 | Resolution order changes whether the skill exists | Rules | timing, insertion point, dependency, cleanup |
+| A later clause needs a rule premise opposite to the one used in construction | Rules | premise, authorization, zone/ownership distinction, or self-contained wording |
 | Biography appears only in names or notes | Character | player verb, cost, target relationship, failure mode |
 | Rational play ignores the core action | Main loop | reward location, default action, repeat incentive |
 | “Construction” shrinks or “inheritance” only destroys | Feedback | resource direction and maintenance pressure |
