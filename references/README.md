@@ -2,6 +2,8 @@
 
 This directory is a progressive knowledge base. Do not read every file for an ordinary request. Start with the route for the current task, then load the smallest relevant slice.
 
+When local Python execution is available, run `scripts/preflight.py context` first and consume its bounded compiled sections. The read order below is the human-readable fallback and the authority model used by that engine.
+
 ## Read Order
 
 1. Every fresh design or review: [rules-priority.md](rules-priority.md).
@@ -46,3 +48,7 @@ These files distill the reviewed `gltjk.com` rules pages and identity-mode mater
 - [knowledge-intake.md](knowledge-intake.md): the cautious end-to-end procedure for preservation, instruction/data separation, classification, authority conflicts, minimal merging, validation, and local commits.
 - [source-digests.md](source-digests.md): concise provenance and reusable lessons from online/offline material.
 - Raw source pages retained for checking are under the ignored workspace folder `.codex/source-check/`; they are not a substitute for the distilled references.
+
+## Local Preflight
+
+- [local-preflight.md](local-preflight.md): commands, output protocol, retrieval priority, cache behavior, extension procedure, and backend boundaries. Read only for maintenance or debugging.

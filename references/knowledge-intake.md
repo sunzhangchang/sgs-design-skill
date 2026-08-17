@@ -24,7 +24,7 @@ Preserve source material after intake. Do not delete a retained page or file unl
 6. **Distill**: write the smallest reusable principle that preserves scope, exceptions, and design consequence. Do not reproduce the article or store a summary merely because it is interesting.
 7. **Merge once**: update the single closest reference. Add a new file only when no existing file has the right responsibility or the target would become too large to load selectively.
 8. **Record provenance**: add or update one concise entry in `source-digests.md` with source, title/identity, knowledge class, target reference, and the main reusable lesson.
-9. **Validate**: check structure, links, contradictory wording, routing, and the affected workflow. Run the skill validator. If a core rule or process changed, test at least one representative example that would have failed before.
+9. **Validate**: check structure, links, contradictory wording, routing, and the affected workflow. Run `python scripts/preflight.py doctor --rebuild`, the preflight unit tests, and the skill validator. If a core rule or process changed, test at least one representative context query that would have failed before.
 10. **Commit**: inspect the diff and commit only the intended files locally. If the user requested review first, stop before the merge or commit at the requested checkpoint.
 
 ## Knowledge Classes And Destinations
@@ -94,5 +94,6 @@ Use this small internal record:
 - No lower-priority source overwrote a foundational rule or confirmed user convention.
 - The reusable principle appears once in the active knowledge base; provenance points to it without duplicating it.
 - `references/README.md` and routing tables change only when file responsibilities changed.
+- New references are automatically indexed; `config/preflight.json` changes only when kind/authority metadata or deterministic routing is needed.
 - Local Markdown links resolve, `quick_validate.py` passes, and `git diff --check` reports no content errors.
 - The final report states what was absorbed, what was intentionally omitted, where the source was retained, and the local commit id when committed.

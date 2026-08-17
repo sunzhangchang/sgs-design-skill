@@ -1,0 +1,457 @@
+{
+  "schema_version": 1,
+  "defaults": {
+    "max_chars": 12000,
+    "max_chunks": 12,
+    "search_chunks": 6
+  },
+  "retrieval": {
+    "exclude_level_one": true,
+    "exclude_headings": ["Contents"]
+  },
+  "classifiers": [
+    {
+      "task": "contest",
+      "terms": ["比赛", "参赛", "评委", "评分", "稿件"]
+    },
+    {
+      "task": "intake",
+      "terms": ["吸收", "写入skill", "写入 skill", "新资料", "参考资料", "知识库"]
+    },
+    {
+      "task": "naming",
+      "terms": ["称号", "战功名", "技能名", "牌名", "标记名", "命名"]
+    },
+    {
+      "task": "review",
+      "terms": ["评价", "评审", "检查", "比较", "优劣", "修改建议", "平衡", "联动是否"]
+    },
+    {
+      "task": "fresh-design",
+      "terms": ["设计", "创建", "生成", "武将技能", "技能组"]
+    }
+  ],
+  "stage_classifiers": [
+    {
+      "stage": "output",
+      "terms": ["定稿", "最终版", "完整技能组", "完整文本"]
+    },
+    {
+      "stage": "rules",
+      "terms": ["时机", "结算", "规则", "能否", "是否合法", "空闲时间点"]
+    },
+    {
+      "stage": "evaluation",
+      "terms": ["评价", "评审", "比较", "优劣", "平衡", "问题"]
+    },
+    {
+      "stage": "skeleton",
+      "terms": ["技能数量", "技能关系", "联动", "骨架"]
+    },
+    {
+      "stage": "play",
+      "terms": ["定位", "机制", "玩法", "辅助", "单挑"]
+    },
+    {
+      "stage": "character",
+      "terms": ["人物", "生平", "原型", "事迹", "锚点"]
+    }
+  ],
+  "tasks": {
+    "fresh-design": {
+      "required": [
+        {
+          "path": "references/rules-priority.md",
+          "sections": ["Authority Order", "Mandatory Rule Scan"]
+        },
+        {
+          "path": "references/design-evaluation-framework.md",
+          "sections": ["Closed Loop", "Unified Working Sheet"]
+        }
+      ],
+      "exclude_kinds": ["contest", "intake", "provenance", "mechanism", "naming", "maintenance"]
+    },
+    "review": {
+      "required": [
+        {
+          "path": "references/rules-priority.md",
+          "sections": ["Authority Order", "Legality Before Quality"]
+        }
+      ],
+      "exclude_kinds": ["contest", "intake", "provenance", "mechanism", "naming", "maintenance"]
+    },
+    "contest": {
+      "required": [
+        {
+          "path": "references/rules-priority.md",
+          "sections": ["Authority Order", "Legality Before Quality"]
+        },
+        {
+          "path": "references/contest-evaluation.md",
+          "sections": ["Read The Whole Sample", "Contest Evidence Decomposition", "Evidence Chain: Prototype To Judgment"]
+        }
+      ],
+      "exclude_kinds": ["intake", "provenance", "mechanism", "naming", "maintenance"]
+    },
+    "naming": {
+      "required": [
+        {
+          "path": "references/naming-titles.md",
+          "sections": ["Workflow", "Naming Methods", "Checks"]
+        }
+      ],
+      "exclude_kinds": ["contest", "intake", "provenance", "mechanism", "maintenance"]
+    },
+    "intake": {
+      "required": [
+        {
+          "path": "references/knowledge-intake.md",
+          "sections": ["Intake Contract", "Intake Steps", "Authority And Conflict Handling", "Validation Checklist"]
+        }
+      ],
+      "exclude_kinds": ["contest", "maintenance"]
+    }
+  },
+  "stages": {
+    "character": [
+      {
+        "path": "references/design-heuristics.md",
+        "sections": ["Design Origin", "Anchors"]
+      }
+    ],
+    "play": [
+      {
+        "path": "references/design-heuristics.md",
+        "sections": ["Effect Role Map", "Support With Solo Play", "Role Shape And Breakpoints"]
+      }
+    ],
+    "skeleton": [
+      {
+        "path": "references/design-heuristics.md",
+        "sections": ["Skill Structure", "Simplicity", "Linkage Patterns"]
+      }
+    ],
+    "rules": [
+      {
+        "path": "references/rules-priority.md",
+        "sections": ["Mandatory Rule Scan", "Final Rule Gate"]
+      },
+      {
+        "path": "references/design-heuristics.md",
+        "sections": ["Timing Map", "Wording Checks"]
+      }
+    ],
+    "evaluation": [
+      {
+        "path": "references/design-evaluation-framework.md",
+        "sections": ["Evaluation Order", "Stress Tests", "Diagnosis And Repair"]
+      }
+    ],
+    "output": [
+      {
+        "path": "references/rules-priority.md",
+        "sections": ["Final Rule Gate"]
+      },
+      {
+        "path": "references/design-heuristics.md",
+        "sections": ["Wording Checks"]
+      }
+    ]
+  },
+  "documents": {
+    "references/rules-priority.md": {
+      "kind": "foundational",
+      "authority": 100,
+      "tags": ["规则优先级", "合法性", "规则入口"]
+    },
+    "references/design-evaluation-framework.md": {
+      "kind": "framework",
+      "authority": 80,
+      "tags": ["设计流程", "评价体系", "诊断", "工作卡"]
+    },
+    "references/design-heuristics.md": {
+      "kind": "heuristic",
+      "authority": 60,
+      "tags": ["设计方法", "联动", "平衡", "人物锚点", "宗族技"]
+    },
+    "references/contest-evaluation.md": {
+      "kind": "contest",
+      "authority": 50,
+      "tags": ["比赛", "评委", "评分", "稿件"]
+    },
+    "references/knowledge-intake.md": {
+      "kind": "intake",
+      "authority": 90,
+      "tags": ["吸收资料", "知识更新", "冲突处理", "来源保留"]
+    },
+    "references/source-digests.md": {
+      "kind": "provenance",
+      "authority": 30,
+      "tags": ["来源", "出处", "文章"]
+    },
+    "references/card-glossary.md": {
+      "kind": "foundational",
+      "authority": 95,
+      "tags": ["游戏牌", "牌类别", "装备", "延时锦囊"]
+    },
+    "references/gamecard-operations.md": {
+      "kind": "foundational",
+      "authority": 95,
+      "tags": ["使用", "打出", "重铸", "移动牌", "虚拟牌", "转化牌", "视为"]
+    },
+    "references/herocard-operations.md": {
+      "kind": "foundational",
+      "authority": 95,
+      "tags": ["武将牌", "横置", "重置", "连环", "翻面"]
+    },
+    "references/zone-glossary.md": {
+      "kind": "foundational",
+      "authority": 95,
+      "tags": ["区域", "手牌区", "装备区", "弃牌堆", "明置", "可见性"]
+    },
+    "references/value-glossary.md": {
+      "kind": "foundational",
+      "authority": 95,
+      "tags": ["体力", "体力上限", "伤害值", "距离", "手牌上限", "点数"]
+    },
+    "references/description-glossary.md": {
+      "kind": "foundational",
+      "authority": 95,
+      "tags": ["技能描述", "并", "然后", "选择", "来源", "目标"]
+    },
+    "references/flow-glossary.md": {
+      "kind": "foundational",
+      "authority": 95,
+      "tags": ["回合", "阶段", "额外回合", "跳过阶段", "濒死", "死亡"]
+    },
+    "references/event-glossary.md": {
+      "kind": "foundational",
+      "authority": 95,
+      "tags": ["事件", "时机", "响应", "结算", "空闲时间点", "无效", "抵消"]
+    },
+    "references/identity-card-environment.md": {
+      "kind": "environment",
+      "authority": 75,
+      "tags": ["身份局", "军争", "牌堆", "牌名密度", "身份模式"]
+    },
+    "references/naming-titles.md": {
+      "kind": "naming",
+      "authority": 60,
+      "tags": ["称号", "战功", "技能名", "牌名", "命名"]
+    },
+    "references/mechanics-index.md": {
+      "kind": "mechanism-index",
+      "authority": 55,
+      "tags": ["特殊机制", "特殊牌", "包", "机制索引"]
+    },
+    "references/local-preflight.md": {
+      "kind": "maintenance",
+      "authority": 70,
+      "tags": ["本地预检", "索引", "路由", "维护"]
+    }
+  },
+  "routes": [
+    {
+      "id": "card-category",
+      "terms": ["基本牌", "锦囊牌", "普通锦囊", "延时锦囊", "装备牌", "武器", "防具", "坐骑", "宝物"],
+      "targets": [
+        {
+          "path": "references/card-glossary.md",
+          "sections": ["Game Card Categories", "Equipment Subtypes And Slots", "Equipment Use Versus Equipment Operation"]
+        }
+      ]
+    },
+    {
+      "id": "card-operation",
+      "terms": ["使用牌", "打出牌", "重铸", "弃置", "获得牌", "交给", "移动牌", "判定", "交换牌"],
+      "targets": [
+        {
+          "path": "references/gamecard-operations.md",
+          "sections": ["Movement And Core Operations", "Discard, Give, Gain, And Lose", "Other Operations"]
+        }
+      ]
+    },
+    {
+      "id": "virtual-transform",
+      "terms": ["虚拟牌", "视为使用", "视为打出", "当作", "转化牌", "复制牌名"],
+      "targets": [
+        {
+          "path": "references/gamecard-operations.md",
+          "sections": ["视为", "将牌当A牌操作"]
+        }
+      ]
+    },
+    {
+      "id": "information-operation",
+      "terms": ["明置手牌", "展示牌", "展示手牌", "观看手牌", "亮出", "暗置手牌", "可见"],
+      "targets": [
+        {
+          "path": "references/gamecard-operations.md",
+          "sections": ["Information Operations"]
+        },
+        {
+          "path": "references/zone-glossary.md",
+          "sections": ["Visibility And Choice"]
+        }
+      ]
+    },
+    {
+      "id": "general-state",
+      "terms": ["横置", "重置", "连环", "铁索", "翻面", "武将牌状态"],
+      "targets": [
+        {
+          "path": "references/herocard-operations.md",
+          "sections": ["Transverse State", "Chain State And Chain Damage", "Flipping The General Card"]
+        }
+      ]
+    },
+    {
+      "id": "zone",
+      "terms": ["区域", "手牌区", "装备区", "判定区", "处理区", "弃牌堆", "摸牌堆", "牌堆顶", "牌堆底", "所有者"],
+      "targets": [
+        {
+          "path": "references/zone-glossary.md",
+          "sections": ["Core Zones", "Ownership And “A Character's Cards”", "Visibility And Choice"]
+        }
+      ]
+    },
+    {
+      "id": "value-hp",
+      "terms": ["体力值", "体力上限", "失去体力", "回复体力", "伤害值", "手牌上限"],
+      "targets": [
+        {
+          "path": "references/value-glossary.md",
+          "sections": ["HP, HP Value, And Maximum HP", "Hand Limit", "Damage Value Base", "Variables And Assignment"]
+        }
+      ]
+    },
+    {
+      "id": "value-card-points",
+      "terms": ["点数", "牌点", "点数相同", "点数差"],
+      "targets": [
+        {
+          "path": "references/value-glossary.md",
+          "sections": ["Card Points"]
+        }
+      ]
+    },
+    {
+      "id": "value-distance",
+      "terms": ["攻击范围", "距离", "最多", "最少", "一半"],
+      "targets": [
+        {
+          "path": "references/value-glossary.md",
+          "sections": ["Distance", "Attack Range", "Difference, Extrema, Counts, And Halves"]
+        }
+      ]
+    },
+    {
+      "id": "description",
+      "terms": ["并", "然后", "依次", "同时", "选择", "令其", "伤害来源", "牌的使用者", "技能目标"],
+      "targets": [
+        {
+          "path": "references/description-glossary.md",
+          "sections": ["Sequential And Simultaneous Operations", "Workspace Rule For “并/然后”", "User, Source, And Channel", "Role And Target References"]
+        }
+      ]
+    },
+    {
+      "id": "flow",
+      "terms": ["回合开始", "回合结束", "阶段开始", "阶段结束", "额外回合", "额外阶段", "跳过阶段", "跳过回合", "濒死", "死亡", "杀死"],
+      "targets": [
+        {
+          "path": "references/flow-glossary.md",
+          "sections": ["Turn Order And Turn Scope", "Phases And Skipping", "Dying, Death, And Kills"]
+        }
+      ]
+    },
+    {
+      "id": "event-timing",
+      "terms": ["时机", "事件", "结算", "响应", "生效前", "生效后", "造成伤害时", "受到伤害时", "受到伤害后", "指定目标", "成为目标", "插入结算"],
+      "targets": [
+        {
+          "path": "references/event-glossary.md",
+          "sections": ["Core Terms", "Four Different Interruptions", "Design Checks"]
+        }
+      ]
+    },
+    {
+      "id": "idle-frequency",
+      "terms": ["空闲时间点", "出牌阶段限一次", "每回合限一次", "每轮限一次", "每名角色限一次"],
+      "targets": [
+        {
+          "path": "references/event-glossary.md",
+          "sections": ["Idle Timing Versus Frequency"]
+        }
+      ]
+    },
+    {
+      "id": "identity-mode",
+      "terms": ["身份局", "主公", "忠臣", "反贼", "内奸", "军争牌堆", "身份模式"],
+      "targets": [
+        {
+          "path": "references/identity-card-environment.md",
+          "sections": ["Baseline Deck", "Design Implications", "Identity-Mode Card Flow"]
+        }
+      ]
+    },
+    {
+      "id": "linkage",
+      "terms": ["联动", "内部联动", "僵硬", "技能关系", "自循环", "互相触发"],
+      "targets": [
+        {
+          "path": "references/design-heuristics.md",
+          "sections": ["Linkage Patterns"]
+        },
+        {
+          "path": "references/design-evaluation-framework.md",
+          "sections": ["Evaluation Order", "Stress Tests"]
+        }
+      ]
+    },
+    {
+      "id": "clan",
+      "terms": ["宗族技", "宗族", "太原王氏", "中流", "颍川荀氏", "陈留吴氏", "族韩氏", "族钟氏"],
+      "targets": [
+        {
+          "path": "references/design-heuristics.md",
+          "sections": ["Clan And Family Design", "太原王氏: 中流"]
+        }
+      ]
+    },
+    {
+      "id": "support-solo",
+      "terms": ["辅助", "支援", "团队", "单挑", "单挑空间", "队友"],
+      "targets": [
+        {
+          "path": "references/design-heuristics.md",
+          "sections": ["Support With Solo Play", "Role Shape And Breakpoints", "Play Experience"]
+        }
+      ]
+    },
+    {
+      "id": "balance",
+      "terms": ["平衡", "过强", "过弱", "生存能力", "强度", "限制次数", "收益", "代价", "反制"],
+      "targets": [
+        {
+          "path": "references/design-heuristics.md",
+          "sections": ["Balancing Valves", "Role Shape And Breakpoints"]
+        },
+        {
+          "path": "references/design-evaluation-framework.md",
+          "sections": ["Stress Tests", "Diagnosis And Repair"]
+        }
+      ]
+    },
+    {
+      "id": "special-mechanism",
+      "terms": ["特殊机制", "特殊牌", "新机制", "机制优先级", "国战机制", "手杀机制", "十周年机制"],
+      "targets": [
+        {
+          "path": "references/mechanics-index.md",
+          "sections": ["Progressive Use", "Fast Lookup By Design Need", "Selection Rule"]
+        }
+      ]
+    }
+  ]
+}
