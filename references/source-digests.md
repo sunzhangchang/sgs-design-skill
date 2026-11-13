@@ -97,6 +97,6 @@ Workflow for user-supplied online sources:
 - summarize what was absorbed and where it was written;
 - retain the fetched source in the ignored check folder for future rereading;
 - validate the skill and make a local commit after absorption unless the user explicitly asks to review first;
-- do not push or synchronize the plugin unless the user explicitly requests it.
+- do not push to a remote unless the user explicitly requests it.
 
 Do not store raw articles, full card tables, code paths, or code-level notes unless the user explicitly asks for a separate coding skill.

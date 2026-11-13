@@ -75,4 +75,4 @@ python scripts/preflight.py context --task naming --query "守城武将技能名
 python scripts/preflight.py lint --file draft.txt --full-group
 ```
 
-单次创作不自动写入知识库。只有资料吸收或维护请求才改技能资源；检索器维护时读取 [local-preflight.md](references/local-preflight.md)。
+本技能仅以独立 skill 形式维护和使用，不生成、安装或同步插件包装。单次创作不自动写入知识库。只有资料吸收或维护请求才改技能资源；检索器维护时读取 [local-preflight.md](references/local-preflight.md)。
