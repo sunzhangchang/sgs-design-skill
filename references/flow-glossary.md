@@ -1,6 +1,12 @@
 # Game Flow Glossary For Design
 
-Use this reference when a design changes turn order, grants extra turns or phases, skips turns or phases, relies on before/within/after timing windows, or interacts with dying, death, and kills. It distills the reviewed 三国杀官方规则集 3.0 game-flow glossary into design checks rather than reproducing the full procedure.
+Use this reference when a design changes turn order, grants extra turns or phases, skips turns or phases, relies on before/within/after timing windows, or interacts with dying, death, and kills. It distills the reviewed 三国杀官方规则集 3.0 flow glossary and game-flow page into design checks rather than reproducing the full procedure.
+
+## Game Start And End
+
+- “游戏开始前亮出武将牌后”“游戏开始前分发起始手牌时” and “游戏开始时” are distinct timing points. Do not collapse setup into one generic start trigger.
+- Receiving starting hand cards is not treated as gaining cards for skills whose trigger is obtaining cards. Do not assume an opening deal triggers ordinary gain effects.
+- Once a game-ending condition is met, all resolution stops and the game ends. Do not continue queued triggers, responses, or cleanup after that point.
 
 ## Turn Order And Turn Scope
 
@@ -22,6 +28,7 @@ When designing an extra-turn effect, identify the anchor turn and insertion side
 
 The normal turn has six phases in order: preparation, judgment, draw, play, discard, and end.
 
+- For the ordinary turn procedure, distinguish the boundary timings (“开始前/开始时/结束时/结束后”), the phase interval itself, and the gaps between adjacent phases. A trigger tied to one does not automatically occur at another.
 - “阶段内” covers the interval from that phase's start through its end. If “你的……阶段” or the relevant turn owner is omitted, make sure context still identifies whose phase is meant.
 - An extra phase is executed immediately at the granted point. It is not a full turn and does not naturally carry the separate “before this phase starts” or “after this phase ends” intervals described for the normal phase sequence.
 - If a card or skill mentions “…阶段” without naming whose turn, use the skill owner's phases when the phrase determines that skill's timing; otherwise use the phases of the turn in which the skill was activated. Treat “阶段内” as a time interval, not as an extra activation timing. A granted extra phase has no ordinary phase-start-before or phase-end-after window unless the effect explicitly creates one.
@@ -39,6 +46,15 @@ Before writing phase-flow text, distinguish these operations:
 - gain an extra turn: insert a complete turn and alter turn order.
 
 These are not interchangeable even when they produce a similar amount of actions.
+
+## Ordinary Phase Procedures
+
+The ordinary phase procedures can themselves impose ordering constraints:
+
+- During the judgment phase, resolve the last delayed trick placed in the judgment area first, then repeat the check until none remain. Avoid wording that assumes a different fixed order.
+- In the draw phase, finish modifying the draw count and then draw that adjusted number before carrying out a dependent follow-up effect. Do not interleave the follow-up with count modification or partial drawing unless a rule explicitly says so.
+- In the discard phase, compare the hand size with the current hand limit and discard the difference. If a skill changes hand limit or modifies discarding, identify which value and operation it affects.
+- “出牌阶段” as a skill timing does not mean any instant while the phase remains active. An ordinary active skill limited to the play phase can be used only at an idle timing; when a card, skill, or response is resolving, wait until that event finishes. A phase-limited use restriction counts across the whole phase, even though the phase has multiple separate idle timings.
 
 ## Dying, Death, And Kills
 
@@ -62,7 +78,10 @@ For effects that reference dying or death, record:
 Before finalizing a flow-sensitive skill, verify:
 
 - the timing belongs to a specific game, turn, phase, card-use, damage, dying, or death line;
+- setup timings, the game-start timing, and the point where a game-ending condition is met are handled distinctly;
 - “开始前”“开始时”“阶段内”“结束时”“结束后” are not treated as synonyms;
+- a phase active-use skill is not inserted into an occupied resolution, and its phase-limited frequency is counted across all idle timings in that phase;
+- phase-procedure follow-up effects wait for prerequisite operations such as adjusted draw counts to finish;
 - an extra phase is not accidentally given the full boundary windows of a normal phase in sequence;
 - skipped procedures do not produce internal events, and cleanup is not stranded inside a skippable turn or phase;
 - an outside-turn effect has an explicit duration and settlement point;

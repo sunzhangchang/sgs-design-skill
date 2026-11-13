@@ -412,11 +412,11 @@
     },
     {
       "id": "flow",
-      "terms": ["回合开始", "回合开始前", "回合结束", "回合结束后", "阶段开始", "阶段开始前", "阶段结束", "阶段结束后", "阶段内", "额外回合", "额外阶段", "跳过阶段", "跳过回合", "濒死", "死亡", "杀死"],
+      "terms": ["游戏开始前", "游戏开始时", "游戏结束条件", "起始手牌", "摸牌阶段", "摸牌数", "判定阶段", "出牌阶段限一次", "弃牌阶段", "回合开始", "回合开始前", "回合结束", "回合结束后", "阶段开始", "阶段开始前", "阶段结束", "阶段结束后", "阶段内", "额外回合", "额外阶段", "跳过阶段", "跳过回合", "濒死", "死亡", "杀死"],
       "targets": [
         {
           "path": "references/flow-glossary.md",
-          "sections": ["Turn Order And Turn Scope", "Phases And Skipping", "Dying, Death, And Kills"]
+          "sections": ["Game Start And End", "Turn Order And Turn Scope", "Phases And Skipping", "Ordinary Phase Procedures", "Dying, Death, And Kills"]
         }
       ]
     },
