@@ -332,6 +332,8 @@ If a strategy is hidden, name it in the design explanation. If the player must r
 
 ## Wording Checks
 
+精确与无歧义优先于字数、诗意与形式美。压缩文字不得抹掉规则落地所需的对象、主体、许可、时机、成本、顺序、范围或后续去向；现有规范术语已经确定的细节无需重复抄写。若必须依赖设计说明或未明示的自定义前提才能确定结算，应改写技能文本或先明确约定。
+
 Before final output, scan the visible skill text for unresolved placeholders. Never output empty or placeholder card brackets such as `【】`, `【 】`, `【牌名】`, or `【某牌】`. Fill the exact official/new card name, or rewrite the effect with an unbracketed category such as "一张基本牌" or "一张普通锦囊牌".
 
 Check whether each clause can fail. If the latter clause must require the former success, use "并". If the latter can happen after partial execution, use "然后".
