@@ -132,6 +132,7 @@ When a skill reveals, displays, views, hides, or privately shares a card, define
 
 Before finalizing skill text, verify:
 
+- standard operation verbs, technical labels, role references, and quantities are used consistently; define new wording instead of relying on an unstated local synonym;
 - labels, “可以”, “须”, and “需” express the intended agency;
 - “任意数量” intentionally permits 0;
 - simultaneous versus “依次” operations have the intended trigger count;

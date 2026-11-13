@@ -63,7 +63,7 @@ Evaluate in this order. Stop and repair a failed earlier layer before polishing 
 6. **互动成立**: allies receive meaningful choices, enemies have ordinary pressure points, and a support design retains solo decisions. Universal benefits or target count alone do not create interaction.
 7. **强度成立**: test the strongest low-effort line, startup hand, repeated high-value names, survival cards, prevention, target denial, extra actions, and scaling with player count. Prefer visible breakpoints over arbitrary hard limits.
 8. **载体成立**: memory, searches, hidden information, dynamic comparisons, inserted events, and generated objects remain auditable in face-to-face play unless the brief permits online-only handling.
-9. **表达成立**: type labels, timing words, “并/然后”, card names, object names, and sentence order accurately expose the resolution without unnecessary branches.
+9. **表达成立**: standard terms, type labels, timing words, agency, “并/然后”, card/object names, and sentence order accurately expose the resolution without ambiguous actors, permissions, or branches.
 
 ## Stress Tests
 

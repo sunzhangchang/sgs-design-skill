@@ -334,6 +334,17 @@ If a strategy is hidden, name it in the design explanation. If the player must r
 
 精确与无歧义优先于字数、诗意与形式美。压缩文字不得抹掉规则落地所需的对象、主体、许可、时机、成本、顺序、范围或后续去向；现有规范术语已经确定的细节无需重复抄写。若必须依赖设计说明或未明示的自定义前提才能确定结算，应改写技能文本或先明确约定。
 
+Treat each clause as an executable contract. Check in this order:
+
+1. **Trigger and scope**: timing, condition, frequency, duration, affected roles, and the event/phase boundary.
+2. **Agency and permission**: who chooses and acts, whether they may decline, what object they may operate, and which text or rule grants that permission.
+3. **Operation and result**: exact target/object, card identity/material/zone/owner, cost, resulting movement or state, and attribution.
+4. **Continuation**: whether the action can execute fully, partially, or not at all; resolve targetlessness, insufficient objects, and the workspace “并/然后” dependency.
+5. **Cleanup**: where cards and temporary states go, when the effect expires, and what happens if the skill or character leaves play.
+6. **Terminology**: use standard labels and operation verbs consistently. Do not swap near-synonyms unless the rules result is intended to change; define any new term and its scope before relying on it.
+
+Read this checklist against the relevant foundational glossary. Do not repeat a rule already carried unambiguously by a standard term, but do not use a design note to supply missing permission, actor, or cleanup that the skill text needs.
+
 Before final output, scan the visible skill text for unresolved placeholders. Never output empty or placeholder card brackets such as `【】`, `【 】`, `【牌名】`, or `【某牌】`. Fill the exact official/new card name, or rewrite the effect with an unbracketed category such as "一张基本牌" or "一张普通锦囊牌".
 
 Check whether each clause can fail. If the latter clause must require the former success, use "并". If the latter can happen after partial execution, use "然后".
