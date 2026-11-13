@@ -66,6 +66,15 @@ The reviewed `gltjk.com` glossary and identity-mode card-flow materials are foun
 - 三国杀各服军争新机制与特殊牌汇总 document: source for cross-server mechanism families such as 使命技、仁区、背水、整肃、谋弈、协力、护甲、施法、妄行、历战、议事、蓄谋 and extra-card/special-zone vocabulary. The active distilled content starts at `mechanics-index.md` and focused files under `mechanics/`.
 - User-reviewed package card/mechanism table: source for package-scoped special cards, mechanism families, package names, and priority labels. The active distilled content starts at `mechanics-index.md` and focused files under `mechanics/`. The skill should not require access to the original package files.
 
+## Re-crawl Audit (2026-11-13)
+
+- Re-fetched the 38 Bilibili URLs and 9 gltjk rules/identity URLs listed above after checking each site's `robots.txt`. Requests were serial, five seconds apart, without login or retry; all 47 returned HTTP 200.
+- Raw HTML, both `robots.txt` responses, and the request manifest are retained under the ignored `.codex/source-check/recrawl-2026-11-13/` directory.
+- The normalized visible text of all nine gltjk pages matches the earlier retained snapshots exactly, so no foundational rule reference needed revision.
+- Rechecked the design-essay and mechanism takeaways against `design-heuristics.md`, `mechanics-index.md`, and the focused mechanism files. Their reusable guidance is already represented; historical anecdotes, package-specific opinions, and claims that conflict with foundational rules remain examples rather than general rules.
+- The recrawl exposed one instruction mismatch: `mechanics-index.md` required a style question before mechanism selection. Its progressive-use route now follows the current skill contract and asks only when missing package/mode scope could change the implementation.
+- Offline package/mechanism source documents are not among the retained files or URL list and were not recrawled; their existing distilled entries remain unchanged.
+
 ## Intake Rule For Future Sources
 
 - User-confirmed workflow correction (2026-08-17): the design and evaluation process must preserve and reverse-check the rule-sensitive premises used during construction. Incorporated into `rules-priority.md`, `design-evaluation-framework.md`, and `SKILL.md`; it prevents a skill's operative text from relying on a rule interpretation contrary to the one used to justify its design.

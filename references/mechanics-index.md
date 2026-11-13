@@ -16,13 +16,13 @@ Package labels are preserved only so a user can include or exclude sources. Do n
 
 ## Progressive Use
 
-Use mechanisms interactively:
+Use mechanisms at the scope the user requested:
 
-1. Ask whether the user wants official-like, low-complexity, experimental, package-scoped, or no-special-mechanism design.
-2. If the user names a mechanism, read the matching slice below and ask one follow-up only if the package/mode scope or risk tolerance is unclear.
-3. If the user only gives a character, first read `design-heuristics.md`; read a mechanics slice only after choosing the character's main resource axis.
-4. If the design direction changes during the conversation, switch slices instead of loading more files preemptively.
-5. After drafting, check the relevant slice's guardrails plus the short cautions below.
+1. Preserve any requested package, mode, complexity, and style. If unspecified, start with an ordinary tabletop design using ordinary rules.
+2. If the user names a mechanism, read its matching slice. Ask about package/mode scope only when the answer would change the implementation.
+3. If the user only gives a character, first establish the character and play direction; read a mechanism slice only after a specific mechanism is under consideration.
+4. If the direction changes, switch to the newly relevant slice rather than loading more files preemptively.
+5. After drafting, check the relevant slice's guardrails and the short cautions below.
 
 ## Fast Lookup By Design Need
 
