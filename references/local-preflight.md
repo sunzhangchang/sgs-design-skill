@@ -8,6 +8,7 @@ Run from the skill root, or pass `--root` explicitly:
 
 ```powershell
 python scripts/preflight.py context --task review --stage rules --query "伤害时机与虚拟牌"
+python scripts/preflight.py context --task rules --query "规则问题"
 python scripts/preflight.py context --task fresh-design --stage play --query "太原王氏中流，辅助且有单挑空间"
 python scripts/preflight.py context --task intake --query "吸收新的机制评价资料"
 python scripts/preflight.py lint --text "技能文本" --full-group
@@ -15,11 +16,13 @@ python scripts/preflight.py doctor
 python scripts/preflight.py build-index --rebuild
 ```
 
-`context` supports `--format json`, `--plan-only`, `--max-chars`, and `--max-chunks`. Its protocol version is stable across retrieval backends:
+`context` supports `--format json`, `--plan-only`, `--max-chars`, and `--max-chunks`. It never cuts a selected section mid-text. Sections that do not fit are listed in both the plan and compiled output; JSON reports them under `coverage.omitted`. `coverage.complete` means every selected section loaded in full; it does not certify that routing found every relevant reference or that the design is legal. Its protocol version is stable across retrieval backends:
 
 ```text
-task / stage / matched_routes / index / total_chars / chunks[]
-chunks[] = path / heading / lines / authority / source / reason / content
+task / stage / matched_routes / index / total_chars / coverage / chunks[]
+coverage = complete / omitted_count / omitted[]
+omitted[] = path / heading / lines / source / cause
+chunks[] = path / heading / lines / authority / source / reason / truncated / content
 ```
 
 ## Architecture
@@ -42,7 +45,7 @@ The context compiler uses this order:
 3. current-stage guidance;
 4. local BM25 plus Chinese character n-grams only when deterministic coverage is insufficient.
 
-Approximate retrieval cannot override or suppress a deterministic foundational route. Mechanism, contest, provenance, and naming documents are excluded from ordinary approximate retrieval unless the task or a deterministic route asks for them.
+Approximate retrieval cannot override or suppress a deterministic foundational route. A rules-only task excludes design, contest, provenance, and naming material; it loads a mechanism reference only through its explicit route. Mechanism, contest, provenance, and naming documents are excluded from ordinary approximate retrieval unless the task or a deterministic route asks for them.
 
 ## Extension Procedure
 

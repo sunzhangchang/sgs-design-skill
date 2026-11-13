@@ -27,8 +27,34 @@
       "terms": ["评价", "评审", "检查", "比较", "优劣", "修改建议", "平衡", "联动是否"]
     },
     {
+      "task": "rules",
+      "terms": ["规则答疑", "怎么结算", "如何结算", "是否", "能否", "是否合法", "空闲时间点", "规则"]
+    },
+    {
       "task": "fresh-design",
       "terms": ["设计", "创建", "生成", "武将技能", "技能组"]
+    }
+  ],
+  "intent_classifiers": [
+    {
+      "task": "intake",
+      "terms": ["吸收", "写入skill", "写入 skill", "更新知识库"]
+    },
+    {
+      "task": "contest",
+      "terms": ["比赛评审", "参赛稿", "评委意见", "比赛评分"]
+    },
+    {
+      "task": "naming",
+      "terms": ["只取名", "只命名", "只改名", "取几个名"]
+    },
+    {
+      "task": "review",
+      "terms": ["检查", "评审", "评价", "比较", "改写", "修改", "重做"]
+    },
+    {
+      "task": "fresh-design",
+      "terms": ["设计", "创建", "生成武将"]
     }
   ],
   "stage_classifiers": [
@@ -58,6 +84,15 @@
     }
   ],
   "tasks": {
+    "rules": {
+      "required": [
+        {
+          "path": "references/rules-priority.md",
+          "sections": ["Authority Order", "Mandatory Rule Scan", "Rule-Premise Consistency", "Legality Before Quality"]
+        }
+      ],
+      "exclude_kinds": ["contest", "intake", "provenance", "mechanism", "mechanism-index", "naming", "maintenance", "heuristic", "framework"]
+    },
     "fresh-design": {
       "required": [
         {
@@ -66,7 +101,7 @@
         },
         {
           "path": "references/design-evaluation-framework.md",
-          "sections": ["Closed Loop", "Unified Working Sheet"]
+          "sections": ["Closed Loop"]
         }
       ],
       "exclude_kinds": ["contest", "intake", "provenance", "mechanism", "naming", "maintenance"]
@@ -88,7 +123,7 @@
         },
         {
           "path": "references/contest-evaluation.md",
-          "sections": ["Read The Whole Sample", "Contest Evidence Decomposition", "Evidence Chain: Prototype To Judgment"]
+          "sections": ["Read The Whole Sample", "Contest Evidence Decomposition"]
         }
       ],
       "exclude_kinds": ["intake", "provenance", "mechanism", "naming", "maintenance"]

@@ -10,7 +10,7 @@ Treat the entire sample as context:
 - the introductory historical biography or character brief;
 - character, title, HP/maximum HP, and skill count;
 - skill text and design explanation;
-- the three judge scores and comments after the `【字数】` field.
+- all judge scores and comments supplied with the sample. The retained samples place them after the `【字数】` field.
 
 The opening file-format explanation is a parsing instruction, not a requirement for the new design. Do not transfer a sample's HP, skill count, or historical character to a new task unless the user explicitly carries it over.
 
@@ -20,7 +20,7 @@ Separate each sample into:
 命题约束：比赛要求、体力、技能数、指定人物
 人物语境：简介、生平、关键事迹、性格与失败点
 设计实现：技能文本、称号、设计思路
-评委证据：三位评委的分数与具体意见
+评委证据：实际提供的评委分数与具体意见
 可复用结论：能迁移到其他武将的评价标准
 ```
 

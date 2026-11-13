@@ -112,7 +112,7 @@ def _doctor(arguments: argparse.Namespace) -> int:
             findings.append({"severity": "error", "message": f"document metadata references missing file: {path}"})
 
     known_tasks = set(config.get("tasks", {}))
-    for classifier in config.get("classifiers", []):
+    for classifier in [*config.get("classifiers", []), *config.get("intent_classifiers", [])]:
         task = str(classifier.get("task", ""))
         if task not in known_tasks:
             findings.append({"severity": "error", "message": f"classifier references unknown task: {task}"})
@@ -129,6 +129,11 @@ def _doctor(arguments: argparse.Namespace) -> int:
             findings.append(
                 {"severity": "error", "message": f"route requires id, terms, and targets: {route_id or '<empty>'}"}
             )
+        for task in route.get("tasks", []):
+            if task not in known_tasks:
+                findings.append(
+                    {"severity": "error", "message": f"route {route_id} references unknown task: {task}"}
+                )
 
     for path, sections, owner in _target_specs(config):
         absolute = root / path

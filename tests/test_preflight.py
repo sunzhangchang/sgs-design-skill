@@ -160,9 +160,35 @@ class PreflightTestCase(unittest.TestCase):
     def test_auto_classification(self) -> None:
         intake = self.context("吸收新的规则资料并保留原文", "auto", "auto")
         review = self.context("检查这个技能的时机是否合法", "auto", "auto")
+        rules = self.context("每回合限一次是否等于发动时机", "auto", "auto")
         self.assertEqual("intake", intake.task)
         self.assertEqual("review", review.task)
         self.assertEqual("rules", review.stage)
+        self.assertEqual("rules", rules.task)
+
+    def test_rule_answer_routes_only_foundation_and_touched_rules(self) -> None:
+        bundle = self.context(
+            "每回合限一次期间，是否能在无懈可击响应窗口发动",
+            "rules",
+        )
+        keys = self.keys(bundle)
+        self.assertIn(("references/rules-priority.md", "Authority Order"), keys)
+        self.assertIn(("references/event-glossary.md", "Idle Timing Versus Frequency"), keys)
+        self.assertFalse(any("design-evaluation-framework.md" in path for path, _ in keys))
+        self.assertFalse(any("design-heuristics.md" in path for path, _ in keys))
+
+    def test_rule_answer_ignores_design_quality_routes(self) -> None:
+        bundle = self.context("技能联动是否平衡，规则上能否这样结算", "rules")
+        keys = self.keys(bundle)
+        self.assertFalse(any("design-evaluation-framework.md" in path for path, _ in keys))
+        self.assertFalse(any("design-heuristics.md" in path for path, _ in keys))
+
+    def test_explicit_design_intent_beats_ambiguous_topic_terms(self) -> None:
+        bundle = self.context(
+            "为王济设计武将技能，兼顾联动和平衡，并给技能命名",
+            "auto",
+        )
+        self.assertEqual("fresh-design", bundle.task)
 
     def test_budget_is_hard_and_keeps_specific_rule(self) -> None:
         bundle = self.context(
@@ -174,6 +200,10 @@ class PreflightTestCase(unittest.TestCase):
         )
         self.assertLessEqual(bundle.total_chars, 5000)
         self.assertIn(("references/gamecard-operations.md", "视为"), self.keys(bundle))
+        self.assertTrue(bundle.omitted)
+        self.assertTrue(all("[preflight context truncated" not in item.chunk.content for item in bundle.selections))
+        self.assertFalse(bundle.as_dict(include_content=False)["coverage"]["complete"])
+        self.assertIn("## Omitted Sections", bundle.as_markdown(plan_only=True))
 
     def test_rules_stage_includes_rule_premise_consistency(self) -> None:
         bundle = self.context(
@@ -218,6 +248,7 @@ class PreflightTestCase(unittest.TestCase):
         self.assertEqual(1, payload["protocol_version"])
         self.assertEqual("review", payload["task"])
         self.assertTrue(payload["chunks"])
+        self.assertIn("coverage", payload)
 
     def test_concurrent_cache_access(self) -> None:
         def open_index(_: int):

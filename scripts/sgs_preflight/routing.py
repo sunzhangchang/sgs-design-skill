@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import dataclass, replace
+from dataclasses import dataclass
 import json
 from pathlib import Path
 from typing import Any
@@ -8,7 +8,7 @@ from typing import Any
 from .index import Chunk, SQLiteKnowledgeIndex, normalize_text
 
 
-VALID_TASKS = {"auto", "fresh-design", "review", "contest", "naming", "intake"}
+VALID_TASKS = {"auto", "fresh-design", "review", "contest", "rules", "naming", "intake"}
 VALID_STAGES = {"auto", "character", "play", "skeleton", "rules", "evaluation", "output"}
 
 
@@ -30,6 +30,7 @@ class ContextBundle:
     index_rebuilt: bool
     index_elapsed_ms: float
     total_chars: int
+    omitted: list[dict[str, Any]]
 
     def as_dict(self, include_content: bool = True) -> dict[str, Any]:
         return {
@@ -43,6 +44,11 @@ class ContextBundle:
                 "elapsed_ms": round(self.index_elapsed_ms, 3),
             },
             "total_chars": self.total_chars,
+            "coverage": {
+                "complete": not self.omitted,
+                "omitted_count": len(self.omitted),
+                "omitted": self.omitted,
+            },
             "chunks": [
                 {
                     "path": selection.chunk.path,
@@ -79,6 +85,13 @@ class ContextBundle:
                 f"[{selection.source}; {selection.reason}]"
             )
 
+        if self.omitted:
+            lines.extend(["", "## Omitted Sections", ""])
+            lines.extend(
+                f"- `{item['path']}#{item['heading']}` [{item['source']}; {item['cause']}]"
+                for item in self.omitted
+            )
+
         if plan_only:
             return "\n".join(lines).rstrip() + "\n"
 
@@ -105,6 +118,9 @@ def _matches_terms(query: str, terms: list[str]) -> bool:
 def classify_task(query: str, config: dict, requested: str) -> str:
     if requested != "auto":
         return requested
+    for classifier in config.get("intent_classifiers", []):
+        if _matches_terms(query, classifier.get("terms", [])):
+            return str(classifier["task"])
     for classifier in config.get("classifiers", []):
         if _matches_terms(query, classifier.get("terms", [])):
             return str(classifier["task"])
@@ -188,18 +204,31 @@ def build_context(
 
     matched_routes: list[str] = []
     for route in config.get("routes", []):
-        applicable_tasks = set(route.get("tasks", ["fresh-design", "review", "contest"]))
+        applicable_tasks = set(route.get("tasks", ["fresh-design", "review", "contest", "rules"]))
         if task not in applicable_tasks:
             continue
+        if task == "rules":
+            kinds = {
+                config.get("documents", {}).get(str(target["path"]), {}).get("kind", "reference")
+                for target in route.get("targets", [])
+            }
+            if not kinds.intersection({"foundational", "environment"}) and route.get("id") != "special-mechanism":
+                continue
         if not _matches_terms(query, route.get("terms", [])):
             continue
         route_id = str(route["id"])
         matched_routes.append(route_id)
+        matched_term_lengths = [
+            len(normalize_text(str(term)))
+            for term in route.get("terms", [])
+            if normalize_text(str(term)) in normalize_text(query)
+        ]
+        specificity_bonus = max(matched_term_lengths, default=0) * 0.1
         _add_targets(
             selections,
             index,
             route.get("targets", []),
-            900.0,
+            900.0 + specificity_bonus,
             "route",
             route_id,
         )
@@ -241,30 +270,33 @@ def build_context(
     )
 
     chosen: list[Selection] = []
+    omitted: list[dict[str, Any]] = []
     total_chars = 0
     for selection in ordered:
         required = selection.source in {"core", "route"}
         if len(chosen) >= max_chunks and not required:
-            continue
-        remaining = max_chars - total_chars
-        content_size = len(selection.chunk.content)
-        if remaining <= 0:
-            continue
-        if content_size > remaining:
-            suffix = "\n\n[preflight context truncated at the configured character budget]"
-            if remaining <= len(suffix):
-                continue
-            content = selection.chunk.content[: remaining - len(suffix)].rstrip()
-            if not content:
-                continue
-            content += suffix
-            selection = Selection(
-                replace(selection.chunk, content=content),
-                selection.priority,
-                selection.reason,
-                selection.source,
+            omitted.append(
+                {
+                    "path": selection.chunk.path,
+                    "heading": selection.chunk.heading,
+                    "lines": [selection.chunk.start_line, selection.chunk.end_line],
+                    "source": selection.source,
+                    "cause": "chunk_limit",
+                }
             )
-            content_size = len(content)
+            continue
+        content_size = len(selection.chunk.content)
+        if total_chars + content_size > max_chars:
+            omitted.append(
+                {
+                    "path": selection.chunk.path,
+                    "heading": selection.chunk.heading,
+                    "lines": [selection.chunk.start_line, selection.chunk.end_line],
+                    "source": selection.source,
+                    "cause": "character_budget",
+                }
+            )
+            continue
         chosen.append(selection)
         total_chars += content_size
 
@@ -277,6 +309,7 @@ def build_context(
         index_rebuilt=index_rebuilt,
         index_elapsed_ms=index_elapsed_ms,
         total_chars=total_chars,
+        omitted=omitted,
     )
 
 

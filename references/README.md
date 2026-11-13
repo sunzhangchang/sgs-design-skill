@@ -2,13 +2,13 @@
 
 This directory is a progressive knowledge base. Do not read every file for an ordinary request. Start with the route for the current task, then load the smallest relevant slice.
 
-When local Python execution is available, run `scripts/preflight.py context` first and consume its bounded compiled sections. The read order below is the human-readable fallback and the authority model used by that engine.
+When local Python execution is available, use `scripts/preflight.py context` to combine relevant sections. Check its coverage and omissions; read missing sections directly before relying on them. The read order below is the human-readable fallback and the authority model used by that engine.
 
 ## Read Order
 
 1. Every fresh design or review: [rules-priority.md](rules-priority.md).
 2. Every fresh design or review: [design-evaluation-framework.md](design-evaluation-framework.md), the shared design/review loop.
-3. Only the current design stage: the needed sections of [design-heuristics.md](design-heuristics.md).
+3. Only the current design stage: the needed sections in [design-heuristics.md](design-heuristics.md).
 4. A named mechanism, package, special card, or special zone: [mechanics-index.md](mechanics-index.md), then one routed file under `mechanics/`.
 5. A contest sample, judge feedback, or contest-style score: [contest-evaluation.md](contest-evaluation.md).
 6. A generated name or named nonstandard object: [naming-titles.md](naming-titles.md).

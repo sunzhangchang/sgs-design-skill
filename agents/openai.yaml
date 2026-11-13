@@ -1,4 +1,4 @@
 interface:
   display_name: "三国杀武将设计"
-  short_description: "创建、评审并命名简洁联动的三国杀武将技能组"
-  default_prompt: "Use $sanguosha-general-designer interactively: confirm the current design stage, ask only the next 1-3 focused questions, then draft or review a natural 2-4 skill 三国杀武将组 with clear timing and linkage."
+  short_description: "设计、评审与命名三国杀武将技能，并检查规则结算与玩法"
+  default_prompt: "使用 $sanguosha-general-designer 完成我的武将设计、评审或命名请求；保留已定约束，信息足够时直接给方案并说明规则依据与玩法取舍。"
