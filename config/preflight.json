@@ -12,7 +12,7 @@
   "classifiers": [
     {
       "task": "contest",
-      "terms": ["比赛", "参赛", "评委", "评分", "稿件"]
+      "terms": ["比赛", "参赛", "评委", "稿件"]
     },
     {
       "task": "intake",
@@ -24,7 +24,7 @@
     },
     {
       "task": "review",
-      "terms": ["评价", "评审", "检查", "比较", "优劣", "修改建议", "平衡", "联动是否"]
+      "terms": ["评价", "评审", "检查", "比较", "优劣", "评分", "打分", "评级", "修改建议", "平衡", "联动是否"]
     },
     {
       "task": "rules",
@@ -50,7 +50,7 @@
     },
     {
       "task": "review",
-      "terms": ["检查", "评审", "评价", "比较", "改写", "修改", "重做"]
+      "terms": ["检查", "评审", "评价", "比较", "评分", "打分", "评级", "改写", "修改", "重做"]
     },
     {
       "task": "fresh-design",
@@ -68,7 +68,7 @@
     },
     {
       "stage": "evaluation",
-      "terms": ["评价", "评审", "比较", "优劣", "平衡", "问题"]
+      "terms": ["评价", "评审", "比较", "评分", "打分", "评级", "优劣", "平衡", "问题"]
     },
     {
       "stage": "skeleton",
@@ -91,7 +91,7 @@
           "sections": ["Authority Order", "Mandatory Rule Scan", "Rule-Premise Consistency", "Legality Before Quality"]
         }
       ],
-      "exclude_kinds": ["contest", "intake", "provenance", "mechanism", "mechanism-index", "naming", "maintenance", "heuristic", "framework"]
+      "exclude_kinds": ["contest", "intake", "provenance", "mechanism", "mechanism-index", "naming", "maintenance", "heuristic", "framework", "evaluation-calibration", "score-method"]
     },
     "fresh-design": {
       "required": [
@@ -104,7 +104,7 @@
           "sections": ["Closed Loop"]
         }
       ],
-      "exclude_kinds": ["contest", "intake", "provenance", "mechanism", "naming", "maintenance"]
+      "exclude_kinds": ["contest", "intake", "provenance", "mechanism", "naming", "maintenance", "evaluation-calibration", "score-method"]
     },
     "review": {
       "required": [
@@ -113,7 +113,7 @@
           "sections": ["Authority Order", "Legality Before Quality"]
         }
       ],
-      "exclude_kinds": ["contest", "intake", "provenance", "mechanism", "naming", "maintenance"]
+      "exclude_kinds": ["contest", "intake", "provenance", "mechanism", "naming", "maintenance", "evaluation-calibration", "score-method"]
     },
     "contest": {
       "required": [
@@ -135,7 +135,7 @@
           "sections": ["Workflow", "Naming Methods", "Checks"]
         }
       ],
-      "exclude_kinds": ["contest", "intake", "provenance", "mechanism", "maintenance"]
+      "exclude_kinds": ["contest", "intake", "provenance", "mechanism", "maintenance", "evaluation-calibration", "score-method"]
     },
     "intake": {
       "required": [
@@ -179,7 +179,11 @@
     "evaluation": [
       {
         "path": "references/design-evaluation-framework.md",
-        "sections": ["Evaluation Order", "Stress Tests", "Diagnosis And Repair", "Comparative Calibration"]
+        "sections": ["Evaluation Order", "Stress Tests", "Diagnosis And Repair"]
+      },
+      {
+        "path": "references/design-rating-calibration.md",
+        "sections": ["Relative Design Anchors"]
       }
     ],
     "output": [
@@ -203,6 +207,16 @@
       "kind": "framework",
       "authority": 80,
       "tags": ["设计流程", "评价体系", "诊断", "工作卡"]
+    },
+    "references/design-rating-calibration.md": {
+      "kind": "evaluation-calibration",
+      "authority": 80,
+      "tags": ["相对评价", "评分校准", "证据锚点", "评委分歧"]
+    },
+    "references/score-calibration-method.md": {
+      "kind": "score-method",
+      "authority": 80,
+      "tags": ["评分分布", "评委尺度", "结果校准", "横向比较"]
     },
     "references/design-heuristics.md": {
       "kind": "heuristic",
@@ -481,6 +495,16 @@
         {
           "path": "references/contest-evaluation.md",
           "sections": ["Sample 3 Lessons"]
+        }
+      ]
+    },
+    {
+      "id": "score-calibration",
+      "terms": ["评分", "评分标准", "评分分布", "分项分数", "评分校准", "相对评价", "横向比较", "赛事结果", "结果集", "结果表格", "评委评分"],
+      "targets": [
+        {
+          "path": "references/score-calibration-method.md",
+          "sections": ["Scored Result Calibration"]
         }
       ]
     },

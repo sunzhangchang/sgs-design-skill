@@ -157,13 +157,36 @@ class PreflightTestCase(unittest.TestCase):
         self.assertEqual([], bundle.matched_routes)
         self.assertFalse(any(path == "references/description-glossary.md" for path, _ in keys))
 
+    def test_review_loads_relative_anchors_without_score_method(self) -> None:
+        bundle = self.context("评审这组武将技能的人物契合与实际玩法", "review")
+        keys = self.keys(bundle)
+        self.assertIn(
+            ("references/design-rating-calibration.md", "Relative Design Anchors"),
+            keys,
+        )
+        self.assertFalse(any(path == "references/score-calibration-method.md" for path, _ in keys))
+
+    def test_scored_contest_result_loads_score_method(self) -> None:
+        bundle = self.context("吸收赛事结果表格并比较评分分布", "contest")
+        self.assertIn("score-calibration", bundle.matched_routes)
+        self.assertIn(
+            ("references/score-calibration-method.md", "Scored Result Calibration"),
+            self.keys(bundle),
+        )
+
     def test_auto_classification(self) -> None:
         intake = self.context("吸收新的规则资料并保留原文", "auto", "auto")
         review = self.context("检查这个技能的时机是否合法", "auto", "auto")
+        scored_review = self.context("给这套武将技能评分并说明依据", "auto", "auto")
+        contest = self.context("评委意见和比赛评分", "auto", "auto")
         rules = self.context("每回合限一次是否等于发动时机", "auto", "auto")
         self.assertEqual("intake", intake.task)
         self.assertEqual("review", review.task)
         self.assertEqual("rules", review.stage)
+        self.assertEqual("review", scored_review.task)
+        self.assertEqual("evaluation", scored_review.stage)
+        self.assertIn("score-calibration", scored_review.matched_routes)
+        self.assertEqual("contest", contest.task)
         self.assertEqual("rules", rules.task)
 
     def test_rule_answer_routes_only_foundation_and_touched_rules(self) -> None:

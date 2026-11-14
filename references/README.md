@@ -34,6 +34,8 @@ These files distill the reviewed `gltjk.com` rules pages and identity-mode mater
 ## Design Files
 
 - [design-evaluation-framework.md](design-evaluation-framework.md): the canonical closed loop, unified working sheet, evaluation order, stress tests, diagnosis, and repair language for both generation and review.
+- [design-rating-calibration.md](design-rating-calibration.md): shared evidence anchors for evaluation; load score calibration only for comparison or scored-result work.
+- [score-calibration-method.md](score-calibration-method.md): score distributions, evaluator differences, cohort comparisons, and limits on numeric generalization; use only when scores or results matter.
 - [design-heuristics.md](design-heuristics.md): a stage-routed option library for design origin, anchors, skill structure, timing, linkage, clan design, locked skills, support, balance, and wording.
 - [contest-evaluation.md](contest-evaluation.md): contest-only extensions, sample parsing, judge-feedback evidence, disagreements, and practical contest cases. It supplements rather than replaces the unified framework.
 - [naming-titles.md](naming-titles.md): titles, achievements, skill names, card names, mark names, and names for generated objects.

@@ -62,7 +62,7 @@ If a link breaks, name the broken link. Do not vaguely label the whole design â€
 
 ## Feed Contest Evidence Back Into Design
 
-Feed a contest lesson back into ordinary design and review after completing the evidence chain below. If it changes a generally useful judgment, put the criterion and its evidence anchor into the matching field or stress test in `design-evaluation-framework.md` or `design-heuristics.md`, and ensure ordinary-task routing loads it. Keep only prompt-, clan-, mode-, or package-scoped findings here. Do not copy a winning mechanism, score, HP, or skill count as a general standard. A lesson is reusable when concrete observations explain why a player action, resource direction, interaction, or implementation succeeded or failed.
+Feed a contest lesson back into ordinary design and review after completing the evidence chain below. If it changes a generally useful judgment, put the criterion and its evidence anchor into `design-evaluation-framework.md`, `design-rating-calibration.md`, or the matching design heuristic, and ensure ordinary-task routing loads it. Use `score-calibration-method.md` for numeric comparisons. Keep only prompt-, clan-, mode-, or package-scoped findings here. Do not copy a winning mechanism, score, HP, or skill count as a general standard. A lesson is reusable when concrete observations explain why a player action, resource direction, interaction, or implementation succeeded or failed.
 
 ## Problem Attribution
 

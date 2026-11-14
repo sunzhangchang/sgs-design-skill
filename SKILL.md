@@ -12,7 +12,7 @@ description: 设计、评审、改写三国杀自制武将与宗族技能，检�
 | 请求 | 处理方式 | 按需读取 |
 | --- | --- | --- |
 | 新设计或重构技能组 | 人物与玩法命题 → 技能分工 → 规则实现 → 检查 | [设计评价框架](references/design-evaluation-framework.md)、[设计选项](references/design-heuristics.md) |
-| 评审、平衡或版本比较 | 先列具体问题、触发场景和后果，再给保留原意的修法；比较设计时按评价框架的共同维度和证据锚点校准 | [设计评价框架](references/design-evaluation-framework.md) |
+| 评审、平衡或版本比较 | 先列具体问题、触发场景和后果，再给保留原意的修法；横向比较或评分时使用证据锚点 | [设计评价框架](references/design-evaluation-framework.md)、[相对评价锚点](references/design-rating-calibration.md)；涉及分数时再读[评分校准方法](references/score-calibration-method.md) |
 | 比赛稿或评委意见 | 核对命题与证据链，区分评委意见和自己的判断 | [比赛评价](references/contest-evaluation.md) |
 | 单独规则答疑 | 直接给结论、条件边界和适用规则 | [规则入口](references/rules-priority.md)、相关基础术语 |
 | 只取名或改名 | 围绕人物和实际玩法给候选及短解释 | [命名](references/naming-titles.md) |
