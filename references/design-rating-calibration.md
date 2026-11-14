@@ -1,6 +1,6 @@
 # Relative Design Evaluation Anchors
 
-Use this reference when comparing designs, applying absorbed contest results, or assigning scores. The canonical design process remains in `design-evaluation-framework.md`; this file defines how to describe relative evidence without turning one contest into an absolute scale.
+Use this as the reusable system for assessing individual designs and comparing alternatives. Apply it after the brief and rules gates in `design-evaluation-framework.md`: build a layer-by-layer profile, locate defects by trigger and impact, then propose a repair. Contest data calibrates these criteria but does not define the system or supply default weights.
 
 ## Relative Design Anchors
 
