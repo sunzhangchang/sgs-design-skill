@@ -173,6 +173,15 @@ class PreflightTestCase(unittest.TestCase):
             ("references/score-calibration-method.md", "Scored Result Calibration"),
             self.keys(bundle),
         )
+        self.assertIn(("references/contest-evaluation.md", "Read The Whole Sample"), self.keys(bundle))
+
+    def test_explicit_blind_review_loads_independent_pass(self) -> None:
+        bundle = self.context("先盲评再对照评委意见", "review")
+        self.assertIn("blind-review-comparison", bundle.matched_routes)
+        self.assertIn(
+            ("references/score-calibration-method.md", "Blind First Pass"),
+            self.keys(bundle),
+        )
 
     def test_auto_classification(self) -> None:
         intake = self.context("吸收新的规则资料并保留原文", "auto", "auto")

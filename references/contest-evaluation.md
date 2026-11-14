@@ -26,6 +26,8 @@ Separate each sample into:
 
 Do not average scores blindly. First identify what each judge is measuring: formal structure, actual play, or theme/table practicality. A disagreement is useful evidence about a risk boundary, not automatically an error by one judge.
 
+When the sample includes actual designs and judge feedback, first evaluate the prompt, character facts, and skill text without reading the author's explanation or judges' comments/scores. Record an independent assessment using the shared evaluation anchors. Then read the explanation and feedback, and compare missed findings, unsupported concerns, severity differences, agreements, and unresolved disagreements. Recheck each difference against the actual wording and a concrete play case; neither a higher score nor majority agreement settles the design judgment. For the detailed scoring procedure, use `score-calibration-method.md`.
+
 ## Contest Extensions To The Core Rubric
 
 Apply these contest-sensitive dimensions after the core framework's rules gate. They elaborate its layers rather than creating a second competing evaluation order:

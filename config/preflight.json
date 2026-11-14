@@ -509,6 +509,16 @@
       ]
     },
     {
+      "id": "blind-review-comparison",
+      "terms": ["盲评", "盲评对照", "先独立评价"],
+      "targets": [
+        {
+          "path": "references/score-calibration-method.md",
+          "sections": ["Blind First Pass"]
+        }
+      ]
+    },
+    {
       "id": "support-solo",
       "terms": ["辅助", "支援", "团队", "单挑", "单挑空间", "队友"],
       "targets": [

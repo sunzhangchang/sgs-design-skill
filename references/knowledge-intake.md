@@ -17,17 +17,20 @@ Preserve source material after intake. Do not delete a retained page or file unl
 ## Intake Steps
 
 1. **Preserve**: save a stable local copy under `.codex/source-check/` when the source is remote or otherwise at risk of changing. Keep user-provided local files in place and record their path; copy them only when preservation is needed and permitted.
-2. **Read faithfully**: extract the relevant body, tables, and captions. Read images only when their content is necessary or the user requests it. Separate page chrome, comments, advertisements, and unrelated recommendations from the source itself.
-3. **Classify**: assign each reusable claim to one knowledge class before editing.
-4. **Compare**: search existing references for the same term and nearby concepts. Identify confirmation, extension, duplication, disagreement, or direct contradiction.
-5. **Resolve authority**: apply the authority rules below. Never silently replace a higher-priority rule with a lower-priority opinion.
-6. **Distill**: write the smallest reusable principle that preserves scope, exceptions, and design consequence. Do not reproduce the article or store a summary merely because it is interesting.
-7. **Calibrate scored evidence**: when results include ratings, follow [Scored Result Calibration](score-calibration-method.md). Retain each rubric, maximum, evaluator, and written reason; do not infer causality or universal cutoffs from rank alone.
-8. **Promote transferable lessons**: move general criteria into `design-evaluation-framework.md`, `design-rating-calibration.md`, or the matching design heuristic so ordinary design and review can use them. Keep clan-, mode-, prompt-, and package-specific findings plus score distributions in the contest/mechanism reference. Preserve the sample and the criterion-to-evidence trace.
-9. **Merge and route**: update the closest references once. Ensure promoted standards load during the ordinary task stage where they affect decisions; keep detailed source evidence on its scoped route. Add a new file only when no existing file has the right responsibility or the target would become too large to load selectively.
-10. **Record provenance**: add or update one concise entry in `source-digests.md` with source, title/identity, knowledge class, target reference, and the main reusable lesson.
-11. **Validate**: check structure, links, contradictory wording, routing, and the affected workflow. Run `python scripts/preflight.py doctor --rebuild`, the preflight unit tests, and the skill validator. If a core rule or process changed, test representative context queries for both ordinary use and the source-specific case.
-12. **Commit**: inspect the diff and commit only the intended files locally. If the user requested review first, stop before the merge or commit at the requested checkpoint.
+2. **Map the source**: identify its entries and separate prompts, factual context, design text, author explanations, comments, and scores. For examples with external evaluations, do not read the explanations or evaluation fields yet.
+3. **Blind first pass**: before seeing author explanations or external reviews, assess the prompt, relevant facts, and actual design text with the shared evaluation anchors. Record likely strengths, defects, triggers, and confidence. Use the supplied score dimensions only if known from the prompt, not the hidden ratings.
+4. **Read faithfully**: now extract the full relevant source, including tables, captions, author explanations, judge comments, and scores. Read images only when their content is necessary or requested; separate page chrome and unrelated material.
+5. **Compare judgments**: compare the blind assessment with author intent and reviewer feedback. Identify missed findings, unsupported concerns, severity differences, agreements, and unresolved disagreements; verify each against rules and a concrete play line.
+6. **Classify**: assign each reusable claim to one knowledge class before editing.
+7. **Compare existing knowledge**: search references for the same term and nearby concepts. Identify confirmation, extension, duplication, disagreement, or contradiction.
+8. **Resolve authority**: apply the authority rules below. Never silently replace a higher-priority rule with a lower-priority opinion.
+9. **Distill**: write the smallest reusable principle that preserves scope, exceptions, and design consequence. Do not reproduce the article or store a summary merely because it is interesting.
+10. **Calibrate scores**: when ratings are supplied, follow [Scored Result Calibration](score-calibration-method.md). Retain each rubric, maximum, evaluator, and reason; do not infer causality or universal cutoffs from rank alone.
+11. **Promote transferable lessons**: move general criteria into `design-evaluation-framework.md`, `design-rating-calibration.md`, or the matching design heuristic so ordinary design and review can use them. Keep clan-, mode-, prompt-, and package-specific findings plus score distributions in the contest/mechanism reference. Preserve the sample and the criterion-to-evidence trace.
+12. **Merge and route**: update the closest references once. Ensure promoted standards load during the ordinary task stage where they affect decisions; keep detailed source evidence on its scoped route. Add a new file only when no existing file has the right responsibility or the target would become too large to load selectively.
+13. **Record provenance**: add or update one concise entry in `source-digests.md` with source, title/identity, knowledge class, target reference, and the main reusable lesson.
+14. **Validate**: check structure, links, contradictions, routing, and affected workflows. Run `python scripts/preflight.py doctor --rebuild`, preflight unit tests, and the skill validator. Test representative ordinary and source-specific queries.
+15. **Commit**: inspect the diff and commit only intended files locally. If the user requested review first, stop before the merge or commit.
 
 ## Knowledge Classes And Destinations
 
