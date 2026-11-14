@@ -179,7 +179,7 @@
     "evaluation": [
       {
         "path": "references/design-evaluation-framework.md",
-        "sections": ["Evaluation Order", "Stress Tests", "Diagnosis And Repair"]
+        "sections": ["Evaluation Order", "Stress Tests", "Diagnosis And Repair", "Comparative Calibration"]
       }
     ],
     "output": [

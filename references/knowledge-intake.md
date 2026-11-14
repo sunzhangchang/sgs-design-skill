@@ -22,10 +22,12 @@ Preserve source material after intake. Do not delete a retained page or file unl
 4. **Compare**: search existing references for the same term and nearby concepts. Identify confirmation, extension, duplication, disagreement, or direct contradiction.
 5. **Resolve authority**: apply the authority rules below. Never silently replace a higher-priority rule with a lower-priority opinion.
 6. **Distill**: write the smallest reusable principle that preserves scope, exceptions, and design consequence. Do not reproduce the article or store a summary merely because it is interesting.
-7. **Merge once**: update the single closest reference. Add a new file only when no existing file has the right responsibility or the target would become too large to load selectively.
-8. **Record provenance**: add or update one concise entry in `source-digests.md` with source, title/identity, knowledge class, target reference, and the main reusable lesson.
-9. **Validate**: check structure, links, contradictory wording, routing, and the affected workflow. Run `python scripts/preflight.py doctor --rebuild`, the preflight unit tests, and the skill validator. If a core rule or process changed, test at least one representative context query that would have failed before.
-10. **Commit**: inspect the diff and commit only the intended files locally. If the user requested review first, stop before the merge or commit at the requested checkpoint.
+7. **Calibrate scored evidence**: when results include ratings, retain each rubric, maximum, evaluator, and written reason. Compare the same dimensions within the same result set, normalize only for unlike maxima, and inspect evaluator differences before pooling. Contrast higher- and lower-rated examples to find evidence-backed relative standards; do not infer causality or universal cutoffs from rank alone.
+8. **Promote transferable lessons**: move general criteria into `design-evaluation-framework.md` or the matching design heuristic so ordinary design and review can use them. Keep clan-, mode-, prompt-, and package-specific findings plus score distributions in the contest/mechanism reference. Preserve the sample and the criterion-to-evidence trace.
+9. **Merge and route**: update the closest references once. Ensure promoted standards load during the ordinary task stage where they affect decisions; keep detailed source evidence on its scoped route. Add a new file only when no existing file has the right responsibility or the target would become too large to load selectively.
+10. **Record provenance**: add or update one concise entry in `source-digests.md` with source, title/identity, knowledge class, target reference, and the main reusable lesson.
+11. **Validate**: check structure, links, contradictory wording, routing, and the affected workflow. Run `python scripts/preflight.py doctor --rebuild`, the preflight unit tests, and the skill validator. If a core rule or process changed, test representative context queries for both ordinary use and the source-specific case.
+12. **Commit**: inspect the diff and commit only the intended files locally. If the user requested review first, stop before the merge or commit at the requested checkpoint.
 
 ## Knowledge Classes And Destinations
 
@@ -36,6 +38,7 @@ Preserve source material after intake. Do not delete a retained page or file unl
 | General design/evaluation method | `design-evaluation-framework.md` | add only if it changes the reusable workflow or diagnosis |
 | Design option, balancing pattern, or character method | `design-heuristics.md` | store as scoped guidance, not law |
 | Contest submission or judge evidence | `contest-evaluation.md` | retain the prototype-design-explanation-judgment chain |
+| Scored design results | transferable criteria in `design-evaluation-framework.md`; cohort data in `contest-evaluation.md` | compare same-rubric dimensions and evaluator evidence before forming relative anchors |
 | Named special mechanism or package vocabulary | routed file under `mechanics/` and, when needed, `mechanics-index.md` | retain package scope, priority, and guardrails |
 | Naming method | `naming-titles.md` | keep naming use, source image, and failure mode concise |
 | Source identity and provenance | `source-digests.md` | record what was absorbed and where, not a second full summary |

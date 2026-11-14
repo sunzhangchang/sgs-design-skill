@@ -10,6 +10,7 @@ Use this compact framework for every fresh design, review, or rebalance task. It
 - `Stress Tests`: counterfactual, strongest-line, empty-line, and tabletop checks.
 - `Diagnosis And Repair`: map the first broken layer to a targeted revision.
 - `Rating Language`: evidence-first review labels.
+- `Comparative Calibration`: use shared criteria and result evidence to compare designs without turning one contest into an absolute scale.
 - `Routing After The Framework`: load only the next focused reference.
 
 ## Closed Loop
@@ -107,6 +108,32 @@ Use evidence before scores:
 - **不成立**: rules, rational play, or the brief directly defeats the layer.
 
 For reviews, report the first broken layer, concrete evidence, downstream symptoms, and the smallest useful repair. Give numeric scores only when the user or contest requires them, and never average away a rules failure.
+
+## Comparative Calibration
+
+比较多份设计或运用已吸收的结果集时，逐层使用同一组判断维度，再给整体结论。每层先记证据状态，不暗中折算成分数：
+
+| 维度 | 较强证据 | 薄弱或缺失的证据 |
+| --- | --- | --- |
+| 规则与表达 | 操作均有合法、可追溯的路径，执行者、时机、成本和结束点明确。 | 关键条款依赖未写明的许可、相互矛盾的前提或未解决的分支。规则不成立属于门槛问题，不能靠其他项高分抵消。 |
+| 人物契合 | 去掉技能名和设计说明，玩家实际做出的选择仍能表现具体人物锚点。 | 关联主要存在于名称或说明中，实际玩法却更像另一类人物。 |
+| 主循环与选择 | 玩家有可重复且有意义的选择，至少在常见局面下优于普通替代行动。 | 理性路线是不开核心技能，或某一选项强到让表面上的选择失去意义。 |
+| 反馈与强度 | 成本、收益和限制在最强重复路线下仍能推动预期玩法，并保留明确的失败点。 | 收益绕开预期行动、成本反转资源方向，或名义限制无法控制产出。 |
+| 技能结构与互动 | 每项技能各有工作，联动提供支持而不强迫执行；其他角色仍有实际选择或反制空间。 | 技能只充当燃料、联动让技能组变脆，或把广泛影响误当作互动。 |
+| 桌面执行 | 状态、历史、选择和清理方式可见且易于核验。 | 隐藏或长期记忆、检索、嵌套结算或反复改写状态，使玩家难以确认当前局面。 |
+| 新意（仅在命题要求时） | 机制带来有意义的新选择或人物解释，同时保持清晰和契合。 | 只给熟悉模板换名，或新机制增加复杂度却没有改变有效玩法。 |
+
+每层使用四档：**强项、成立、有条件、缺乏依据**。“强项”需要反复出现或特别直接的证据；“成立”表示常见边界下运作可靠；“有条件”表示仍依赖某项条件或有具体风险；“缺乏依据”表示文本、实战路线或来源材料尚不能支撑该判断。这是一组相对画像：一份设计可以人物契合为强项、桌面执行为有条件。除非用户要求打分，不把画像压成单一总评。
+
+当吸收的来源含有评分或结果时：
+
+1. 保留原评分维度、满分、权重、评委及评语。分数只说明该评委依照该量表作出的判断，不是规则或客观真值。
+2. 只比较同一量表下的相同维度。量尺不同才按各自满分归一化；合并前先看每位评委的评分差异。不同量表的总分不可直接比较，规则硬伤也不能被其他项平均抵消。
+3. 对照同一维度的高分稿与低分稿，把差异连到具体评语和可观察的玩法行为；分开记录评委原话与归纳出的可迁移标准。
+4. 将可迁移标准写入本框架或对应设计选项，并纳入普通设计/评审路由。评分分布、具体投稿、命题限制和未决解释留在赛事资料中。
+5. 标注基准所对应的样本范围和可信度。单一小型或主题赛事只能提示相对模式，不能建立普适门槛、因果结论或默认权重。除非用户要求，不把赛事评分权重套到普通评审。
+
+没有可比较的评分集时，仍使用相同维度作定性判断，不自行编造数值校准。
 
 ## Routing After The Framework
 

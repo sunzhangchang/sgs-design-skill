@@ -62,7 +62,7 @@ If a link breaks, name the broken link. Do not vaguely label the whole design �
 
 ## Feed Contest Evidence Back Into Design
 
-Feed a contest lesson back into design only after completing the evidence chain below. Put the reusable conclusion into the matching field or stress test in `design-evaluation-framework.md`; do not copy the winning mechanism, score, HP, or skill count. A lesson is reusable when the judges' concrete observation explains why the submitted player action, resource direction, interaction, or implementation succeeded or failed.
+Feed a contest lesson back into ordinary design and review after completing the evidence chain below. If it changes a generally useful judgment, put the criterion and its evidence anchor into the matching field or stress test in `design-evaluation-framework.md` or `design-heuristics.md`, and ensure ordinary-task routing loads it. Keep only prompt-, clan-, mode-, or package-scoped findings here. Do not copy a winning mechanism, score, HP, or skill count as a general standard. A lesson is reusable when concrete observations explain why a player action, resource direction, interaction, or implementation succeeded or failed.
 
 ## Problem Attribution
 
@@ -129,14 +129,18 @@ These cases show why the evaluation rubric is not a generic popularity scale: th
 
 ## Sample 3 Lessons
 
-The first **门阀士族补完计划** table contains 31 entries: 15 汝南袁氏, 10 清河崔氏, and 6 天水姜氏. The user-provided brief requires a clan skill whose name is fixed while its effect is entrant-designed: 汝南袁氏「沽名」、清河崔氏「沦佚」、天水姜氏「星孤」. Treat the exact clan/name pairing and presence of a clan skill as hard prompt checks; do not grade a renamed or omitted skill as if it met the brief. The workbook records two reviewers, each using appearance (1), creativity (2), fit (2), and gameplay (5), with a combined total out of 20. Its highest combined totals are BCG's 袁术 (18), BCG's 崔琰 (16.5), and 于吉's 姜维 (14.5). The sheet does not designate a winner, so these are score observations rather than declared placements.
+第一届**门阀士族补完计划**收录31份投稿：汝南袁氏15份、清河崔氏10份、天水姜氏6份。用户提供的命题要求必须有宗族技，宗族技名称固定、效果自拟：汝南袁氏「沽名」、清河崔氏「沦佚」、天水姜氏「星孤」。宗族与名称是否对应、是否确实有宗族技属于硬性命题检查；不能把改名或漏写的投稿当作完成命题。表中两位评委都按美观（1分）、创意（2分）、契合度（2分）、游戏性（5分）评分，合计20分。合计分最高的是BCG的袁术（18分）、BCG的崔琰（16.5分）和于吉的姜维（14.5分）。表格没有标注获奖名次，因此这些只是分数观察，不代表正式排名。
+
+本届内部的分数校准显示两位评委的平均尺度不同：评委1的美观、创意、契合度、游戏性均分分别为0.50/1、1.21/2、1.15/2、1.69/5；评委2分别为0.84/1、1.06/2、1.27/2、2.17/5。游戏性有一项未填分。按表内合计分排序，前后各四分位（各7份）的单项平均分对照为：美观0.93对0.36、创意1.61对0.64、契合度1.61对0.89、游戏性3.11对1.04。由于分组依据就是这些分项相加得到的总分，这些差异只描述本届样本的分数区分情况，不能证明某维度导致了排名。可迁移的方法是分项比较、结合评语解释分数，并保持相同维度横向对照；不要把本届均分、权重或分数线套用到普通设计。
 
 The entries and comments support these scoped lessons:
 
-- **汝南袁氏 / 沽名**: family-wide resource language can carry into personal skills. The two 袁谭/袁尚 entries that share a visible-hand/attack-range clan effect earned 13.5 each; one reviewer praised the symmetry, while reviewers also warned against unrestricted use and paired draw/skip benefits. Elsewhere, reviewers liked family rebellion expressed through a lord-facing 沽名, but questioned whether the rest of the kit made the general a credible lord. Check both the clan effect's shared-family function and the character's requested role; do not let a thematic “内伐” clause stand in for lord gameplay.
-- **清河崔氏 / 沦佚**: skill loss, protection of derived skills, and transformation of skills can evoke obscurity or family legacy, but implementations drew repeated criticism when the affected skill, owner, duration, or trigger was hard to audit. One entry duplicated the same self-generating skill and was criticized as cumbersome and formulaic; another had a reviewer explicitly note that its effects diverged from its explanation. When using this clan concept, define what is lost or preserved, whose skill it is, and when the state ends; then test whether actual play expresses the submitted idea without requiring players to infer it from the name.
-- **天水姜氏 / 星孤**: the strongest-scoring entries gave the clan skill a concrete job in the character's play loop. 于吉's 14.5-point 姜维 paired a multi-condition 火【杀】 choice with a shared-family 浮雷判定; judges praised its visual image, numerical decision-making, and tactical choice. 舆人’s 13.5-point entry used a limited 「星」 resource to connect the clan skill with its duel/response package, with a reviewer praising its self-link and interaction. By contrast, a low-scoring entry used the wrong clan-skill name; a reviewer called out that the prompt name was wrong even while finding parts of the personal design interesting. Validate the required family term first, then judge whether its effect supplies a real shared function and whether the personal kit makes that function matter.
-- **Across all three clans**: reviewers repeatedly distinguished an evocative explanation from the behavior the text actually creates. Dynamic counts, generated or lost skills, “no limit” effects, copied turns, and nested card-use choices need concrete line-by-line play tests. Retain reviewer disagreements as boundaries: visual or thematic praise can coexist with concerns about role fit, wording, power, and tabletop execution. Keep each reviewer's score and reason visible rather than turning the combined score into a universal quality rule.
+- **汝南袁氏 / 沽名**：家族共用的资源语言可以延伸到个人技能。两份共用“明置手牌数—攻击范围”宗族技的袁谭、袁尚投稿均得13.5分；有评委赞赏其对称性，也有评委提醒不要轻率给予无次数限制或同时叠加摸牌、跳弃牌阶段。另有投稿用面向主公的「沽名」表现袁氏内伐，评委认可其方向，但质疑其余技能是否真能支撑主公定位。评审时应同时检查宗族技是否发挥家族共用功能、个人技能是否满足武将定位，不能用“内伐”的主题替代主公玩法。
+- **清河崔氏 / 沦佚**：失去技能、保护衍生技和技能变化都能表达湮没或家族传承，但多份投稿因操作对象、归属、持续时间或触发条件难以核验而受批评。一份重复生成同一技能的投稿被评为繁琐、公式化；另一份评语指出实际效果与设计说明脱节。采用此类设计时，应写清失去或保留什么技能、技能属于谁、状态何时结束，再检查实际玩法是否无需依赖名称也能表现设计意图。
+- **天水姜氏 / 星孤**：高分投稿让宗族技在武将玩法中承担了明确工作。于吉的姜维得14.5分，将多个条件对应的火【杀】选择与同族共用的【浮雷】判定相连；评委肯定其画面感、数值决策和博弈性。舆人的姜维得13.5分，用有限「星」资源连接宗族技与决斗/响应技能，有评委肯定其自联动和交互性。另一份低分投稿使用了错误的宗族技名；评委明确指出其不符合命题，但仍肯定了个人技能组的一些想法。应先核验规定名称，再评价其效果是否提供真实的家族共用功能，以及个人技能是否会用到该功能。
+- **三氏共同观察**：评委多次区分“说明很有意象”与“技能实际造成的行为”。动态数量、技能生成或失去、“无次数限制”、共同回合和嵌套用牌都需要按结算顺序逐条推演。保留评委意见的分歧：画面或主题受到肯定时，定位、措辞、强度和面杀执行仍可能有问题。分数要与各评委理由一起看，不能把合计分变成普适质量标准。
+
+本届较高合计分投稿的评语通常同时提到人物契合、玩家选择和执行清晰度；仅有主题名称或设计说明，并不能弥补实际路线不清、强度失控、互动薄弱或难以操作的问题。这些结论已转成 `design-evaluation-framework.md` 中的通用维度锚点，不另设新权重或自动及格线。
 
 These conclusions come from one themed contest and are scoped examples, not default definitions of the three clans. Reuse the prompt-validation method and evaluation checks; do not copy a submitted clan effect merely because it ranked highly.
 
