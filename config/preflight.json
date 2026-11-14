@@ -475,6 +475,16 @@
       ]
     },
     {
+      "id": "clan-contest-evidence",
+      "terms": ["门阀士族补完计划", "沦佚", "沽名", "星孤"],
+      "targets": [
+        {
+          "path": "references/contest-evaluation.md",
+          "sections": ["Sample 3 Lessons"]
+        }
+      ]
+    },
+    {
       "id": "support-solo",
       "terms": ["辅助", "支援", "团队", "单挑", "单挑空间", "队友"],
       "targets": [
